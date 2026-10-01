@@ -1,0 +1,49 @@
+{
+  "id": "20260928-102817-cb86",
+  "root": "experiments/photo-agent-v1",
+  "stage": "family",
+  "writes": "families",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T10:28:17",
+  "started": "2026-09-28T10:28:17",
+  "finished": "2026-09-28T10:29:20",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_001",
+        "SCN_002",
+        "SCN_003",
+        "SCN_004",
+        "SCN_005",
+        "SCN_006",
+        "SCN_007",
+        "SCN_008",
+        "SCN_009",
+        "SCN_010"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 4572,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 4,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/photo-agent-v1/data/evaluate/families.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T10:29:20 배치 0 완료 (64초, 1504자)",
+    "2026-09-28T10:29:20 저장 4행 → experiments/photo-agent-v1/data/evaluate/families.jsonl"
+  ],
+  "pid": 91228
+}

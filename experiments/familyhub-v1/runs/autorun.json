@@ -1,0 +1,169 @@
+{
+  "id": "20260928-002124",
+  "root": "experiments/familyhub-v1",
+  "status": "done",
+  "executor": "claude_cli",
+  "plan": [
+    "generate",
+    "split",
+    "baseline",
+    "extract",
+    "link",
+    "analogy",
+    "package",
+    "principle",
+    "premise",
+    "scenario",
+    "judge",
+    "family",
+    "polish",
+    "shortlist",
+    "score"
+  ],
+  "current": null,
+  "started": "2026-09-28T00:21:24",
+  "finished": "2026-09-28T00:43:21",
+  "error": null,
+  "steps": [
+    {
+      "stage": "generate",
+      "status": "done",
+      "started": "2026-09-28T00:21:24",
+      "job_id": "20260928-002124-9243",
+      "model": "sonnet",
+      "batches": 4,
+      "note": "실패 — 한 번 재시도",
+      "rows": 103,
+      "finished": "2026-09-28T00:25:09"
+    },
+    {
+      "stage": "split",
+      "status": "done",
+      "started": "2026-09-28T00:25:09",
+      "note": "품질 검사: 통과",
+      "finished": "2026-09-28T00:25:09"
+    },
+    {
+      "stage": "baseline",
+      "status": "done",
+      "started": "2026-09-28T00:21:24",
+      "job_id": "20260928-002124-fbaa",
+      "model": "sonnet",
+      "batches": 1,
+      "note": "본 사슬과 나란히",
+      "rows": 30,
+      "finished": "2026-09-28T00:22:04"
+    },
+    {
+      "stage": "extract",
+      "status": "done",
+      "started": "2026-09-28T00:25:09",
+      "job_id": "20260928-002509-cc26",
+      "model": "sonnet",
+      "batches": 4,
+      "note": "실패 — 한 번 재시도",
+      "rows": 117,
+      "finished": "2026-09-28T00:30:07"
+    },
+    {
+      "stage": "link",
+      "status": "done",
+      "started": "2026-09-28T00:30:07",
+      "job_id": "20260928-003007-7da9",
+      "model": "opus",
+      "batches": 1,
+      "rows": 8,
+      "finished": "2026-09-28T00:30:49"
+    },
+    {
+      "stage": "analogy",
+      "status": "done",
+      "started": "2026-09-28T00:30:49",
+      "job_id": "20260928-003049-2c7f",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 16,
+      "finished": "2026-09-28T00:32:43"
+    },
+    {
+      "stage": "package",
+      "status": "done",
+      "started": "2026-09-28T00:32:43",
+      "finished": "2026-09-28T00:32:43"
+    },
+    {
+      "stage": "principle",
+      "status": "done",
+      "started": "2026-09-28T00:32:43",
+      "job_id": "20260928-003243-99b0",
+      "model": "opus",
+      "batches": 1,
+      "rows": 8,
+      "finished": "2026-09-28T00:33:38"
+    },
+    {
+      "stage": "premise",
+      "status": "done",
+      "started": "2026-09-28T00:33:38",
+      "job_id": "20260928-003338-0c2a",
+      "model": "opus",
+      "batches": 1,
+      "rows": 13,
+      "finished": "2026-09-28T00:34:53"
+    },
+    {
+      "stage": "scenario",
+      "status": "done",
+      "started": "2026-09-28T00:34:53",
+      "job_id": "20260928-003453-5840",
+      "model": "opus",
+      "batches": 3,
+      "rows": 24,
+      "finished": "2026-09-28T00:36:44"
+    },
+    {
+      "stage": "judge",
+      "status": "done",
+      "started": "2026-09-28T00:36:47",
+      "job_id": "20260928-003647-a0a5",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 24,
+      "finished": "2026-09-28T00:38:47"
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "started": "2026-09-28T00:38:47",
+      "job_id": "20260928-003847-be99",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 20,
+      "finished": "2026-09-28T00:41:32"
+    },
+    {
+      "stage": "polish",
+      "status": "done",
+      "started": "2026-09-28T00:41:32",
+      "job_id": "20260928-004133-cdd5",
+      "model": "opus",
+      "batches": 6,
+      "rows": 45,
+      "finished": "2026-09-28T00:43:21"
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "started": "2026-09-28T00:43:21",
+      "note": "후보 5개 / 적격 21",
+      "finished": "2026-09-28T00:43:21"
+    },
+    {
+      "stage": "score",
+      "status": "done",
+      "started": "2026-09-28T00:43:21",
+      "note": "PASS 8 / 10",
+      "finished": "2026-09-28T00:43:21"
+    }
+  ]
+}

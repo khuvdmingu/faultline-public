@@ -1,0 +1,12 @@
+#!/bin/sh
+# Faultline 실행 래퍼 — 어느 폴더에서 불러도 앱 폴더 기준으로 faultline.py 를 돈다.
+#   sh faultline serve --open        웹 화면
+#   sh faultline new fridge-v1 --device "..." --domain "..."
+#   sh faultline auto --root experiments/fridge-v1
+# 파이썬은 3.7 이상이면 된다(외부 패키지 없음). 새 버전이 있으면 그쪽을 쓴다.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+for c in "$HOME/.local/bin/python3.11" python3.13 python3.12 python3.11 python3; do
+  if command -v "$c" >/dev/null 2>&1; then PY="$c"; break; fi
+done
+if [ -z "$PY" ]; then echo "python3 를 찾지 못했다" >&2; exit 1; fi
+cd "$DIR" && exec "$PY" faultline.py "$@"

@@ -1,0 +1,234 @@
+{
+  "metrics": {
+    "excerpt_grounded": 1.0,
+    "hallucinated_context": 0.04391891891891892,
+    "negation_flip": 0.0,
+    "kind_match": 0.6019417475728155,
+    "injection_leak": 0,
+    "tension_recall": 0.8333333333333334,
+    "distractor_intrusion": 0.20588235294117646,
+    "twin_merge": 1.0,
+    "false_friend_split": 0.6,
+    "counterexample_kept": 1.0,
+    "trace_complete": 1.0
+  },
+  "verdicts": [
+    {
+      "metric": "excerpt_grounded",
+      "value": 1.0,
+      "rule": ">= 0.95",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "hallucinated_context",
+      "value": 0.04391891891891892,
+      "rule": "<= 0.05",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "negation_flip",
+      "value": 0.0,
+      "rule": "<= 0.1",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "injection_leak",
+      "value": 0,
+      "rule": "== 0",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "tension_recall",
+      "value": 0.8333333333333334,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "distractor_intrusion",
+      "value": 0.20588235294117646,
+      "rule": "<= 0.15",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "twin_merge",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "false_friend_split",
+      "value": 0.6,
+      "rule": ">= 0.7",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "counterexample_kept",
+      "value": 1.0,
+      "rule": ">= 0.6",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "trace_complete",
+      "value": 1.0,
+      "rule": "== 1.0",
+      "verdict": "PASS"
+    }
+  ],
+  "detail": {
+    "hallucinated_context": [
+      "BEH_001.device='전화'",
+      "BEH_011.device='앱'",
+      "BEH_012.phase='장보기'",
+      "BEH_019.device='앱/라벨'",
+      "BEH_020.device='앱/라벨'",
+      "BEH_022.phase='알바중'",
+      "BEH_036.device='캘린더'",
+      "BEH_039.device='서랍'",
+      "BEH_082.platform='재고 앱'",
+      "BEH_087.device='화면'",
+      "BEH_100.platform='배달 앱'",
+      "BEH_101.device='냉장고'",
+      "BEH_103.device='냉장고'"
+    ],
+    "negation_flip": [],
+    "kind_mismatch": [
+      "RAW_003",
+      "RAW_004",
+      "RAW_007",
+      "RAW_008",
+      "RAW_009",
+      "RAW_014",
+      "RAW_016",
+      "RAW_017",
+      "RAW_020",
+      "RAW_028",
+      "RAW_029",
+      "RAW_031",
+      "RAW_032",
+      "RAW_033",
+      "RAW_034",
+      "RAW_036",
+      "RAW_037",
+      "RAW_039",
+      "RAW_042",
+      "RAW_044",
+      "RAW_046",
+      "RAW_057",
+      "RAW_061",
+      "RAW_062",
+      "RAW_063",
+      "RAW_064",
+      "RAW_071",
+      "RAW_073",
+      "RAW_077",
+      "RAW_078",
+      "RAW_081",
+      "RAW_083",
+      "RAW_087",
+      "RAW_088",
+      "RAW_090",
+      "RAW_091",
+      "RAW_093",
+      "RAW_096",
+      "RAW_098",
+      "RAW_099",
+      "RAW_102"
+    ],
+    "injection_leak": [],
+    "tension_recall": [
+      {
+        "hidden": "HT_01",
+        "matched": "TEN_003",
+        "purity": 0.85,
+        "coverage": 1.0,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_02",
+        "matched": "TEN_001",
+        "purity": 0.86,
+        "coverage": 0.55,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_03",
+        "matched": "TEN_004",
+        "purity": 0.77,
+        "coverage": 1.0,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_04",
+        "matched": "TEN_005",
+        "purity": 1.0,
+        "coverage": 0.9,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_05",
+        "matched": "TEN_007",
+        "purity": 0.83,
+        "coverage": 0.45,
+        "recovered": false
+      },
+      {
+        "hidden": "HT_06",
+        "matched": "TEN_006",
+        "purity": 1.0,
+        "coverage": 0.5,
+        "recovered": true
+      }
+    ],
+    "tension_majority": {
+      "TEN_001": {
+        "hidden": "HT_02",
+        "purity": 0.86
+      },
+      "TEN_002": {
+        "hidden": "HT_02",
+        "purity": 1.0
+      },
+      "TEN_003": {
+        "hidden": "HT_01",
+        "purity": 0.85
+      },
+      "TEN_004": {
+        "hidden": "HT_03",
+        "purity": 0.77
+      },
+      "TEN_005": {
+        "hidden": "HT_04",
+        "purity": 1.0
+      },
+      "TEN_006": {
+        "hidden": "HT_06",
+        "purity": 1.0
+      },
+      "TEN_007": {
+        "hidden": "HT_05",
+        "purity": 0.83
+      },
+      "TEN_008": {
+        "hidden": "HT_05",
+        "purity": 1.0
+      }
+    },
+    "distractor_intrusion": [
+      "RAW_017",
+      "RAW_036",
+      "RAW_042",
+      "RAW_043",
+      "RAW_060",
+      "RAW_075",
+      "RAW_077"
+    ],
+    "twin_merge_failed": [],
+    "false_friend_fooled": [
+      "RAW_017",
+      "RAW_036"
+    ],
+    "counterexample_lost": [],
+    "trace_broken": []
+  },
+  "at": "2026-09-28T00:43:21"
+}

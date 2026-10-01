@@ -1,0 +1,4 @@
+```json
+{"id":"ANA_001","source_domain":"medicine/workplace","source_pattern":"진단서 발급 시 고용주에게는 근무 가능 여부만 알리고 병명은 비공개하되 환자 본인·가족에게는 전체 공개하는 관행","abstract_mechanism":"청중이 누구냐에 따라 같은 사건을 서로 다른 해상도로 공개한다","target_tension_ids":["TEN_003"],"mapping":{"진단서의 '근무 불가 기간'":"직장 메신저에 뜨는 '컨디션 난조' 알림","환자·가족용 전체 진단 기록":"가족 메신저에 공유되는 심박·수면 원본 데이터"},"transfer_limitations":["진단서는 법적 구속력을 가진 공식 제도지만 에이전트의 공개 범위 설정은 사용자가 임의로 바꿀 수 있는 규칙이라 신뢰 수준이 다르다"],"distance":"distant"}
+{"id":"ANA_002","source_domain":"캘린더 공유 서비스","source_pattern":"다른 사람에게 세부 일정 대신 '바쁨' 상태만 보여주는 공유 설정","abstract_mechanism":"세부 내용 대신 요약 상태값만 노출해 정보 해상도를 낮춘다","target_tension_ids":["TEN_003"],"mapping":{"캘린더 이벤트 세부내용":"실제 건강 데이터(심박·수면 수치)","'바쁨' 상태 표시":"직장 메신저에 뜨는 '컨디션 난조' 정도의 요약 알림"},"transfer_limitations":["캘린더의 '바쁨'은 고정된 정적 설정이지만 건강 상태 공개는 응급 여부 등 상황에 따라 실시간으로 재판단해야 해 고정 규칙만으로는 처리되지 않는다"],"distance":"adjacent"}
+```

@@ -1,0 +1,57 @@
+{
+  "id": "20260928-103459",
+  "root": "experiments/photo-agent-v1",
+  "status": "done",
+  "executor": "claude_cli",
+  "plan": [
+    "scenario",
+    "judge",
+    "family",
+    "shortlist"
+  ],
+  "current": null,
+  "started": "2026-09-28T10:34:59",
+  "finished": "2026-09-28T10:37:41",
+  "error": null,
+  "steps": [
+    {
+      "stage": "scenario",
+      "status": "done",
+      "started": "2026-09-28T10:34:59",
+      "job_id": "20260928-103459-8345",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 10,
+      "finished": "2026-09-28T10:36:47"
+    },
+    {
+      "stage": "judge",
+      "status": "done",
+      "started": "2026-09-28T10:36:47",
+      "job_id": "20260928-103647-2e67",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 10,
+      "finished": "2026-09-28T10:37:35"
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "started": "2026-09-28T10:36:47",
+      "job_id": "20260928-103647-8521",
+      "model": "sonnet",
+      "batches": 1,
+      "note": "평가와 나란히",
+      "parallel": true,
+      "rows": 5,
+      "finished": "2026-09-28T10:37:41"
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "started": "2026-09-28T10:37:41",
+      "note": "후보 5개 / 적격 6",
+      "finished": "2026-09-28T10:37:41"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "20260928-110017-4152",
+  "root": "experiments/shop-agent-v1",
+  "stage": "family",
+  "writes": "families",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "failed",
+  "created": "2026-09-28T11:00:17",
+  "started": "2026-09-28T11:00:17",
+  "finished": "2026-09-28T11:00:37",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_001",
+        "SCN_002",
+        "SCN_003",
+        "SCN_004",
+        "SCN_005",
+        "SCN_006",
+        "SCN_007",
+        "SCN_008",
+        "SCN_009",
+        "SCN_010",
+        "SCN_011",
+        "SCN_012",
+        "SCN_013",
+        "SCN_014"
+      ],
+      "status": "failed",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 5907,
+      "out_file": null,
+      "error": "You've hit your session limit · resets 2:40pm (Asia/Seoul)"
+    }
+  ],
+  "result": null,
+  "error": "배치 0: You've hit your session limit · resets 2:40pm (Asia/Seoul)",
+  "log": [
+    "2026-09-28T11:00:19 배치 0 일시 실패, 15초 뒤 재시도: You've hit your session limit · resets 2:40pm (Asia/Seoul)",
+    "2026-09-28T11:00:37 배치 0 실패: You've hit your session limit · resets 2:40pm (Asia/Seoul)"
+  ],
+  "pid": 993
+}

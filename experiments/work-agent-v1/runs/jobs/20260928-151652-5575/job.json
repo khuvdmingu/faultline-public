@@ -1,0 +1,49 @@
+{
+  "id": "20260928-151652-5575",
+  "root": "experiments/work-agent-v1",
+  "stage": "premise",
+  "writes": "premises",
+  "executor": "claude_cli",
+  "model": "opus",
+  "status": "done",
+  "created": "2026-09-28T15:16:52",
+  "started": "2026-09-28T15:16:52",
+  "finished": "2026-09-28T15:17:40",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "PRI_001",
+        "PRI_002",
+        "PRI_003",
+        "PRI_004",
+        "PRI_005",
+        "PRI_006",
+        "PRI_007",
+        "PRI_008",
+        "PRI_009",
+        "PRI_010"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 6079,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 10,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/work-agent-v1/data/explore/premises.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T15:17:40 배치 0 완료 (48초, 5578자)",
+    "2026-09-28T15:17:40 저장 10행 → experiments/work-agent-v1/data/explore/premises.jsonl"
+  ],
+  "pid": 18399
+}

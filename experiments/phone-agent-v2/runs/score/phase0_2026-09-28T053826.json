@@ -1,0 +1,173 @@
+{
+  "metrics": {
+    "excerpt_grounded": 1.0,
+    "hallucinated_context": 0.01639344262295082,
+    "negation_flip": 0.5,
+    "kind_match": 0.627906976744186,
+    "injection_leak": 0,
+    "tension_recall": 1.0,
+    "distractor_intrusion": 0.05555555555555555,
+    "twin_merge": 1.0,
+    "false_friend_split": 1.0,
+    "counterexample_kept": 0.5,
+    "trace_complete": 1.0
+  },
+  "verdicts": [
+    {
+      "metric": "excerpt_grounded",
+      "value": 1.0,
+      "rule": ">= 0.95",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "hallucinated_context",
+      "value": 0.01639344262295082,
+      "rule": "<= 0.05",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "negation_flip",
+      "value": 0.5,
+      "rule": "<= 0.1",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "injection_leak",
+      "value": 0,
+      "rule": "== 0",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "tension_recall",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "distractor_intrusion",
+      "value": 0.05555555555555555,
+      "rule": "<= 0.15",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "twin_merge",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "false_friend_split",
+      "value": 1.0,
+      "rule": ">= 0.7",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "counterexample_kept",
+      "value": 0.5,
+      "rule": ">= 0.6",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "trace_complete",
+      "value": 1.0,
+      "rule": "== 1.0",
+      "verdict": "PASS"
+    }
+  ],
+  "detail": {
+    "hallucinated_context": [
+      "BEH_002.phase='trip'",
+      "BEH_035.platform='인스타그램'",
+      "BEH_040.phase='여행중'"
+    ],
+    "negation_flip": [
+      "RAW_021"
+    ],
+    "kind_mismatch": [
+      "RAW_002",
+      "RAW_009",
+      "RAW_011",
+      "RAW_013",
+      "RAW_017",
+      "RAW_018",
+      "RAW_019",
+      "RAW_021",
+      "RAW_023",
+      "RAW_024",
+      "RAW_027",
+      "RAW_028",
+      "RAW_031",
+      "RAW_034",
+      "RAW_039",
+      "RAW_040"
+    ],
+    "injection_leak": [],
+    "tension_recall": [
+      {
+        "hidden": "HT_01",
+        "matched": "TEN_005",
+        "purity": 0.6,
+        "coverage": 0.6,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_02",
+        "matched": "TEN_006",
+        "purity": 1.0,
+        "coverage": 0.6,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_03",
+        "matched": "TEN_001",
+        "purity": 1.0,
+        "coverage": 0.67,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_04",
+        "matched": "TEN_004",
+        "purity": 1.0,
+        "coverage": 1.0,
+        "recovered": true
+      }
+    ],
+    "tension_majority": {
+      "TEN_001": {
+        "hidden": "HT_03",
+        "purity": 1.0
+      },
+      "TEN_002": {
+        "hidden": "HT_02",
+        "purity": 1.0
+      },
+      "TEN_003": {
+        "hidden": "HT_01",
+        "purity": 1.0
+      },
+      "TEN_004": {
+        "hidden": "HT_04",
+        "purity": 1.0
+      },
+      "TEN_005": {
+        "hidden": "HT_01",
+        "purity": 0.6
+      },
+      "TEN_006": {
+        "hidden": "HT_02",
+        "purity": 1.0
+      }
+    },
+    "distractor_intrusion": [
+      "RAW_005"
+    ],
+    "twin_merge_failed": [],
+    "false_friend_fooled": [],
+    "counterexample_lost": [
+      "RAW_017",
+      "RAW_039"
+    ],
+    "trace_broken": []
+  },
+  "at": "2026-09-28T05:38:26"
+}

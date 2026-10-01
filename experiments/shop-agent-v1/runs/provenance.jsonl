@@ -1,0 +1,15 @@
+{"at": "2026-09-28T10:40:07", "key": "baseline", "rows": 15, "job": "20260928-103947-b96a", "stage": "baseline", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:40:40", "key": "ground_truth", "rows": 1, "job": "20260928-103947-83c4", "stage": "ground_truth", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:42:19", "key": "corpus_labeled", "rows": 41, "job": "20260928-104041-8ef8", "stage": "generate", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:43:20", "key": "behaviors", "rows": 47, "job": "20260928-104220-126a", "stage": "extract", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:44:51", "key": "tensions", "rows": 5, "job": "20260928-104321-7b17", "stage": "link", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:47:34", "key": "analogies", "rows": 10, "job": "20260928-104702-c484", "stage": "analogy", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:48:35", "key": "principles", "rows": 7, "job": "20260928-104735-bf3f", "stage": "principle", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:49:31", "key": "premises", "rows": 7, "job": "20260928-104838-95cf", "stage": "premise", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:51:15", "key": "scenarios", "rows": 14, "job": "20260928-104932-6cff", "stage": "scenario", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:52:24", "key": "evaluations", "rows": 14, "job": "20260928-105120-9fea", "stage": "judge", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:52:32", "key": "families", "rows": 6, "job": "20260928-105120-f43b", "stage": "family", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:53:18", "key": "polished", "rows": 5, "job": "20260928-105233-c3ce", "stage": "polish", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T11:00:14", "key": "scenarios", "rows": 14, "job": "20260928-105322-6842", "stage": "scenario", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T14:42:41", "key": "evaluations", "rows": 14, "job": "20260928-144159-ff1c", "stage": "judge", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T14:43:05", "key": "families", "rows": 7, "job": "20260928-144159-dc6c", "stage": "family", "executor": "claude_cli", "model": "sonnet"}

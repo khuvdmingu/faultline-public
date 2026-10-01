@@ -1,0 +1,66 @@
+{
+  "id": "20260928-152309-d4ef",
+  "root": "experiments/work-agent-v1",
+  "stage": "polish",
+  "writes": "polished",
+  "executor": "claude_cli",
+  "model": "opus",
+  "status": "done",
+  "created": "2026-09-28T15:23:09",
+  "started": "2026-09-28T15:23:09",
+  "finished": "2026-09-28T15:23:35",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_002",
+        "SCN_010"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 12770,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "SCN_013",
+        "SCN_015"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 12858,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    },
+    {
+      "index": 2,
+      "items": [
+        "SCN_020"
+      ],
+      "status": "done",
+      "prompt_file": "batch_02.prompt.md",
+      "prompt_chars": 12292,
+      "out_file": "batch_02.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 5,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/work-agent-v1/data/polish/polished.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T15:23:21 배치 2 완료 (12초, 720자)",
+    "2026-09-28T15:23:26 배치 1 완료 (18초, 1101자)",
+    "2026-09-28T15:23:33 배치 0 완료 (25초, 1570자)",
+    "2026-09-28T15:23:35 저장 5행 → experiments/work-agent-v1/data/polish/polished.jsonl"
+  ],
+  "pid": 18399
+}

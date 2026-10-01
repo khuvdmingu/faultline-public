@@ -1,0 +1,54 @@
+{
+  "id": "20260928-101703-967b",
+  "root": "experiments/photo-agent-v1",
+  "stage": "analogy",
+  "writes": "analogies",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T10:17:03",
+  "started": "2026-09-28T10:17:03",
+  "finished": "2026-09-28T10:24:58",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "TEN_001",
+        "TEN_002"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 2088,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "TEN_003",
+        "TEN_004"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 2012,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 8,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/photo-agent-v1/data/explore/analogies.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T10:17:39 배치 0 완료 (36초, 1514자)",
+    "2026-09-28T10:24:58 배치 1 완료 (475초, 1694자)",
+    "2026-09-28T10:24:58 저장 8행 → experiments/photo-agent-v1/data/explore/analogies.jsonl"
+  ],
+  "pid": 91228
+}

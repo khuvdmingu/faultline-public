@@ -1,0 +1,225 @@
+{
+  "metrics": {
+    "excerpt_grounded": 1.0,
+    "hallucinated_context": 0.034782608695652174,
+    "negation_flip": 0.0,
+    "kind_match": 0.5454545454545454,
+    "injection_leak": 0,
+    "tension_recall": 1.0,
+    "distractor_intrusion": 0.06896551724137931,
+    "twin_merge": 1.0,
+    "false_friend_split": 1.0,
+    "counterexample_kept": 0.5,
+    "trace_complete": 1.0
+  },
+  "verdicts": [
+    {
+      "metric": "excerpt_grounded",
+      "value": 1.0,
+      "rule": ">= 0.95",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "hallucinated_context",
+      "value": 0.034782608695652174,
+      "rule": "<= 0.05",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "negation_flip",
+      "value": 0.0,
+      "rule": "<= 0.1",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "injection_leak",
+      "value": 0,
+      "rule": "== 0",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "tension_recall",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "distractor_intrusion",
+      "value": 0.06896551724137931,
+      "rule": "<= 0.15",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "twin_merge",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "false_friend_split",
+      "value": 1.0,
+      "rule": ">= 0.7",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "counterexample_kept",
+      "value": 0.5,
+      "rule": ">= 0.6",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "trace_complete",
+      "value": 1.0,
+      "rule": "== 1.0",
+      "verdict": "PASS"
+    }
+  ],
+  "detail": {
+    "hallucinated_context": [
+      "BEH_054.phase='during'",
+      "BEH_055.phase='during'",
+      "BEH_057.phase='during'",
+      "BEH_058.platform='단톡방'",
+      "BEH_060.platform='메모장'",
+      "BEH_069.phase='시청 중'",
+      "BEH_070.platform='블로그'",
+      "BEH_084.phase='시청 중'",
+      "BEH_085.phase='시청 중'",
+      "BEH_089.phase='시청 후'",
+      "BEH_097.platform='리뷰 앱'",
+      "BEH_104.phase='시청 중'"
+    ],
+    "negation_flip": [],
+    "kind_mismatch": [
+      "RAW_007",
+      "RAW_011",
+      "RAW_013",
+      "RAW_017",
+      "RAW_018",
+      "RAW_020",
+      "RAW_022",
+      "RAW_024",
+      "RAW_026",
+      "RAW_033",
+      "RAW_034",
+      "RAW_035",
+      "RAW_037",
+      "RAW_038",
+      "RAW_039",
+      "RAW_040",
+      "RAW_043",
+      "RAW_044",
+      "RAW_045",
+      "RAW_047",
+      "RAW_049",
+      "RAW_050",
+      "RAW_051",
+      "RAW_052",
+      "RAW_055",
+      "RAW_058",
+      "RAW_059",
+      "RAW_063",
+      "RAW_066",
+      "RAW_067",
+      "RAW_072",
+      "RAW_073",
+      "RAW_077",
+      "RAW_078",
+      "RAW_081",
+      "RAW_082",
+      "RAW_083",
+      "RAW_085",
+      "RAW_088",
+      "RAW_092",
+      "RAW_093",
+      "RAW_094",
+      "RAW_095",
+      "RAW_097",
+      "RAW_099"
+    ],
+    "injection_leak": [],
+    "tension_recall": [
+      {
+        "hidden": "HT_01",
+        "matched": "TEN_001",
+        "purity": 1.0,
+        "coverage": 0.83,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_02",
+        "matched": "TEN_002",
+        "purity": 1.0,
+        "coverage": 0.9,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_03",
+        "matched": "TEN_005",
+        "purity": 1.0,
+        "coverage": 0.91,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_04",
+        "matched": "TEN_003",
+        "purity": 1.0,
+        "coverage": 0.91,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_05",
+        "matched": "TEN_006",
+        "purity": 0.91,
+        "coverage": 0.82,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_06",
+        "matched": "TEN_004",
+        "purity": 0.9,
+        "coverage": 0.89,
+        "recovered": true
+      }
+    ],
+    "tension_majority": {
+      "TEN_001": {
+        "hidden": "HT_01",
+        "purity": 1.0
+      },
+      "TEN_002": {
+        "hidden": "HT_02",
+        "purity": 1.0
+      },
+      "TEN_003": {
+        "hidden": "HT_04",
+        "purity": 1.0
+      },
+      "TEN_004": {
+        "hidden": "HT_06",
+        "purity": 0.9
+      },
+      "TEN_005": {
+        "hidden": "HT_03",
+        "purity": 1.0
+      },
+      "TEN_006": {
+        "hidden": "HT_05",
+        "purity": 0.91
+      }
+    },
+    "distractor_intrusion": [
+      "RAW_047",
+      "RAW_086"
+    ],
+    "twin_merge_failed": [],
+    "false_friend_fooled": [],
+    "counterexample_lost": [
+      "RAW_035",
+      "RAW_050",
+      "RAW_064"
+    ],
+    "trace_broken": []
+  },
+  "at": "2026-09-27T23:09:33"
+}

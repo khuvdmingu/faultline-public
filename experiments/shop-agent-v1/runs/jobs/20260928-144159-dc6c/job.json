@@ -1,0 +1,53 @@
+{
+  "id": "20260928-144159-dc6c",
+  "root": "experiments/shop-agent-v1",
+  "stage": "family",
+  "writes": "families",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T14:41:59",
+  "started": "2026-09-28T14:41:59",
+  "finished": "2026-09-28T14:43:05",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_001",
+        "SCN_002",
+        "SCN_003",
+        "SCN_004",
+        "SCN_005",
+        "SCN_006",
+        "SCN_007",
+        "SCN_008",
+        "SCN_009",
+        "SCN_010",
+        "SCN_011",
+        "SCN_012",
+        "SCN_013",
+        "SCN_014"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 5907,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 7,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/shop-agent-v1/data/evaluate/families.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T14:43:05 배치 0 완료 (66초, 2313자)",
+    "2026-09-28T14:43:05 저장 7행 → experiments/shop-agent-v1/data/evaluate/families.jsonl"
+  ],
+  "pid": 16711
+}

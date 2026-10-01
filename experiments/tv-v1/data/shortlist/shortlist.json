@@ -1,0 +1,139 @@
+{
+  "version": "shortlist_v01",
+  "at": "2026-09-28T00:01:24",
+  "n": 5,
+  "rule": "근거·현실성 3 미만, 뻔함 4 이상, 추적 끊김은 제외 → 점수 = 평균(근거·tension·새로움·현실성·기기 적합) − 0.5×(뻔함−1) → tension 마다 1개(다음 family 마다 1개) → 상위 5개",
+  "counts": {
+    "scenarios": 18,
+    "eligible": 18,
+    "excluded": 0
+  },
+  "picks": [
+    {
+      "scenario_id": "SCN_013",
+      "score": 4.2,
+      "family_id": "FAM_012",
+      "tension_id": "TEN_005",
+      "family_label": "몰입 중 외부 알림의 지연 일괄 전달",
+      "scores": {
+        "behavioral_grounding": 4,
+        "tension_strength": 4,
+        "novelty": 5,
+        "cliche_level": 1,
+        "plausibility": 4,
+        "device_fit": 4,
+        "ai_necessity": 2
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 1,
+      "why": [
+        "새로움 5",
+        "현실성 4",
+        "뻔함 1",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_003",
+      "score": 3.8,
+      "family_id": "FAM_002",
+      "tension_id": "TEN_001",
+      "family_label": "진도 차이에 따른 대화 메시지 보류",
+      "scores": {
+        "behavioral_grounding": 3,
+        "tension_strength": 4,
+        "novelty": 5,
+        "cliche_level": 1,
+        "plausibility": 3,
+        "device_fit": 4,
+        "ai_necessity": 5
+      },
+      "review_route": "question_candidate",
+      "slot": "tension 대표",
+      "rank": 2,
+      "why": [
+        "새로움 5",
+        "기기 적합 4",
+        "뻔함 1",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_016",
+      "score": 3.7,
+      "family_id": "FAM_015",
+      "tension_id": "TEN_006",
+      "family_label": "미세 반응의 연속 포착과 종료 시 자동 엮기",
+      "scores": {
+        "behavioral_grounding": 4,
+        "tension_strength": 4,
+        "novelty": 5,
+        "cliche_level": 2,
+        "plausibility": 4,
+        "device_fit": 4,
+        "ai_necessity": 5
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 3,
+      "why": [
+        "새로움 5",
+        "현실성 4",
+        "뻔함 2",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_004",
+      "score": 3.5,
+      "family_id": "FAM_003",
+      "tension_id": "TEN_002",
+      "family_label": "표식으로 다시 만나는 진도 지도",
+      "scores": {
+        "behavioral_grounding": 4,
+        "tension_strength": 4,
+        "novelty": 4,
+        "cliche_level": 2,
+        "plausibility": 4,
+        "device_fit": 4,
+        "ai_necessity": 1
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 4,
+      "why": [
+        "현실성 4",
+        "새로움 4",
+        "뻔함 2",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_009",
+      "score": 3.5,
+      "family_id": "FAM_008",
+      "tension_id": "TEN_003",
+      "family_label": "재생 시작 기기 기준 기록 출처 분리",
+      "scores": {
+        "behavioral_grounding": 4,
+        "tension_strength": 4,
+        "novelty": 4,
+        "cliche_level": 2,
+        "plausibility": 4,
+        "device_fit": 4,
+        "ai_necessity": 1
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 5,
+      "why": [
+        "현실성 4",
+        "새로움 4",
+        "뻔함 2",
+        "tension 대표"
+      ]
+    }
+  ],
+  "excluded": []
+}

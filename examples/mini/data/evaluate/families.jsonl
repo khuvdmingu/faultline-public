@@ -1,0 +1,2 @@
+{"id":"FAM_001","label":"진행도 기반 정보 경계","mechanism":"사용자의 경험 진행도에 맞춰 보여줄 정보의 범위를 바꿔 이해와 놀라움을 함께 지킨다","scenario_ids":["SCN_001","SCN_003"],"principle_ids":["PRI_001"],"distinct_from":"공동 시청 분기와 달리 한 사람의 지식 상태를 다룬다","is_synthetic":true}
+{"id":"FAM_002","label":"공동 진행 분기·재합류","mechanism":"개인 진행과 공동 진행을 분리해 각자의 속도와 함께 보기를 동시에 허용한다","scenario_ids":["SCN_002"],"principle_ids":["PRI_002"],"distinct_from":"여러 사람의 진행도 관계를 다룬다","is_synthetic":true}

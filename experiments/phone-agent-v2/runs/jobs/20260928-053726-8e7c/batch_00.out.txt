@@ -1,0 +1,5 @@
+```json
+{"id":"POL_001","target_id":"SCN_001","fields":{"experience":"에이전트가 예약을 확정하자마자 독립 감사 저장소에 행동기록이 실시간 복제된다. 사용자는 재로그인해 캡처하지 않고도 감사 로그 링크만 열어 검증한다.","takeaway":"항의 상황이 생기면 그 로그가 제3자 증거로 쓰인다."},"changes":[{"rule":"F-1","before":"항의 상황이 생기면 그 로그가 제3자 증거로 쓰인다.","after":"takeaway 로 이동"}],"is_synthetic":true}
+{"id":"POL_002","target_id":"SCN_007","fields":{"experience":"에이전트가 게이트 변경 같은 사소한 알림은 조용히 기록만 하고 결제가 발생하는 재예약 건만 소리로 즉시 알린다.","takeaway":"사용자는 결제 알림에만 반응하면 된다."},"changes":[{"rule":"F-1","before":"사용자는 결제 알림에만 반응하면 된다.","after":"takeaway 로 이동"},{"rule":"C-11","before":"조용히 기록만 하고, 결제가","after":"조용히 기록만 하고 결제가"}],"is_synthetic":true}
+{"id":"POL_003","target_id":"SCN_009","fields":{"experience":"에이전트가 단톡방엔 일정 변경 공지를 자동으로 올리지만 약속을 못 지키게 된 친구에게 보내는 사과 문자는 사용자가 직접 쓴다. 에이전트는 초안만 제안하고 전송 버튼은 누르지 않는다."},"changes":[{"rule":"C-11","before":"올리지만, 약속을","after":"올리지만 약속을"}],"is_synthetic":true}
+```

@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ko" data-astryx-theme="neutral">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Faultline 판단 모듈</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@astryxdesign/core@0.1.3/src/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@astryxdesign/core@0.1.3/dist/astryx.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@astryxdesign/theme-neutral@0.1.3/dist/theme.css">
+<style>
+/* 토큰은 web/index.html 과 같다 (Astryx 런타임에서 실제로 확인된 이름만). 괄호 안은 CDN 실패 시 fallback. */
+:root{
+  color-scheme:light dark;
+  --bg:var(--color-background-body,#f4f4f2); --surface:var(--color-background-surface,#fff);
+  --card:var(--color-background-card,#fafaf8);
+  --text:var(--color-text-primary,#141414); --muted:var(--color-text-secondary,#5f5f5a);
+  --border:var(--color-border,rgba(0,0,0,.1)); --border-strong:var(--color-border-emphasized,rgba(0,0,0,.28));
+  --ok:var(--color-success,#2e7d5b); --warn:var(--color-warning,#b7791f); --bad:var(--color-error,#c0392b);
+  --r-in:var(--radius-inner,6px); --r-el:var(--radius-element,10px); --r-box:var(--radius-container,14px);
+  --sh:var(--shadow-low,0 1px 2px rgba(0,0,0,.08));
+  --s1:var(--spacing-1,4px); --s2:var(--spacing-2,8px); --s3:var(--spacing-3,12px); --s4:var(--spacing-4,16px); --s5:var(--spacing-5,20px);
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--text);font:15px/1.55 system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif}
+header{background:var(--surface);border-bottom:1px solid var(--border)}
+.wrap{max-width:1120px;margin:0 auto;padding:var(--s5)}
+header .wrap{padding-top:var(--s4);padding-bottom:var(--s4)}
+h1{font-size:20px;margin:0 0 var(--s1)}
+h2{font-size:16px;margin:0 0 var(--s3)}
+h3{font-size:14px;margin:var(--s4) 0 var(--s2);color:var(--muted);font-weight:600}
+p{margin:0 0 var(--s2)}
+.muted{color:var(--muted)} .small{font-size:13px}
+main.wrap{display:grid;gap:var(--s5)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-box);padding:var(--s4);box-shadow:var(--sh);min-width:0}
+code,.mono{font:12.5px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace}
+.badge{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;border:1px solid var(--border-strong);color:var(--muted);white-space:nowrap}
+.badge.ok{background:var(--ok);color:var(--surface);border-color:transparent}
+.badge.warn{border-color:var(--warn);color:var(--warn)}
+.badge.bad{border-color:var(--bad);color:var(--bad)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{text-align:left;padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--muted);font-weight:600;white-space:nowrap}
+.scroll{overflow-x:auto}
+
+/* 파이프라인 띠 */
+.pipe{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2)}
+.stage{border:1px solid var(--border-strong);border-radius:var(--r-el);padding:6px 10px;background:var(--card);font-size:13px;white-space:nowrap}
+.stage.judge{border:2px solid var(--text);background:var(--surface);font-weight:600}
+.arrow{color:var(--muted);font-size:13px}
+.pin{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;border:2px dashed var(--warn);color:var(--warn);font-weight:700;font-size:12px;flex:none}
+
+/* 모듈 층 */
+.module{border:2px solid var(--text);border-radius:var(--r-box);padding:var(--s3);margin-top:var(--s4)}
+.module-title{display:flex;flex-wrap:wrap;gap:var(--s2);align-items:baseline;margin-bottom:var(--s3)}
+.module-title b{font-size:15px}
+.layer{display:grid;grid-template-columns:200px 1fr;gap:var(--s3);align-items:start;padding:var(--s3);border-radius:var(--r-el);background:var(--card);border:1px solid var(--border)}
+.layer + .down{display:block;text-align:center;color:var(--muted);font-size:12px;line-height:1;padding:3px 0}
+.layer .name b{display:block;font-size:14px}
+.layer .name span{font-size:12px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:var(--s2);align-items:center}
+.chip{border:1px solid var(--border-strong);border-radius:var(--r-in);padding:3px 8px;font-size:13px;background:var(--surface);white-space:nowrap}
+.chip .pin{width:18px;height:18px;font-size:11px;margin-right:4px;vertical-align:-3px;display:inline-flex}
+.chip.stub{border-style:dashed}
+.note{flex-basis:100%;font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* 차단선 */
+.barrier{display:grid;grid-template-columns:1fr auto 1fr;gap:var(--s3);align-items:center;margin-top:var(--s4)}
+.box{border:1px solid var(--border-strong);border-radius:var(--r-el);padding:var(--s3);background:var(--card);min-width:0}
+.box.hidden-box{border-color:var(--bad)}
+.wall{writing-mode:vertical-rl;text-orientation:mixed;border-left:3px dashed var(--bad);padding-left:6px;color:var(--bad);font-size:12px;font-weight:600;height:100%;min-height:90px;display:flex;align-items:center;justify-content:center}
+
+/* 한 항목의 길 */
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s3);counter-reset:step}
+.step{border:1px solid var(--border);border-radius:var(--r-el);padding:var(--s3);background:var(--card);position:relative;min-width:0}
+.step::before{counter-increment:step;content:counter(step);position:absolute;top:-10px;left:10px;background:var(--text);color:var(--surface);border-radius:999px;font-size:11px;padding:0 7px;line-height:18px}
+.step b{display:block;font-size:13.5px;margin:4px 0 2px}
+.step p{font-size:12.5px;color:var(--muted);margin:0}
+pre{margin:6px 0 0;padding:6px 8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-in);white-space:pre-wrap;word-break:break-all;font:11.5px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--text)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4)}
+ul.tight,ol.tight{margin:0;padding-left:20px}
+ul.tight li,ol.tight li{margin:0 0 6px}
+.ok-t{color:var(--ok);font-weight:600} .warn-t{color:var(--warn);font-weight:600}
+
+@media (max-width:760px){
+  .wrap{padding:var(--s4)}
+  .layer{grid-template-columns:1fr;gap:var(--s2)}
+  .flow{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .barrier{grid-template-columns:1fr}
+  .wall{writing-mode:horizontal-tb;border-left:0;border-top:3px dashed var(--bad);padding:6px 0 0;min-height:0}
+}
+@media (max-width:440px){ .flow{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Faultline 판단 모듈 구조도</h1>
+  <p class="muted small">Jev로 교체할 수 있는 typed judge · <code>_apps/faultline/judge/</code> · 파이프라인에는 아직 연결하지 않음 · 2026-09-27</p>
+</div></header>
+
+<main class="wrap">
+
+<section class="card" aria-labelledby="s1">
+  <h2 id="s1">한 장 구조</h2>
+  <p class="small muted">위 줄은 기존 파이프라인이고, 점선 원(A·B·C)은 판단 모듈을 붙일 자리입니다. 생성은 LLM이, 판단은 모듈이 맡습니다. 모듈 안의 층은 위에서 아래로 흐릅니다.</p>
+
+  <div class="pipe" role="list" aria-label="파이프라인 단계">
+    <span class="stage" role="listitem">00 생성</span><span class="arrow">→</span>
+    <span class="stage" role="listitem">10 추출</span><span class="arrow">→</span>
+    <span class="pin" title="A: 추출 검사">A</span><span class="arrow">→</span>
+    <span class="stage" role="listitem">20a 후보 제안 <span class="muted">(LLM)</span></span><span class="arrow">→</span>
+    <span class="stage judge" role="listitem"><span class="pin" style="display:inline-flex;margin-right:4px">B</span>20b 배정</span><span class="arrow">→</span>
+    <span class="stage" role="listitem">30 원리</span><span class="arrow">→</span>
+    <span class="stage" role="listitem">40 시나리오</span><span class="arrow">→</span>
+    <span class="pin" title="C: 시나리오 지도화">C</span>
+  </div>
+
+  <div class="module">
+    <div class="module-title"><b>judge/ 패키지</b><span class="muted small">Python 3.7+ · 표준 라이브러리만 · 파이프라인 <code>scripts/</code>에 의존하지 않음</span></div>
+
+    <div class="layer">
+      <div class="name"><b>태스크</b><span>tasks.py</span></div>
+      <div class="chips">
+        <span class="chip"><span class="pin">A</span>extract_check</span>
+        <span class="chip"><span class="pin">B</span>assign</span>
+        <span class="chip"><span class="pin">C</span>scenario_map_tv</span>
+        <span class="note">레코드를 상태 텍스트로 바꾸고, 질문을 고르고, 답을 조합한다 (확정 · 검토 · 플래그 · 사분면)</span>
+      </div>
+    </div>
+    <span class="down">↓</span>
+    <div class="layer">
+      <div class="name"><b>질문 은행</b><span>bank/*.json</span></div>
+      <div class="chips">
+        <span class="chip">extract_check@v1 · 5종</span>
+        <span class="chip">assign@v1 · 2종</span>
+        <span class="chip">scenario_map_tv@v1 · 8종</span>
+        <span class="note">문구가 곧 프롬프트라 버전으로 관리하고 실행 기록에 남긴다. TV 특화 축은 scenario_map_tv에만 있다</span>
+      </div>
+    </div>
+    <span class="down">↓</span>
+    <div class="layer">
+      <div class="name"><b>스키마</b><span>schema.py</span></div>
+      <div class="chips">
+        <span class="chip">noul · 예일 확률</span>
+        <span class="chip">choice · 닫힌 선택지</span>
+        <span class="chip">score · 순서 등급</span>
+        <span class="chip">Answer · 확률·방식·질량·사용량</span>
+        <span class="note">Jev의 Noul · Choice · Score와 1:1. 선택지 2~255개 검사 (Jev 공개 제약)</span>
+      </div>
+    </div>
+    <span class="down">↓</span>
+    <div class="layer">
+      <div class="name"><b>백엔드</b><span>backends.py</span></div>
+      <div class="chips">
+        <span class="chip">mock</span>
+        <span class="chip">openai</span>
+        <span class="chip">openrouter</span>
+        <span class="chip">custom · 로컬 모델</span>
+        <span class="chip stub">adapter · 공식 어댑터</span>
+        <span class="chip stub">jev · 빈칸 1곳</span>
+        <span class="note">전부 <code>ask(state, questions) → {id: Answer}</code>. 점선은 설치·접근 권한이 있어야 쓸 수 있는 백엔드</span>
+      </div>
+    </div>
+    <span class="down">↓</span>
+    <div class="layer">
+      <div class="name"><b>정책</b><span>policy.py</span></div>
+      <div class="chips">
+        <span class="chip">accept · 값 확정</span>
+        <span class="chip">review · 이유와 함께 사람에게</span>
+        <span class="note">질문 하나 단위에서는 아무것도 버리지 않는다. 버릴지는 태스크가 답을 합친 뒤에만 정한다</span>
+      </div>
+    </div>
+    <span class="down">↓</span>
+    <div class="layer">
+      <div class="name"><b>기록</b><span>&lt;root&gt;/judge_runs/&lt;run&gt;/</span></div>
+      <div class="chips">
+        <span class="chip">&lt;task&gt;.jsonl</span>
+        <span class="chip">manifest.json</span>
+        <span class="chip">tensions.judged.jsonl</span>
+        <span class="note">백엔드·모델·확률 방식·은행 버전·토큰·지연을 남긴다. 파이프라인 <code>data/</code>는 건드리지 않는다</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="barrier">
+    <div class="box hidden-box">
+      <b class="small">hidden/labels.json</b>
+      <p class="small muted">Phase 0의 숨은 정답. 태스크·백엔드는 읽지 않는다 (selftest가 상태에 정답 ID가 없는지 검사)</p>
+    </div>
+    <div class="wall" aria-hidden="true">정보 차단선</div>
+    <div class="box">
+      <b class="small">calibrate.py</b>
+      <p class="small muted">채점할 때만 정답을 읽는다. "0.8이라고 한 판정이 실제로 80% 맞는가" → 정확도 · Brier · ECE · 구간표. 백엔드별로 나란히 비교</p>
+    </div>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="s2">
+  <h2 id="s2">한 항목이 지나가는 길 — B · assign 예시</h2>
+  <p class="small muted">아래 값은 흐름을 보여주려는 예시이며 실제 실행 결과가 아닙니다.</p>
+  <div class="flow">
+    <div class="step"><b>레코드</b><p>추출된 행동 하나</p><pre>BEH_014 · avoidance</pre></div>
+    <div class="step"><b>상태 텍스트</b><p>필요한 필드만 라벨을 붙여서</p><pre>원문 [RAW_021]: …
+추출된 행동 [BEH_014]:
+- kind: avoidance
+- action: …</pre></div>
+    <div class="step"><b>질문 ① tension</b><p>choice · 후보 k개 + <b style="display:inline">NONE</b></p><pre>A. TEN_001 — …
+B. TEN_002 — …
+C. NONE — 어느 후보도 아님</pre></div>
+    <div class="step"><b>백엔드</b><p>코드 한 글자로 답하게 하고 첫 토큰의 로그확률을 모은다</p><pre>top_logprobs → A, B, C</pre></div>
+    <div class="step"><b>확률 분포</b><p>유효 선택지 질량도 기록</p><pre>TEN_001  0.72
+NONE     0.18
+TEN_002  0.10   (질량 0.97)</pre></div>
+    <div class="step"><b>정책</b><p>1위 ≥ 0.60 이고 1·2위 차이 ≥ 0.20 → 확정</p><pre>accept · TEN_001</pre></div>
+    <div class="step"><b>질문 ② role</b><p>첫 답이 NONE이 아닐 때만. 고른 후보의 두 극을 넣어 묻는다</p><pre>MEMBER · COUNTER · UNKNOWN</pre></div>
+    <div class="step"><b>조합 · 기록</b><p>배정 · 확률 · 차순위 · 검토 이유. <code>--emit-tensions</code>면 tensions.jsonl 모양으로도</p><pre>{"tension_id":"TEN_001",
+ "role":"MEMBER",
+ "decision":"accept"}</pre></div>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="s3">
+  <h2 id="s3">붙일 자리 3곳</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>자리</th><th>태스크</th><th>묻는 것</th><th>나오는 것</th><th>Phase 0 지표</th></tr></thead>
+    <tbody>
+      <tr><td><span class="pin">A</span> 10 뒤</td><td><code>extract_check</code></td><td>근거 구절이 행동을 뒷받침하는가 · 방향이 뒤집혔는가 · 채워진 context 칸이 원문에 명시됐는가 · 원문에 지시문이 있고 추출이 그걸 따랐는가</td><td>pass · flag(이유) · review</td><td class="small">excerpt_grounded · hallucinated_context · negation_flip · injection_leak</td></tr>
+      <tr><td><span class="pin">B</span> 20b</td><td><code>assign</code> <span class="badge warn">1순위</span></td><td>어느 후보인가(없음 포함) → member인가 반례인가</td><td>배정 + 확률 + 차순위, tensions.jsonl 모양 출력</td><td class="small">distractor_intrusion · twin_merge · false_friend_split · counterexample_kept</td></tr>
+      <tr><td><span class="pin">C</span> 40 뒤</td><td><code>scenario_map_tv</code></td><td>grounding · 흔한 기능과의 거리 · plausibility · TV fit · 시청 단위 · 입력 부담 · 미래 변화 필요 · 자기모순</td><td>근거×새로움 사분면 + horizon 힌트. 버리지 않음</td><td class="small">Phase 1 이후</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="card" aria-labelledby="s4">
+  <h2 id="s4">백엔드 6종</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>백엔드</th><th>확률을 얻는 방식</th><th>필요한 것</th><th>지금 상태</th></tr></thead>
+    <tbody>
+      <tr><td><code>mock</code></td><td>해시로 만든 가짜 분포</td><td>없음</td><td><span class="badge ok">작동</span> 배선 검사용</td></tr>
+      <tr><td><code>openai</code></td><td>logprobs (기본) · sampling · verbal</td><td><code>OPENAI_API_KEY</code></td><td><span class="badge">가짜 서버로 검증</span> 실 API는 아직 안 부름</td></tr>
+      <tr><td><code>openrouter</code></td><td>같음. 로그확률이 없으면 자동으로 sampling</td><td><code>OPENROUTER_API_KEY</code></td><td><span class="badge">가짜 서버로 검증</span></td></tr>
+      <tr><td><code>custom</code></td><td>같음</td><td><code>--base-url</code> (Ollama · LM Studio · vLLM 등)</td><td><span class="badge">가짜 서버로 검증</span></td></tr>
+      <tr><td><code>adapter</code></td><td>verbal — 모델이 확률 JSON을 적는다 (공식 어댑터 소스 확인)</td><td><code>pip install 'system-one-adapter[openai]'</code></td><td><span class="badge warn">미설치</span> Jev 호출 모양 리허설용</td></tr>
+      <tr><td><code>jev</code></td><td>Jev의 보정 확률</td><td>TypeSafe early access + <code>typesafe_sdk</code></td><td><span class="badge bad">빈칸 1곳</span> <code>JevBackend._client()</code></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="card" aria-labelledby="s5">
+  <h2 id="s5">Jev 전환</h2>
+  <div class="two">
+    <div>
+      <h3>대응표</h3>
+      <div class="scroll"><table>
+        <thead><tr><th>우리</th><th>Jev (typesafe_sdk)</th><th>확인</th></tr></thead>
+        <tbody>
+          <tr><td>noul</td><td class="mono">Noul(instructions) → NoulAnswer(noul)</td><td class="ok-t">확인</td></tr>
+          <tr><td>choice</td><td class="mono">Choice(criteria) → ChoiceAnswer(choice, confidence, probabilities)</td><td class="warn-t">생성자 인자 미확인</td></tr>
+          <tr><td>score</td><td class="mono">Score(criteria) → ScoreAnswer(score, confidence, probabilities, legend)</td><td class="warn-t">확률 키 기준 미확인</td></tr>
+          <tr><td>ask()</td><td class="mono">system_one(state, questions)</td><td class="ok-t">어댑터가 drop-in이라 밝힘</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div>
+      <h3>준비된 것</h3>
+      <ul class="tight small">
+        <li>판단을 원자 질문으로 쪼갠 질문 은행 3종과 버전 관리</li>
+        <li>타입과 선택지 수(≤255) 검사, 구조화된 상태 빌더</li>
+        <li>확률을 결정으로 바꾸는 규칙과 검토 이유</li>
+        <li>백엔드 교체 인터페이스와 사용량·지연 기록</li>
+        <li>Jev의 보정 주장을 재는 측정기</li>
+      </ul>
+      <h3>Jev를 받으면 할 일</h3>
+      <ol class="tight small">
+        <li><code>JevBackend._client()</code>를 공식 문서대로 채운다</li>
+        <li>미확인 가정 두 개(Choice·Score 생성자)를 확인한다</li>
+        <li><code>--limit 5</code>로 형식만 본 뒤 전체 실행</li>
+        <li>logprobs 백엔드와 보정 표를 나란히 비교한다</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="s6">
+  <h2 id="s6">MVP에 붙이는 순서</h2>
+  <ol class="tight">
+    <li><b>기준선 먼저.</b> 모듈 없이 Phase 0을 한 번 돌린다 (기존 20_link로 한 번에 묶기). 이 점수가 없으면 모듈이 무엇을 바꿨는지 분리할 수 없다.</li>
+    <li><b>B 자리 열기.</b> <code>judge/attach/20a_tension_candidates.md</code>를 <code>prompts/</code>로 옮기고 <code>pack.py</code>에 등록 → 20a 실행 → <code>tension_candidates.jsonl</code>.</li>
+    <li><code>python3 -m judge run assign --emit-tensions</code> → 결과를 검토한 뒤 <code>data/linked/tensions.jsonl</code>로 복사 → <code>validate.py</code> → <code>score.py</code>.</li>
+    <li>같은 corpus로 연결 지표 4개를 기준선과 비교한다. 두 회차씩.</li>
+    <li>그다음 A를 붙여 추출 지표를 비교한다. C는 실데이터(Phase 1)부터.</li>
+  </ol>
+  <p class="small muted" style="margin-top:var(--s3)">파이프라인 실행(10~40, 20a)은 이 모듈을 만든 세션이 아닌 새 세션에서 한다. 이 세션은 tv-v1의 숨은 정답표를 봤다.</p>
+</section>
+
+<footer class="small muted">
+  출처 (2026-09-27 확인): <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe — Introducing System One Models &amp; Jev</a> ·
+  <a href="https://github.com/typesafe-ai/system-one-adapter-python">system-one-adapter-python (MIT)</a> ·
+  <a href="https://openrouter.ai/docs/api-reference/parameters">OpenRouter 파라미터 문서</a>. 상세: <code>docs/JUDGE.md</code>
+</footer>
+</main>
+</body>
+</html>

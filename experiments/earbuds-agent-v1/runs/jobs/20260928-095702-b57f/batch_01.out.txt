@@ -1,0 +1,6 @@
+```json
+{"id":"PRI_001","statement":"평소엔 요약만 전달하고, 되물으면 원래 톤을 살려 재현한다.","tension_ids":["TEN_003"],"package_ids":["PKG_003"],"analogy_ids":["ANA_005","ANA_006"],"rationale":"BEH_005·BEH_050의 재요청 행동을 ANA_005·ANA_006의 축약-정교 이원화 구조에 넣어 재요청을 톤 전환 신호로 삼았다."}
+{"id":"PRI_002","statement":"어투를 신경 안 쓴다고 밝히면 그 뒤로도 요약본만 유지한다.","tension_ids":["TEN_003"],"package_ids":["PKG_003"],"analogy_ids":[],"rationale":"BEH_022의 반례를 해치지 않도록 톤 무관심을 고정 선택지로 남겨 되묻지 않게 했다."}
+{"id":"PRI_003","statement":"드문 고위험 신호만 감각을 깨우고, 반복되는 신호는 조용히 쌓아둔다.","tension_ids":["TEN_004"],"package_ids":["PKG_004"],"analogy_ids":["ANA_007","ANA_001"],"rationale":"BEH_035의 특정 경고음 반응을 ANA_007 알람 등급화와 ANA_001 자동조종 개입 전환 구조로 재구성했다."}
+{"id":"PRI_004","statement":"전체 무음을 택한 사람에겐 등급화를 강요하지 않고 그대로 둔다.","tension_ids":["TEN_004"],"package_ids":["PKG_004"],"analogy_ids":[],"rationale":"BEH_015·025·026·033·041·043 등 전체 무음 선호 반례를 해치지 않도록 선택권을 우선시했다."}
+```

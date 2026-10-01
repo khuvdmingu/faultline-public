@@ -1,0 +1,59 @@
+{
+  "run_id": "mini-demo",
+  "stages": [
+    {
+      "stage": "generate",
+      "prompt": "00_generate_corpus.md",
+      "package": "00_generate_corpus.md",
+      "items": 2,
+      "packed_at": "2026-09-27T17:43:12",
+      "model": null,
+      "session_note": null
+    },
+    {
+      "stage": "extract",
+      "prompt": "10_extract.md",
+      "package": "10_extract.md",
+      "items": 12,
+      "packed_at": "2026-09-27T17:43:12",
+      "model": null,
+      "session_note": null
+    },
+    {
+      "stage": "link",
+      "prompt": "20_link.md",
+      "package": "20_link.md",
+      "items": 12,
+      "packed_at": "2026-09-27T17:43:12",
+      "model": null,
+      "session_note": null
+    },
+    {
+      "stage": "principle",
+      "prompt": "30_principle.md",
+      "package": "30_principle.md",
+      "items": 2,
+      "packed_at": "2026-09-27T17:43:12",
+      "model": null,
+      "session_note": null
+    },
+    {
+      "stage": "scenario",
+      "prompt": "40_scenario.md",
+      "package": "40_scenario.md",
+      "items": 16,
+      "packed_at": "2026-09-27T17:43:12",
+      "model": null,
+      "session_note": null
+    },
+    {
+      "stage": "extract",
+      "prompt": "10_extract.md",
+      "package": "10_extract_000-004.md",
+      "items": 5,
+      "packed_at": "2026-09-27T17:43:12",
+      "model": null,
+      "session_note": null
+    }
+  ]
+}

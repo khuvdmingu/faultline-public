@@ -1,0 +1,68 @@
+{
+  "id": "20260928-003453-5840",
+  "root": "experiments/familyhub-v1",
+  "stage": "scenario",
+  "writes": "scenarios",
+  "executor": "claude_cli",
+  "model": "opus",
+  "status": "done",
+  "created": "2026-09-28T00:34:53",
+  "started": "2026-09-28T00:34:53",
+  "finished": "2026-09-28T00:36:44",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "PRI_001",
+        "PRI_002",
+        "PRI_003"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 12166,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "PRI_004",
+        "PRI_005",
+        "PRI_006"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 11412,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    },
+    {
+      "index": 2,
+      "items": [
+        "PRI_007",
+        "PRI_008"
+      ],
+      "status": "done",
+      "prompt_file": "batch_02.prompt.md",
+      "prompt_chars": 8361,
+      "out_file": "batch_02.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 24,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/familyhub-v1/data/scenarios/scenarios.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T00:36:14 배치 2 완료 (81초, 6816자)",
+    "2026-09-28T00:36:37 배치 0 완료 (104초, 9367자)",
+    "2026-09-28T00:36:44 배치 1 완료 (111초, 9687자)",
+    "2026-09-28T00:36:44 저장 24행 → experiments/familyhub-v1/data/scenarios/scenarios.jsonl"
+  ]
+}

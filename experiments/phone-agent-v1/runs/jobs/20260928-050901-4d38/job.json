@@ -1,0 +1,42 @@
+{
+  "id": "20260928-050901-4d38",
+  "root": "experiments/phone-agent-v1",
+  "stage": "analogy",
+  "writes": "analogies",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T05:09:01",
+  "started": "2026-09-28T05:09:01",
+  "finished": "2026-09-28T05:09:54",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "TEN_001",
+        "TEN_002",
+        "TEN_003",
+        "TEN_004"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 2447,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 8,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/phone-agent-v1/data/explore/analogies.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T05:09:54 배치 0 완료 (53초, 2990자)",
+    "2026-09-28T05:09:54 저장 8행 → experiments/phone-agent-v1/data/explore/analogies.jsonl"
+  ]
+}

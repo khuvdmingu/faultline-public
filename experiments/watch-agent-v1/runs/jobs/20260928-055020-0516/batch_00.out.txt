@@ -1,0 +1,4 @@
+```json
+{"id":"PRI_001","statement":"확인 시점 수·깊이를 사용자가 조절하는 위임 다이얼을 둔다","tension_ids":["TEN_001"],"package_ids":["PKG_001"],"analogy_ids":["ANA_001"],"rationale":"조종사 상시감시 의무 유추와 재확인 행동들에서, 위임 강도를 조절 가능하게 하면 완전위임 반례(BEH_030)도 해치지 않는다."}
+{"id":"PRI_002","statement":"실행은 계속 기록하고 이상 신호일 때만 사람에게 경보한다","tension_ids":["TEN_001"],"package_ids":["PKG_001"],"analogy_ids":["ANA_004"],"rationale":"ICU 알람 피로도 관리 유추처럼 상시 모니터링+선택적 경보로 재확인 부담과 빠른 대응 욕구(BEH_045)를 동시에 푼다."}
+```

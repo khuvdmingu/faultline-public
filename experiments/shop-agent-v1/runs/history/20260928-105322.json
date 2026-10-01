@@ -1,0 +1,65 @@
+{
+  "id": "20260928-105322",
+  "status": "stopped",
+  "started": "2026-09-28T10:53:22",
+  "finished": "2026-09-28T11:00:59",
+  "secs": 457,
+  "error": "judge 에서 멈춤 — 실패: 배치 0: You've hit your session limit · resets 2:40pm (Asia/Seoul)",
+  "config": {
+    "size": "quick",
+    "parallel": 3,
+    "brevity": "short",
+    "profile": "full",
+    "polish": "shortlist",
+    "family": "on",
+    "assign": "on",
+    "assign_rule": "v1",
+    "baseline_split": "avoid"
+  },
+  "steps": [
+    {
+      "stage": "scenario",
+      "status": "done",
+      "rows": 14,
+      "secs": 415,
+      "note": null
+    },
+    {
+      "stage": "judge",
+      "status": "stopped",
+      "rows": null,
+      "secs": 42,
+      "note": "실패 — 한 번 재시도"
+    },
+    {
+      "stage": "family",
+      "status": "running",
+      "rows": null,
+      "secs": null,
+      "note": "평가와 나란히"
+    },
+    {
+      "stage": "shortlist",
+      "status": "pending",
+      "rows": null,
+      "secs": null,
+      "note": null
+    }
+  ],
+  "counts": {
+    "raw": 41,
+    "behaviors": 47,
+    "tensions": 5,
+    "principles": 7,
+    "premises": 7,
+    "scenarios": 14,
+    "families": 6,
+    "shortlist": 5
+  },
+  "text": {
+    "principles": 143,
+    "premises": 243,
+    "scenarios": 445
+  },
+  "score": null
+}

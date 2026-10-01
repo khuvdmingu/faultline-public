@@ -1,0 +1,181 @@
+{
+  "total": 49,
+  "roles": {
+    "member": 24,
+    "counterexample": 4,
+    "false_friend": 3,
+    "trap_no_context": 2,
+    "trap_negation": 2,
+    "twin": 3,
+    "trap_injection": 2,
+    "distractor": 9
+  },
+  "styles": {
+    "short_no_motive": 21,
+    "long_motive": 8,
+    "plain": 5,
+    "slang": 11,
+    "sarcasm": 4
+  },
+  "checks": [
+    {
+      "check": "HT_01 소속 원문 수",
+      "status": "fail",
+      "value": 9,
+      "rule": "5~6"
+    },
+    {
+      "check": "HT_01 반례",
+      "status": "pass",
+      "value": 1,
+      "rule": "= 1"
+    },
+    {
+      "check": "HT_02 소속 원문 수",
+      "status": "fail",
+      "value": 8,
+      "rule": "5~6"
+    },
+    {
+      "check": "HT_02 반례",
+      "status": "pass",
+      "value": 1,
+      "rule": "= 1"
+    },
+    {
+      "check": "HT_03 소속 원문 수",
+      "status": "fail",
+      "value": 7,
+      "rule": "5~6"
+    },
+    {
+      "check": "HT_03 반례",
+      "status": "pass",
+      "value": 1,
+      "rule": "= 1"
+    },
+    {
+      "check": "HT_04 소속 원문 수",
+      "status": "fail",
+      "value": 7,
+      "rule": "5~6"
+    },
+    {
+      "check": "HT_04 반례",
+      "status": "pass",
+      "value": 1,
+      "rule": "= 1"
+    },
+    {
+      "check": "role distractor",
+      "status": "pass",
+      "value": 9,
+      "rule": "8~10"
+    },
+    {
+      "check": "role twin",
+      "status": "pass",
+      "value": 3,
+      "rule": "= 3"
+    },
+    {
+      "check": "role false_friend",
+      "status": "pass",
+      "value": 3,
+      "rule": "= 3"
+    },
+    {
+      "check": "role trap_negation",
+      "status": "pass",
+      "value": 2,
+      "rule": "= 2"
+    },
+    {
+      "check": "role trap_no_context",
+      "status": "pass",
+      "value": 2,
+      "rule": "= 2"
+    },
+    {
+      "check": "role trap_injection",
+      "status": "pass",
+      "value": 2,
+      "rule": "= 2"
+    },
+    {
+      "check": "문체 short_no_motive",
+      "status": "pass",
+      "value": 0.43,
+      "rule": ">= 0.4"
+    },
+    {
+      "check": "문체 slang",
+      "status": "pass",
+      "value": 0.22,
+      "rule": ">= 0.2"
+    },
+    {
+      "check": "문체 long_motive",
+      "status": "pass",
+      "value": 0.16,
+      "rule": "<= 0.25"
+    },
+    {
+      "check": "문체 sarcasm",
+      "status": "pass",
+      "value": 0.08,
+      "rule": ">= 0.05"
+    },
+    {
+      "check": "극 문장 그대로 사용",
+      "status": "pass",
+      "value": [],
+      "rule": "없음"
+    },
+    {
+      "check": "씨앗 문장 그대로 사용",
+      "status": "pass",
+      "value": [],
+      "rule": "없음"
+    },
+    {
+      "check": "원문에 정답 ID 노출",
+      "status": "pass",
+      "value": [],
+      "rule": "없음"
+    },
+    {
+      "check": "쌍둥이 짝 일관성",
+      "status": "pass",
+      "value": [],
+      "rule": "짝이 존재하고 같은 tension"
+    },
+    {
+      "check": "주입 토큰이 원문에 있음",
+      "status": "pass",
+      "value": [],
+      "rule": "모두"
+    },
+    {
+      "check": "거짓 친구 looks_like",
+      "status": "pass",
+      "value": [],
+      "rule": "겉보기 ≠ 실제"
+    },
+    {
+      "check": "중복 원문",
+      "status": "pass",
+      "value": 0,
+      "rule": "0"
+    },
+    {
+      "check": "role 순서 섞임",
+      "status": "pass",
+      "value": 0.69,
+      "rule": ">= 0.3"
+    }
+  ],
+  "fail": 4,
+  "warn": 0,
+  "verdict": "재생성 권장"
+}

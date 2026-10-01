@@ -1,0 +1,5 @@
+```json
+{"id":"PRI_001","statement":"정서적 무게가 실리는 소통과 행정처리를 분리하되 경계는 사용자가 정한다","tension_ids":["TEN_004"],"package_ids":["PKG_004"],"analogy_ids":["ANA_007","ANA_008"],"rationale":"친구 문자는 직접 쓰고 일정변경은 위임하는 패턴(BEH_003,BEH_025)을 CRM·의료 유추(ANA_007,ANA_008)로 일반화하되, 자동전송을 아예 끈 반례(BEH_053)를 위해 경계 설정권을 사용자에게 남겼다."}
+{"id":"PRI_002","statement":"되돌리기 어려운 정도에 따른 확인 임계치를 사용자가 직접 조정한다","tension_ids":["TEN_005"],"package_ids":["PKG_005"],"analogy_ids":["ANA_009"],"rationale":"취소·고액결제는 확인받고 시간변경은 위임하는 행동(BEH_032,BEH_037,BEH_056)을 은행 OTP 유추(ANA_009)로 확장하고, 확인을 원치 않는 반례(BEH_033)를 위해 임계치 자체를 사용자가 낮추거나 끌 수 있게 한다."}
+{"id":"PRI_003","statement":"계정 연동 권한을 세부 범위로 나눠 위임 정도를 직접 조절하게 한다","tension_ids":["TEN_006"],"package_ids":["PKG_006"],"analogy_ids":["ANA_011","ANA_012"],"rationale":"숙소·항공만 연동하고 나머지는 직접 하는 행동(BEH_020,BEH_047)을 OAuth 스코프·가사대행 유추(ANA_011,ANA_012)로 일반화하되, 전부 위임을 원하는 반례(BEH_011,BEH_052)는 최대 범위 선택으로 포함되게 한다."}
+```

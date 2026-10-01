@@ -1,0 +1,15 @@
+{"id":"BAS_001","title":"아침 브리핑 에이전트","experience":"눈뜨자마자 오늘 일정·날씨·교통을 요약해 알려준다.","mechanism":"캘린더·지도·날씨 API 통합 요약","condition":"A"}
+{"id":"BAS_002","title":"식당 예약 대행","experience":"원하는 날짜와 인원만 말하면 여러 식당에 전화·앱으로 예약을 시도해 확정해준다.","mechanism":"예약 앱·전화 자동화 병렬 시도","condition":"A"}
+{"id":"BAS_003","title":"생일선물 자동 준비","experience":"지인 생일이 다가오면 선물을 추천하고 결제·배송까지 대신 처리한다.","mechanism":"캘린더 연동+쇼핑몰 결제 API","condition":"A"}
+{"id":"BAS_004","title":"공과금 자동 납부 비서","experience":"매달 청구서를 확인해 이상 없으면 자동으로 납부하고 결과만 알려준다.","mechanism":"이메일 파싱+간편결제 자동 실행","condition":"A"}
+{"id":"BAS_005","title":"택배 분실 대응","experience":"배송 지연이나 분실이 감지되면 고객센터와 채팅해 환불·재배송을 요청한다.","mechanism":"배송 상태 모니터링+챗봇 협상 자동화","condition":"A"}
+{"id":"BAS_006","title":"메신저 답장 초안 작성","experience":"바쁠 때 온 메시지에 맥락에 맞는 답장 초안을 만들어 확인만 하면 보낸다.","mechanism":"대화 맥락 분석+템플릿 생성","condition":"A"}
+{"id":"BAS_007","title":"여행 일정 올인원 예약","experience":"여행 목적지만 말하면 항공·숙소·현지 이동을 한번에 비교해 예약한다.","mechanism":"복수 예약 플랫폼 API 통합 비교","condition":"A"}
+{"id":"BAS_008","title":"병원 예약 리마인더 겸 대행","experience":"정기 검진 시기가 되면 병원에 예약을 잡고 전날 알림을 준다.","mechanism":"주기적 일정 트리거+예약 시스템 연동","condition":"A"}
+{"id":"BAS_009","title":"장보기 자동 주문","experience":"냉장고 재고가 부족한 품목을 파악해 정기적으로 장바구니를 채우고 주문한다.","mechanism":"소비 패턴 학습+배달앱 자동 주문","condition":"A"}
+{"id":"BAS_010","title":"영수증 정리 및 가계부 자동화","experience":"카드 결제 알림을 모아 자동으로 카테고리별 가계부를 정리해준다.","mechanism":"결제 알림 파싱+분류 알고리즘","condition":"A"}
+{"id":"BAS_011","title":"구독 서비스 관리","experience":"불필요하거나 중복된 구독을 찾아 해지 여부를 물어보고 대신 해지해준다.","mechanism":"결제 내역 스캔+구독 해지 자동화","condition":"A"}
+{"id":"BAS_012","title":"미팅 일정 조율","experience":"여러 사람과 일정을 맞춰야 할 때 각자의 캘린더를 확인해 최적 시간을 제안하고 확정한다.","mechanism":"다자간 캘린더 교차 확인+자동 초대","condition":"A"}
+{"id":"BAS_013","title":"항공권 가격 추적 및 자동구매","experience":"원하는 노선의 가격이 목표치 이하로 떨어지면 즉시 구매해준다.","mechanism":"가격 모니터링+조건부 자동 결제","condition":"A"}
+{"id":"BAS_014","title":"정보 리서치 요약 비서","experience":"궁금한 주제를 물으면 여러 출처를 찾아 핵심만 요약해 보여준다.","mechanism":"웹 검색+요약 생성","condition":"A"}
+{"id":"BAS_015","title":"긴급 연락 대행","experience":"본인이 연락하기 어려운 상황일 때 지정한 사람에게 상황을 대신 전달한다.","mechanism":"음성 명령 트리거+메신저 자동 발송","condition":"A"}

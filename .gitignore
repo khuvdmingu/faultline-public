@@ -1,0 +1,17 @@
+# 파이썬·OS 부산물
+__pycache__/
+*.pyc
+.DS_Store
+
+# 저장 시 남는 직전 판 백업 (store.write keep_prev)
+*.prev
+
+# tv-v1 첫 생성 실패 작업 — 격리 전 실행이라 로컬 경로가 출력에 섞였다 (재현에 불필요)
+experiments/tv-v1/runs/jobs/20260927-223811-6743/
+
+# 키·로컬 설정
+.env
+.env.*
+
+# 원자적 쓰기 임시 파일 (store.atomic_json)
+*.tmp[0-9]*

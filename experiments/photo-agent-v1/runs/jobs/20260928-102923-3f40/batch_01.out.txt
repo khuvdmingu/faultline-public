@@ -1,0 +1,4 @@
+```json
+{"id":"POL_001","target_id":"SCN_004","fields":{"experience":"에이전트가 연락 빈도 감소 같은 신호로 관계 변화를 감지해 과거 공유했던 사진들의 공개 범위를 다시 점검한다. 그 사람 얼굴이 명확히 나온 사진은 자동으로 비공개 폴더로 옮기고 여러 명이 섞인 단체사진만 사용자에게 조정 여부를 묻는다. 조정 이력은 따로 기록돼 남는다."},"changes":[{"rule":"C-11","before":"옮기고, 여러 명이","after":"옮기고 여러 명이"}],"is_synthetic":true}
+{"id":"POL_002","target_id":"SCN_008","fields":{},"changes":[],"is_synthetic":true}
+```

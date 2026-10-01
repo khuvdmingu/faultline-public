@@ -1,0 +1,14 @@
+{
+  "run_id": "gen",
+  "stages": [
+    {
+      "stage": "generate",
+      "prompt": "00_generate_corpus.md",
+      "package": "00_generate_corpus.md",
+      "items": 6,
+      "packed_at": "2026-09-27T17:55:52",
+      "model": null,
+      "session_note": null
+    }
+  ]
+}

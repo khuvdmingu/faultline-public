@@ -1,0 +1,30 @@
+{"id": "BAS_001", "title": "이거 뭐였지 검색", "experience": "시청 중 배우 얼굴이 낯익어 폰으로 바로 검색해서 필모그래피를 확인한다.", "mechanism": "화면 속 인물 정보를 폰 검색으로 즉시 해소", "condition": "A", "is_synthetic": true}
+{"id": "BAS_002", "title": "다음 화 자동재생 몰아보기", "experience": "에피소드가 끝나면 자동으로 다음 화가 재생되어 계속 이어서 본다.", "mechanism": "자동재생 기본값이 시청 지속을 유도", "condition": "A", "is_synthetic": true}
+{"id": "BAS_003", "title": "가족 프로필 시청 기록 섞임", "experience": "내가 본 다큐멘터리 추천 목록에 아이가 본 만화 추천이 섞여 나온다.", "mechanism": "단일 계정 시청 기록 공유로 취향 데이터가 혼합됨", "condition": "A", "is_synthetic": true}
+{"id": "BAS_004", "title": "음성으로 채널 전환", "experience": "리모컨을 찾지 못해 음성으로 '뉴스 채널 틀어줘'라고 말해 전환한다.", "mechanism": "음성 인식이 리모컨 조작을 대체", "condition": "A", "is_synthetic": true}
+{"id": "BAS_005", "title": "실시간 반응 공유", "experience": "명장면이 나오면 캡처해서 단체 채팅방에 바로 공유한다.", "mechanism": "화면 캡처와 메신저 연동으로 즉시 공유", "condition": "A", "is_synthetic": true}
+{"id": "BAS_006", "title": "리뷰 커뮤니티 먼저 확인", "experience": "영화를 고르기 전 커뮤니티에서 평점과 후기를 먼저 읽는다.", "mechanism": "외부 커뮤니티 정보로 선택 리스크를 낮춤", "condition": "A", "is_synthetic": true}
+{"id": "BAS_007", "title": "OTT 앱 넘나들며 검색", "experience": "보고 싶은 작품이 어느 OTT에 있는지 여러 앱을 오가며 확인한다.", "mechanism": "통합 검색 부재로 사용자가 수동으로 앱을 순회", "condition": "A", "is_synthetic": true}
+{"id": "BAS_008", "title": "시청 중 알림 방해", "experience": "몰입해서 보다가 폰에 온 메시지 알림 때문에 흐름이 끊긴다.", "mechanism": "별개 디바이스 알림이 시청 몰입을 방해", "condition": "A", "is_synthetic": true}
+{"id": "BAS_009", "title": "가족 투표로 콘텐츠 결정", "experience": "저녁에 뭘 볼지 가족들이 리모컨으로 후보를 올리고 투표한다.", "mechanism": "공용 화면에서 다수 의견 수렴 절차가 필요함", "condition": "A", "is_synthetic": true}
+{"id": "BAS_010", "title": "몰아보기 후 줄거리 요약 검색", "experience": "오랜만에 이어보는 시리즈라 이전 화 줄거리를 검색해서 요약을 읽는다.", "mechanism": "기억 공백을 외부 텍스트 요약으로 보완", "condition": "A", "is_synthetic": true}
+{"id": "BAS_011", "title": "자막 언어 변경", "experience": "외국어 콘텐츠를 볼 때 리모컨으로 자막 언어를 한국어로 바꾼다.", "mechanism": "설정 메뉴 진입으로 자막 옵션 변경", "condition": "A", "is_synthetic": true}
+{"id": "BAS_012", "title": "광고 스킵 시도", "experience": "광고가 나오면 리모컨으로 빨리감기하거나 다른 채널로 잠깐 돌린다.", "mechanism": "광고 회피를 위한 수동 조작", "condition": "A", "is_synthetic": true}
+{"id": "BAS_013", "title": "시청 중 뜬 배경음악 검색", "experience": "인상적인 배경음악이 나오면 폰으로 '이 노래 뭐지' 검색한다.", "mechanism": "청각 정보를 외부 음악 인식 앱으로 식별", "condition": "A", "is_synthetic": true}
+{"id": "BAS_014", "title": "밤늦게 볼륨 낮추고 자막 켜기", "experience": "늦은 밤 가족이 잘까 봐 볼륨을 줄이고 자막을 켜서 시청한다.", "mechanism": "공용 공간 소음 제약에 따른 설정 조정", "condition": "A", "is_synthetic": true}
+{"id": "BAS_015", "title": "리모컨 잃어버려 폰 앱으로 조작", "experience": "리모컨이 안 보여서 스마트폰의 리모컨 앱으로 TV를 조작한다.", "mechanism": "폰 앱이 리모컨 기능을 대체", "condition": "A", "is_synthetic": true}
+{"id": "BAS_016", "title": "시청 후 SNS 감상 올리기", "experience": "드라마 완결 후 감상을 SNS에 짧게 글로 올린다.", "mechanism": "시청 경험을 SNS 포스팅으로 외부화", "condition": "A", "is_synthetic": true}
+{"id": "BAS_017", "title": "위키에서 세계관 정리 확인", "experience": "복잡한 세계관의 작품을 보다가 위키에서 설정 정리를 찾아본다.", "mechanism": "콘텐츠 이해 보조를 위해 위키 문서를 참조", "condition": "A", "is_synthetic": true}
+{"id": "BAS_018", "title": "본방 시간에 늦어 채널 확인", "experience": "본방 시작 시간을 놓칠까 봐 폰으로 편성표를 미리 확인한다.", "mechanism": "편성 정보 확인을 위한 외부 앱 조회", "condition": "A", "is_synthetic": true}
+{"id": "BAS_019", "title": "가족과 리모컨 쟁탈", "experience": "보고 싶은 채널이 달라 가족끼리 리모컨을 주고받으며 조율한다.", "mechanism": "단일 입력 장치로 인한 물리적 우선권 다툼", "condition": "A", "is_synthetic": true}
+{"id": "BAS_020", "title": "시청 중 캐릭터 이름 헷갈림", "experience": "등장인물이 많아 이름이 헷갈려서 검색으로 인물 관계도를 찾아본다.", "mechanism": "외부 검색으로 서사 정보 결핍 보완", "condition": "A", "is_synthetic": true}
+{"id": "BAS_021", "title": "추천 알고리즘 못 믿어 직접 검색", "experience": "홈 화면 추천이 마음에 안 들어 검색창에 직접 원하는 제목을 입력한다.", "mechanism": "추천 결과 불신 시 수동 검색으로 전환", "condition": "A", "is_synthetic": true}
+{"id": "BAS_022", "title": "스포츠 경기 중 실시간 커뮤니티 반응", "experience": "축구 경기를 보면서 폰으로 실시간 반응 커뮤니티를 같이 확인한다.", "mechanism": "동시성 콘텐츠에 대한 외부 반응 동기화", "condition": "A", "is_synthetic": true}
+{"id": "BAS_023", "title": "자녀 시청 시간 제한 설정", "experience": "부모가 리모컨 설정 메뉴에서 자녀 프로필의 시청 가능 시간을 제한한다.", "mechanism": "프로필별 접근 권한 설정으로 이용 통제", "condition": "A", "is_synthetic": true}
+{"id": "BAS_024", "title": "본 것 같은데 확인", "experience": "이미 본 영화인지 헷갈려서 OTT 앱의 시청 기록을 확인한다.", "mechanism": "개인 시청 기록 조회로 중복 시청 방지", "condition": "A", "is_synthetic": true}
+{"id": "BAS_025", "title": "화질 문제로 재부팅", "experience": "화면이 끊기자 리모컨으로 TV를 재부팅해서 문제를 해결한다.", "mechanism": "기기 재시작을 통한 임시 오류 해결", "condition": "A", "is_synthetic": true}
+{"id": "BAS_026", "title": "결말 스포일러 피하기", "experience": "아직 안 본 사람이 있어 결말에 대한 이야기를 SNS에서 일부러 피한다.", "mechanism": "정보 노출 시점 차이로 인한 자발적 회피 행동", "condition": "A", "is_synthetic": true}
+{"id": "BAS_027", "title": "다음 시즌 나왔는지 검색", "experience": "시즌 완결 후 다음 시즌 방영 여부를 검색으로 확인한다.", "mechanism": "제작 정보 갱신 확인을 위한 외부 검색", "condition": "A", "is_synthetic": true}
+{"id": "BAS_028", "title": "음성 검색 오인식 재시도", "experience": "음성으로 제목을 말했는데 다른 작품이 나와서 다시 발음을 바꿔 말한다.", "mechanism": "음성 인식 오류에 대한 사용자 재시도", "condition": "A", "is_synthetic": true}
+{"id": "BAS_029", "title": "가족 단위 시청 이력 초기화", "experience": "공유 프로필에 이상한 추천이 계속 떠서 시청 기록을 일부 삭제한다.", "mechanism": "추천 품질 개선을 위한 데이터 수동 정리", "condition": "A", "is_synthetic": true}
+{"id": "BAS_030", "title": "리뷰 영상 먼저 보고 결정", "experience": "영화를 볼지 결정하기 전에 유튜브 리뷰 영상을 폰으로 먼저 본다.", "mechanism": "외부 영상 콘텐츠로 선택 전 정보 수집", "condition": "A", "is_synthetic": true}

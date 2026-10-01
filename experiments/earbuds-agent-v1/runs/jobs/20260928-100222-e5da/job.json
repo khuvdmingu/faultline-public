@@ -1,0 +1,54 @@
+{
+  "id": "20260928-100222-e5da",
+  "root": "experiments/earbuds-agent-v1",
+  "stage": "polish",
+  "writes": "polished",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T10:02:22",
+  "started": "2026-09-28T10:02:22",
+  "finished": "2026-09-28T10:03:17",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_001",
+        "SCN_005"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 12480,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "SCN_006",
+        "SCN_013"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 12521,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 4,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/earbuds-agent-v1/data/polish/polished.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T10:02:57 배치 0 완료 (35초, 485자)",
+    "2026-09-28T10:03:16 배치 1 완료 (54초, 713자)",
+    "2026-09-28T10:03:17 저장 4행 → experiments/earbuds-agent-v1/data/polish/polished.jsonl"
+  ],
+  "pid": 86649
+}

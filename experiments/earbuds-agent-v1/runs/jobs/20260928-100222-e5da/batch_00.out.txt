@@ -1,0 +1,4 @@
+```json
+{"id":"POL_001","target_id":"SCN_001","fields":{"experience":"이어폰이 짧은 신호로 확정 필요를 알리고 다른 서비스에서 미리 정해둔 확정=수동 기준이 이 앱에도 그대로 적용된다. 환불 요청 같은 되돌릴 수 있는 일은 그대로 AI가 처리해 넘어간다.","takeaway":"새 앱마다 기준을 다시 설정할 필요가 없어진다."},"changes":[{"rule":"F-1","before":"새 앱마다 다시 기준을 설정할 필요가 없다.","after":"takeaway 로 이동: 새 앱마다 기준을 다시 설정할 필요가 없어진다."},{"rule":"C-11","before":"알리고,","after":"알리고"}],"is_synthetic":true}
+{"id":"POL_002","target_id":"SCN_005","fields":{},"changes":[],"is_synthetic":true}
+```

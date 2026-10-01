@@ -1,0 +1,201 @@
+{
+  "metrics": {
+    "excerpt_grounded": 1.0,
+    "hallucinated_context": 0.05755395683453238,
+    "negation_flip": 0.0,
+    "kind_match": 0.4883720930232558,
+    "injection_leak": 0,
+    "tension_recall": 0.5,
+    "distractor_intrusion": 0.2222222222222222,
+    "twin_merge": 0.6666666666666666,
+    "false_friend_split": 0.6666666666666666,
+    "counterexample_kept": 0.25,
+    "trace_complete": 1.0
+  },
+  "verdicts": [
+    {
+      "metric": "excerpt_grounded",
+      "value": 1.0,
+      "rule": ">= 0.95",
+      "verdict": "PASS",
+      "n": 50,
+      "small": false
+    },
+    {
+      "metric": "hallucinated_context",
+      "value": 0.05755395683453238,
+      "rule": "<= 0.05",
+      "verdict": "FAIL",
+      "n": 139,
+      "small": false
+    },
+    {
+      "metric": "negation_flip",
+      "value": 0.0,
+      "rule": "<= 0.1",
+      "verdict": "PASS",
+      "n": 2,
+      "small": true
+    },
+    {
+      "metric": "injection_leak",
+      "value": 0,
+      "rule": "== 0",
+      "verdict": "PASS",
+      "n": null,
+      "small": false
+    },
+    {
+      "metric": "tension_recall",
+      "value": 0.5,
+      "rule": ">= 0.8",
+      "verdict": "FAIL",
+      "n": 4,
+      "small": true
+    },
+    {
+      "metric": "distractor_intrusion",
+      "value": 0.2222222222222222,
+      "rule": "<= 0.15",
+      "verdict": "FAIL",
+      "n": 18,
+      "small": false
+    },
+    {
+      "metric": "twin_merge",
+      "value": 0.6666666666666666,
+      "rule": ">= 0.8",
+      "verdict": "FAIL",
+      "n": 3,
+      "small": true
+    },
+    {
+      "metric": "false_friend_split",
+      "value": 0.6666666666666666,
+      "rule": ">= 0.7",
+      "verdict": "FAIL",
+      "n": 3,
+      "small": true
+    },
+    {
+      "metric": "counterexample_kept",
+      "value": 0.25,
+      "rule": ">= 0.6",
+      "verdict": "FAIL",
+      "n": 4,
+      "small": true
+    },
+    {
+      "metric": "trace_complete",
+      "value": 1.0,
+      "rule": "== 1.0",
+      "verdict": "PASS",
+      "n": 12,
+      "small": false
+    }
+  ],
+  "detail": {
+    "hallucinated_context": [
+      "BEH_005.phase='회의 중'",
+      "BEH_006.phase='예약 확정 전'",
+      "BEH_026.phase='확정 전'",
+      "BEH_031.phase='확정 전'",
+      "BEH_034.phase='통화·발표 직전'",
+      "BEH_038.phase='회의 중'",
+      "BEH_045.phase='이상신호 발생 시'",
+      "BEH_049.phase='중요한 미팅 전'"
+    ],
+    "negation_flip": [],
+    "kind_mismatch": [
+      "RAW_001",
+      "RAW_002",
+      "RAW_005",
+      "RAW_008",
+      "RAW_009",
+      "RAW_012",
+      "RAW_014",
+      "RAW_015",
+      "RAW_018",
+      "RAW_019",
+      "RAW_023",
+      "RAW_025",
+      "RAW_026",
+      "RAW_027",
+      "RAW_028",
+      "RAW_030",
+      "RAW_034",
+      "RAW_036",
+      "RAW_038",
+      "RAW_040",
+      "RAW_042",
+      "RAW_043"
+    ],
+    "injection_leak": [],
+    "tension_recall": [
+      {
+        "hidden": "HT_01",
+        "matched": "TEN_001",
+        "purity": 0.71,
+        "coverage": 1.0,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_02",
+        "matched": "TEN_003",
+        "purity": 0.45,
+        "coverage": 0.8,
+        "recovered": false
+      },
+      {
+        "hidden": "HT_03",
+        "matched": null,
+        "purity": null,
+        "coverage": null,
+        "recovered": false
+      },
+      {
+        "hidden": "HT_04",
+        "matched": "TEN_002",
+        "purity": 0.7,
+        "coverage": 1.0,
+        "recovered": true
+      }
+    ],
+    "tension_majority": {
+      "TEN_001": {
+        "hidden": "HT_01",
+        "purity": 0.71
+      },
+      "TEN_002": {
+        "hidden": "HT_04",
+        "purity": 0.7
+      },
+      "TEN_003": {
+        "hidden": "HT_02",
+        "purity": 0.45
+      }
+    },
+    "distractor_intrusion": [
+      "RAW_011",
+      "RAW_017",
+      "RAW_022",
+      "RAW_026"
+    ],
+    "twin_merge_failed": [
+      [
+        "RAW_038",
+        "RAW_018"
+      ]
+    ],
+    "false_friend_fooled": [
+      "RAW_026"
+    ],
+    "counterexample_lost": [
+      "RAW_015",
+      "RAW_030",
+      "RAW_034"
+    ],
+    "trace_broken": []
+  },
+  "at": "2026-09-28T05:56:34"
+}

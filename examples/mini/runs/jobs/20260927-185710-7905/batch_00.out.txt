@@ -1,0 +1,4 @@
+```json
+{"id":"BAS_009","title":"AI 추천","experience":"이력 기반 추천","mechanism":"개인화 추천","condition":"A"}
+{"id":"BAS_010","title":"음성 검색","experience":"말로 찾기","mechanism":"음성 검색","condition":"A"}
+```

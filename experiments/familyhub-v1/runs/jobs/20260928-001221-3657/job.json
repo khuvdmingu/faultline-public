@@ -1,0 +1,33 @@
+{
+  "id": "20260928-001221-3657",
+  "root": "experiments/familyhub-v1",
+  "stage": "generate",
+  "writes": "corpus_labeled",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "failed",
+  "created": "2026-09-28T00:12:21",
+  "started": "2026-09-28T00:12:21",
+  "finished": "2026-09-28T00:21:15",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "HT_01",
+        "HT_02",
+        "HT_03",
+        "HT_04",
+        "HT_05",
+        "HT_06"
+      ],
+      "status": "running",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 4689,
+      "out_file": null,
+      "error": null
+    }
+  ],
+  "result": null,
+  "error": "서버가 재시작돼 중단됨 — 재시도 가능",
+  "log": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "20260928-144159",
+  "root": "experiments/shop-agent-v1",
+  "status": "done",
+  "executor": "claude_cli",
+  "plan": [
+    "judge",
+    "family",
+    "shortlist"
+  ],
+  "current": null,
+  "started": "2026-09-28T14:41:59",
+  "finished": "2026-09-28T14:43:08",
+  "error": null,
+  "steps": [
+    {
+      "stage": "judge",
+      "status": "done",
+      "started": "2026-09-28T14:41:59",
+      "job_id": "20260928-144159-ff1c",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 14,
+      "finished": "2026-09-28T14:42:44"
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "started": "2026-09-28T14:41:59",
+      "job_id": "20260928-144159-dc6c",
+      "model": "sonnet",
+      "batches": 1,
+      "note": "평가와 나란히",
+      "parallel": true,
+      "rows": 7,
+      "finished": "2026-09-28T14:43:05"
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "started": "2026-09-28T14:43:08",
+      "note": "후보 5개 / 적격 11",
+      "finished": "2026-09-28T14:43:08"
+    }
+  ]
+}

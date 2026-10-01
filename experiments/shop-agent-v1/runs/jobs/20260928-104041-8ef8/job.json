@@ -1,0 +1,66 @@
+{
+  "id": "20260928-104041-8ef8",
+  "root": "experiments/shop-agent-v1",
+  "stage": "generate",
+  "writes": "corpus_labeled",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T10:40:41",
+  "started": "2026-09-28T10:40:41",
+  "finished": "2026-09-28T10:42:19",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "HT_01",
+        "HT_02"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 3437,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "HT_03",
+        "HT_04"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 3443,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    },
+    {
+      "index": 2,
+      "items": [
+        "unaffiliated"
+      ],
+      "status": "done",
+      "prompt_file": "batch_02.prompt.md",
+      "prompt_chars": 4604,
+      "out_file": "batch_02.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 41,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/shop-agent-v1/hidden/corpus_labeled.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T10:42:05 배치 2 완료 (84초, 5291자)",
+    "2026-09-28T10:42:14 배치 1 완료 (93초, 3708자)",
+    "2026-09-28T10:42:19 배치 0 완료 (98초, 3393자)",
+    "2026-09-28T10:42:19 저장 41행 → experiments/shop-agent-v1/hidden/corpus_labeled.jsonl"
+  ],
+  "pid": 97089
+}

@@ -1,0 +1,4 @@
+```json
+{"id":"POL_001","target_id":"SCN_006","fields":{"experience":"평소엔 사용자가 낮춰둔 약한 진동 그대로 오지만 에이전트가 위험 신호를 감지하면 그 설정을 무시하고 최대 강도 진동과 음성으로 전환한다. 워치 화면엔 왜 세게 울렸는지 이유가 함께 뜬다."},"changes":[{"rule":"C-11","before":"오지만,","after":"오지만"}],"is_synthetic":true}
+{"id":"POL_002","target_id":"SCN_010","fields":{},"changes":[],"is_synthetic":true}
+```

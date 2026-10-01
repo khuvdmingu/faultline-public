@@ -1,0 +1,12 @@
+{"at": "2026-09-28T15:02:37", "key": "baseline", "rows": 30, "job": "20260928-150208-7be6", "stage": "baseline", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T15:02:57", "key": "ground_truth", "rows": 1, "job": "20260928-150208-57a5", "stage": "ground_truth", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T15:07:16", "key": "corpus_labeled", "rows": 95, "job": "20260928-150259-69c7", "stage": "generate", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T15:08:53", "key": "behaviors", "rows": 108, "job": "20260928-150718-7cae", "stage": "extract", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T15:09:20", "key": "tensions", "rows": 6, "job": "20260928-150854-3332", "stage": "link", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T15:16:29", "key": "analogies", "rows": 12, "job": "20260928-151552-6003", "stage": "analogy", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T15:16:52", "key": "principles", "rows": 10, "job": "20260928-151631-e8a9", "stage": "principle", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T15:17:40", "key": "premises", "rows": 10, "job": "20260928-151652-5575", "stage": "premise", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T15:19:03", "key": "scenarios", "rows": 20, "job": "20260928-151740-e7ea", "stage": "scenario", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T15:20:40", "key": "evaluations", "rows": 20, "job": "20260928-151907-8857", "stage": "judge", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T15:23:05", "key": "families", "rows": 9, "job": "20260928-151907-829c", "stage": "family", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T15:23:35", "key": "polished", "rows": 5, "job": "20260928-152309-d4ef", "stage": "polish", "executor": "claude_cli", "model": "opus"}

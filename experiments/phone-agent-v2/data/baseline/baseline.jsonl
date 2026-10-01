@@ -1,0 +1,15 @@
+{"id": "BAS_001", "title": "항공편 지연 자동 대응", "experience": "항공편이 지연되면 에이전트가 자동으로 숙소 체크인 시간과 다음 교통편을 조정한다.", "mechanism": "항공사 API 지연 감지 후 연쇄 일정 재조정", "condition": "A", "is_synthetic": true}
+{"id": "BAS_002", "title": "최저가 숙소 자동 예약", "experience": "여행 날짜와 예산만 입력하면 에이전트가 여러 숙소 앱을 비교해 가장 저렴한 곳을 예약한다.", "mechanism": "멀티 앱 가격 비교 후 자동 예약 실행", "condition": "A", "is_synthetic": true}
+{"id": "BAS_003", "title": "실시간 길찾기 대체 경로", "experience": "이동 중 교통 체증이 감지되면 에이전트가 알아서 대체 경로로 안내를 전환한다.", "mechanism": "실시간 교통 데이터 기반 경로 재계산", "condition": "A", "is_synthetic": true}
+{"id": "BAS_004", "title": "캘린더 기반 여행 일정 자동 생성", "experience": "캘린더에 여행 일정을 등록하면 에이전트가 교통편과 숙소를 자동으로 채워 넣는다.", "mechanism": "캘린더 이벤트 트리거로 예약 자동 생성", "condition": "A", "is_synthetic": true}
+{"id": "BAS_005", "title": "단체 여행 메신저 조율", "experience": "단체 여행 메신저 방에서 일정 취합을 요청하면 에이전트가 참가자들의 가능 시간을 모아 정리해준다.", "mechanism": "메신저 대화 파싱 후 일정 취합", "condition": "A", "is_synthetic": true}
+{"id": "BAS_006", "title": "환승 시간 부족 경고", "experience": "환승 시간이 촉박한 일정이 잡히면 에이전트가 미리 알림을 보내고 대안을 제시한다.", "mechanism": "경유 시간 계산 후 임계값 초과 시 경고", "condition": "A", "is_synthetic": true}
+{"id": "BAS_007", "title": "숙소 취소 자동 환불 처리", "experience": "일정이 취소되면 에이전트가 관련 숙소·교통 예약을 자동으로 취소하고 환불을 신청한다.", "mechanism": "일정 취소 이벤트에 연동된 취소·환불 자동 처리", "condition": "A", "is_synthetic": true}
+{"id": "BAS_008", "title": "현지 도착 후 이동수단 추천", "experience": "공항에 도착하면 에이전트가 위치를 인식해 숙소까지 가는 최적 교통수단을 추천한다.", "mechanism": "GPS 위치 인식 기반 이동수단 추천", "condition": "A", "is_synthetic": true}
+{"id": "BAS_009", "title": "짐 체크인 알림", "experience": "출발 시간이 다가오면 에이전트가 짐을 챙겼는지, 필요한 서류가 있는지 체크리스트로 알려준다.", "mechanism": "출발 시각 역산 알림 및 체크리스트 생성", "condition": "A", "is_synthetic": true}
+{"id": "BAS_010", "title": "날씨 기반 일정 재조정", "experience": "여행지 날씨가 나빠지면 에이전트가 야외 일정을 실내 일정으로 바꿔 제안한다.", "mechanism": "날씨 API 연동 후 일정 대체안 생성", "condition": "A", "is_synthetic": true}
+{"id": "BAS_011", "title": "예산 초과 경고", "experience": "여행 중 지출이 예산을 넘어서면 에이전트가 알림을 보내고 남은 일정의 비용을 조정 제안한다.", "mechanism": "결제 내역 합산 후 예산 임계값 체크", "condition": "A", "is_synthetic": true}
+{"id": "BAS_012", "title": "멀티 앱 로그인 자동화", "experience": "새 여행을 시작하면 에이전트가 필요한 교통·숙소 앱에 자동으로 로그인해 준비한다.", "mechanism": "저장된 계정 정보로 앱 간 자동 인증", "condition": "A", "is_synthetic": true}
+{"id": "BAS_013", "title": "귀국 항공편 자동 체크인", "experience": "체크인 가능 시간이 되면 에이전트가 자동으로 온라인 체크인을 완료하고 좌석을 선택한다.", "mechanism": "체크인 오픈 시각 감지 후 자동 실행", "condition": "A", "is_synthetic": true}
+{"id": "BAS_014", "title": "현지 교통카드 자동 충전", "experience": "현지 교통카드 잔액이 부족해지면 에이전트가 연결된 결제 수단으로 자동 충전한다.", "mechanism": "잔액 모니터링 후 임계값 도달 시 자동 충전", "condition": "A", "is_synthetic": true}
+{"id": "BAS_015", "title": "일정 변경 시 관계자 일괄 통보", "experience": "여행 일정이 바뀌면 에이전트가 동행자와 숙소 측에 변경 사항을 메신저로 자동 전달한다.", "mechanism": "일정 변경 감지 후 관련자에게 메시지 브로드캐스트", "condition": "A", "is_synthetic": true}

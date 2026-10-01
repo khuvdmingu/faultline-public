@@ -1,0 +1,64 @@
+{
+  "id": "20260928-054956-cd6e",
+  "root": "experiments/watch-agent-v1",
+  "stage": "analogy",
+  "writes": "analogies",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T05:49:56",
+  "started": "2026-09-28T05:49:56",
+  "finished": "2026-09-28T05:50:18",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "TEN_001"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 1866,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "TEN_002"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 1859,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    },
+    {
+      "index": 2,
+      "items": [
+        "TEN_003"
+      ],
+      "status": "done",
+      "prompt_file": "batch_02.prompt.md",
+      "prompt_chars": 1919,
+      "out_file": "batch_02.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 6,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/watch-agent-v1/data/explore/analogies.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T05:50:04 배치 0 완료 (8초, 670자)",
+    "2026-09-28T05:50:14 배치 1 완료 (18초, 827자)",
+    "2026-09-28T05:50:18 배치 2 완료 (22초, 876자)",
+    "2026-09-28T05:50:18 저장 6행 → experiments/watch-agent-v1/data/explore/analogies.jsonl"
+  ],
+  "pid": 65166
+}

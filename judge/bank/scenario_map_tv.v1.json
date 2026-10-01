@@ -1,0 +1,60 @@
+{
+  "bank": "scenario_map_tv",
+  "version": "v1",
+  "attach": "40_scenario 뒤 — 시나리오 1개당 1회. 선별이 아니라 지도화: 어느 축에서 이례적인지 보여준다 (설계 문서 §17.6·§18)",
+  "device": "TV",
+  "quadrant_threshold": 3.5,
+  "questions": [
+    {"id": "grounding", "kind": "score",
+     "text": "이 시나리오는 연결된 근거(행동·구절)에 얼마나 기대고 있는가?",
+     "options": [
+       {"value": "1", "desc": "연결된 근거가 없거나 원문과 맞지 않는다"},
+       {"value": "2", "desc": "일반적인 주장뿐이고 구체적 행동과의 연결이 약하다"},
+       {"value": "3", "desc": "일부 행동에 기대지만 중요한 추론이 남아 있다"},
+       {"value": "4", "desc": "근거와 긴장의 연결이 구체적이고 추론이 드러나 있다"},
+       {"value": "5", "desc": "여러 맥락의 근거·반례·추론의 경계가 분명하다"}]},
+    {"id": "cliche_distance", "kind": "score",
+     "text": "흔한 AI TV 기능(추천·요약·검색·음성비서·개인화·스마트홈 연동)과 얼마나 먼가?",
+     "options": [
+       {"value": "1", "desc": "흔한 기능의 이름만 바꾼 반복이다"},
+       {"value": "2", "desc": "흔한 기능에 대상·표현만 바꿨다"},
+       {"value": "3", "desc": "알려진 원리를 새 상황에 적용했다"},
+       {"value": "4", "desc": "흔한 기능 목록에서 보기 드문 관계·메커니즘이다"},
+       {"value": "5", "desc": "흔한 기능 목록으로 설명되지 않는 원리를 내놓는다"}]},
+    {"id": "plausibility", "kind": "score",
+     "text": "스스로 둔 가정까지 포함해, 이 시나리오가 성립하는 과정이 얼마나 설득력 있는가?",
+     "options": [
+       {"value": "1", "desc": "가정 안에서도 성립 과정이 설명되지 않는다"},
+       {"value": "2", "desc": "필요한 변화가 크고 설명이 약하다"},
+       {"value": "3", "desc": "필요한 변화가 명시돼 있고 설득력은 보통이다"},
+       {"value": "4", "desc": "알려진 기술·사회 조건으로 설득력 있게 성립한다"},
+       {"value": "5", "desc": "지금 조건으로도 거의 성립한다"}]},
+    {"id": "device_fit", "kind": "choice",
+     "text": "TV라는 기기가 이 시나리오의 가치를 만드는가?",
+     "options": [
+       {"value": "TV_VALUE", "desc": "큰 화면·공용 공간·기대어 보는 시청이라서 가치가 생긴다"},
+       {"value": "PERSONAL_BETTER", "desc": "폰 같은 개인 기기에서 더 잘 된다"},
+       {"value": "AGNOSTIC", "desc": "기기와 상관없다"},
+       {"value": "UNKNOWN", "desc": "판정할 수 없다"}],
+     "unknown_value": "UNKNOWN"},
+    {"id": "viewing_unit", "kind": "choice",
+     "text": "이 시나리오는 어떤 시청 단위를 전제하는가?",
+     "options": [
+       {"value": "SOLO", "desc": "혼자 보는 상황"},
+       {"value": "SHARED_SCREEN", "desc": "같은 화면을 여럿이 보는 상황"},
+       {"value": "APART_TOGETHER", "desc": "떨어진 곳에서 함께 보는 상황"},
+       {"value": "UNSPECIFIED", "desc": "시나리오가 정하지 않았다"}]},
+    {"id": "input_burden", "kind": "score",
+     "text": "TV 앞에서 사용자가 해야 하는 조작은 얼마나 가벼운가?",
+     "options": [
+       {"value": "1", "desc": "텍스트 입력이나 세밀한 조작이 여러 번 필요하다"},
+       {"value": "2", "desc": "리모컨으로 하기엔 조작이 많다"},
+       {"value": "3", "desc": "리모컨 몇 단계나 짧은 음성으로 된다"},
+       {"value": "4", "desc": "한두 번 누르거나 한마디면 된다"},
+       {"value": "5", "desc": "사용자가 따로 조작하지 않아도 된다"}]},
+    {"id": "requires_future_change", "kind": "noul",
+     "text": "이 시나리오는 지금의 기술·제도·서비스 연결로는 성립하지 않고, 가정된 변화가 있어야 성립한다."},
+    {"id": "self_contradiction", "kind": "noul",
+     "text": "이 시나리오는 스스로 둔 가정 안에서도 모순된다. (지금 불가능하다는 것과는 다르다)"}
+  ]
+}

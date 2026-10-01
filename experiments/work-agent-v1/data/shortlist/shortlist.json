@@ -1,0 +1,175 @@
+{
+  "version": "shortlist_v01",
+  "at": "2026-09-28T15:23:08",
+  "n": 5,
+  "rule": "근거·현실성 3 미만, 뻔함 4 이상, 추적 끊김은 제외 → 점수 = 평균(근거·tension·새로움·현실성·기기 적합·에이전트 적합*) − 0.5×(뻔함−1) → tension 마다 1개(다음 family 마다 1개) → 상위 5개 (*평가에 있을 때만)",
+  "counts": {
+    "scenarios": 20,
+    "eligible": 15,
+    "excluded": 5
+  },
+  "picks": [
+    {
+      "scenario_id": "SCN_015",
+      "score": 4.0,
+      "family_id": "FAM_008",
+      "tension_id": "TEN_005",
+      "family_label": "무게에 따라 잠정 승인 후 나중 확정",
+      "scores": {
+        "behavioral_grounding": 5,
+        "tension_strength": 4,
+        "novelty": 4,
+        "cliche_level": 2,
+        "plausibility": 4,
+        "device_fit": 5,
+        "ai_necessity": 4,
+        "agent_fit": 5
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 1,
+      "why": [
+        "에이전트 적합 5",
+        "기기 적합 5",
+        "뻔함 2",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_002",
+      "score": 3.83,
+      "family_id": "FAM_002",
+      "tension_id": "TEN_001",
+      "family_label": "부담 이력 기억해 분산",
+      "scores": {
+        "behavioral_grounding": 3,
+        "tension_strength": 4,
+        "novelty": 5,
+        "cliche_level": 1,
+        "plausibility": 4,
+        "device_fit": 2,
+        "ai_necessity": 5,
+        "agent_fit": 5
+      },
+      "review_route": "question_candidate",
+      "slot": "tension 대표",
+      "rank": 2,
+      "why": [
+        "에이전트 적합 5",
+        "새로움 5",
+        "뻔함 1",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_020",
+      "score": 3.33,
+      "family_id": "FAM_001",
+      "tension_id": "TEN_006",
+      "family_label": "습관을 규칙·프로필로 전환",
+      "scores": {
+        "behavioral_grounding": 5,
+        "tension_strength": 4,
+        "novelty": 4,
+        "cliche_level": 2,
+        "plausibility": 4,
+        "device_fit": 2,
+        "ai_necessity": 4,
+        "agent_fit": 4
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 3,
+      "why": [
+        "근거 5",
+        "현실성 4",
+        "뻔함 2",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_013",
+      "score": 3.33,
+      "family_id": "FAM_003",
+      "tension_id": "TEN_004",
+      "family_label": "필요한 순간만 열고 스스로 닫기",
+      "scores": {
+        "behavioral_grounding": 4,
+        "tension_strength": 4,
+        "novelty": 4,
+        "cliche_level": 2,
+        "plausibility": 4,
+        "device_fit": 2,
+        "ai_necessity": 4,
+        "agent_fit": 5
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 4,
+      "why": [
+        "에이전트 적합 5",
+        "현실성 4",
+        "뻔함 2",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_010",
+      "score": 3.0,
+      "family_id": "FAM_005",
+      "tension_id": "TEN_003",
+      "family_label": "완료된 결과의 노출 시점만 지연",
+      "scores": {
+        "behavioral_grounding": 3,
+        "tension_strength": 3,
+        "novelty": 4,
+        "cliche_level": 2,
+        "plausibility": 5,
+        "device_fit": 2,
+        "ai_necessity": 3,
+        "agent_fit": 4
+      },
+      "review_route": "question_candidate",
+      "slot": "tension 대표",
+      "rank": 5,
+      "why": [
+        "현실성 5",
+        "에이전트 적합 4",
+        "뻔함 2",
+        "tension 대표"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "scenario_id": "SCN_004",
+      "reasons": [
+        "뻔함 (4)"
+      ]
+    },
+    {
+      "scenario_id": "SCN_006",
+      "reasons": [
+        "근거 부족 (2)"
+      ]
+    },
+    {
+      "scenario_id": "SCN_008",
+      "reasons": [
+        "뻔함 (4)"
+      ]
+    },
+    {
+      "scenario_id": "SCN_011",
+      "reasons": [
+        "뻔함 (4)"
+      ]
+    },
+    {
+      "scenario_id": "SCN_019",
+      "reasons": [
+        "뻔함 (4)"
+      ]
+    }
+  ]
+}

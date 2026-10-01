@@ -1,0 +1,2 @@
+{"id":"PRI_001","statement":"경험 진행도에 맞춰 정보 노출 경계를 조절한다","tension_ids":["TEN_001"],"package_ids":["PKG_001"],"analogy_ids":["ANA_001"],"is_synthetic":true}
+{"id":"PRI_002","statement":"공동 시청의 진행도를 분기하고 다시 합류할 수 있게 한다","tension_ids":["TEN_002"],"package_ids":["PKG_002"],"analogy_ids":["ANA_003"],"is_synthetic":true}

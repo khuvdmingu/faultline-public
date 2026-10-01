@@ -1,0 +1,3 @@
+{"id":"BAS_001","title":"AI 맞춤 추천","experience":"시청 이력으로 다음 작품을 추천한다","mechanism":"시청 이력 기반 개인화 추천","condition":"A","is_synthetic":true}
+{"id":"BAS_002","title":"회차 요약","experience":"이전 회차를 AI가 요약해 보여준다","mechanism":"콘텐츠 요약","condition":"A","is_synthetic":true}
+{"id":"BAS_003","title":"음성으로 찾기","experience":"말로 작품을 찾는다","mechanism":"음성 검색","condition":"A","is_synthetic":true}

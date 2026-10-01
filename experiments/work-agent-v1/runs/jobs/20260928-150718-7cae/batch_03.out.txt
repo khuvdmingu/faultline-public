@@ -1,0 +1,8 @@
+```json
+{"id":"BEH_001","source_id":"RAW_091","kind":"action","action":"질문 모아서 한번에 보냄","source_excerpt":"질문 쌓아뒀다가 한꺼번에 정리해서 보냄","context":{"device":null,"social":null,"platform":null,"phase":null},"inferred_need":"효율적으로 처리","inference_status":"inferred","is_synthetic":true}
+{"id":"BEH_002","source_id":"RAW_092","kind":"avoidance","action":"신경 쓰지 않고 넘어감","source_excerpt":"신경 안 쓰고 넘어감","context":{"device":null,"social":null,"platform":null,"phase":null},"inferred_need":null,"inference_status":"none","is_synthetic":true}
+{"id":"BEH_003","source_id":"RAW_093","kind":"workaround","action":"AI 문장 일부 손봄","source_excerpt":"몇 군데 손봄","context":{"device":null,"social":null,"platform":null,"phase":null},"inferred_need":"AI 티 안 나게","inference_status":"explicit","is_synthetic":true}
+{"id":"BEH_004","source_id":"RAW_094","kind":"action","action":"이동 중 공유 버튼 누름","source_excerpt":"버스 기다리면서 공유는 눌렀는데","context":{"device":null,"social":null,"platform":null,"phase":"이동 중"},"inferred_need":null,"inference_status":"none","is_synthetic":true}
+{"id":"BEH_005","source_id":"RAW_094","kind":"action","action":"저녁에 명단 다시 확인함","source_excerpt":"명단은 저녁에 다시 봄","context":{"device":null,"social":null,"platform":null,"phase":"저녁"},"inferred_need":null,"inference_status":"none","is_synthetic":true}
+{"id":"BEH_006","source_id":"RAW_095","kind":"action","action":"공유 전 일정 매번 확인함","source_excerpt":"매번 확인하게 된다","context":{"device":"폰","social":"회사 사람","platform":null,"phase":"출근길"},"inferred_need":"병원 예약 노출 방지","inference_status":"explicit","is_synthetic":true}
+```

@@ -1,0 +1,32 @@
+{
+  "run_id": "20260928-050945",
+  "task": "assign",
+  "bank": "assign@v1",
+  "root": "experiments/phone-agent-v1",
+  "backend": "claude_cli:sonnet (verbal)",
+  "limit": null,
+  "started": "2026-09-28T05:09:45",
+  "finished": "2026-09-28T05:13:47",
+  "summary": {
+    "items": 57,
+    "questions": 102,
+    "decisions": {
+      "accept": 86,
+      "review": 16
+    },
+    "methods": {
+      "verbal": 102
+    },
+    "errors": 0,
+    "tokens": {},
+    "mean_latency_ms": 4732,
+    "task": {
+      "accept": 43,
+      "review": 14,
+      "none": 12
+    }
+  },
+  "candidates_source": "data/linked/tensions.jsonl (member 무시, 두 극만 사용)",
+  "emitted_tensions": 4,
+  "dropped_tensions": []
+}

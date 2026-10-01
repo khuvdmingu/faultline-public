@@ -1,0 +1,4 @@
+```json
+{"id":"ANA_001","source_domain":"museum_curation","source_pattern":"소장품 폐기(deaccessioning) 심의 절차","abstract_mechanism":"기관이 물건을 없앨지 남길지 정할 때 역사적·정서적 가치와 실용적 필요를 공식 절차로 저울질한다","target_tension_ids":["TEN_005"],"mapping":{"소장품":"정리 후보 구독·아이템","기증자의 애착":"사용자의 미련"},"transfer_limitations":["박물관은 전문 위원회의 다단계 심의를 거치지만 개인의 구독·물건 정리는 즉흥적 판단이라 그 정교함이 없다"],"distance":"distant"}
+{"id":"ANA_002","source_domain":"cloud_photo_apps","source_pattern":"중복·유사 사진 자동 정리 제안","abstract_mechanism":"시스템이 불필요해 보이는 항목을 자동 식별해 삭제를 제안하되 최종 보류·삭제는 사용자의 정서적 판단에 맡긴다","target_tension_ids":["TEN_005"],"mapping":{"유사 사진 묶음":"안 쓰는 구독·아이템 목록","즐겨찾기 표시":"남겨두고 싶다는 사용자 선택"},"transfer_limitations":["사진은 저장 용량만 문제지만 구독·물건 정리는 금전적 손실이 걸려 정서적 갈등의 무게가 다르다"],"distance":"adjacent"}
+```

@@ -1,0 +1,5 @@
+```json
+{"id":"PRI_001","statement":"번복 어려운 지점만 자동화를 멈추고, 그 기준은 사용자가 정한다","tension_ids":["TEN_001"],"package_ids":["PKG_001"],"analogy_ids":["ANA_002"],"rationale":"계약·예약 확정은 직접 눌러야 안심된다는 BEH_047과 은행 OTP 임계값 유추(ANA_002)를 결합해 되돌릴 수 없는 지점에서만 통제권을 되찾되 그 경계를 사용자가 조절하게 함."}
+{"id":"PRI_002","statement":"위험도 계산과 별개로 특정 상대는 항상 수동 처리로 지정할 수 있다","tension_ids":["TEN_001"],"package_ids":["PKG_001"],"analogy_ids":[],"rationale":"엄마 전화만 예외로 직접 받는 BEH_034에서, 완전 위임형 사용자(BEH_024)에게도 해가 되지 않도록 관계 기반 영구 예외를 별도 축으로 둠."}
+{"id":"PRI_003","statement":"관계의 공식성이 기본 공개 수준을 정하고 상대별 예외를 허용한다","tension_ids":["TEN_002"],"package_ids":["PKG_002"],"analogy_ids":["ANA_003"],"rationale":"가까운 사이엔 숨기고 회사엔 명시하는 BEH_003·BEH_004와 식품표시 유추(ANA_003)를 결합하되, 신경 안 쓰는 BEH_039 사용자도 예외 설정으로 해를 입지 않게 함."}
+```

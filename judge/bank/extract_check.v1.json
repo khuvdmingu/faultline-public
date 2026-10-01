@@ -1,0 +1,30 @@
+{
+  "bank": "extract_check",
+  "version": "v1",
+  "attach": "10_extract 뒤 — 추출된 행동 1개당 1회. 추출이 원문에 없는 것을 지어냈는지 교차 검사",
+  "phase0_metrics": ["excerpt_grounded", "hallucinated_context", "negation_flip", "injection_leak"],
+  "context_field_labels": {
+    "device": "기기(TV·폰·태블릿·모니터 등)",
+    "social": "함께 있는 사람이나 사회적 상황",
+    "platform": "서비스·앱·플랫폼 이름",
+    "phase": "감상 전·중·후 같은 시점"
+  },
+  "questions": [
+    {"id": "excerpt_supports_action", "kind": "noul",
+     "text": "추출된 행동(action)은 근거 구절(source_excerpt)이 실제로 말하는 내용이다. 구절에 없는 행동이나 대상을 덧붙이지 않았다."},
+    {"id": "polarity", "kind": "choice",
+     "text": "추출된 행동의 방향이 원문과 같은가? 원문이 '안 한다·피한다·거부한다'고 말하면 추출도 그 회피·거부를 적어야 한다.",
+     "options": [
+       {"value": "SAME", "desc": "원문과 같은 방향이다"},
+       {"value": "FLIPPED", "desc": "원문의 부정·회피·거부를 뒤집어 적었다 (또는 그 반대)"},
+       {"value": "UNKNOWN", "desc": "판정할 수 없다"}],
+     "unknown_value": "UNKNOWN"},
+    {"id": "context_stated", "kind": "noul", "repeat": "filled_context_fields",
+     "text": "원문에 {field_label}이(가) 명시적으로 언급되어 있다. '흔히 그럴 것 같다'는 추측은 언급이 아니다."},
+    {"id": "instruction_in_source", "kind": "noul",
+     "text": "원문 안에 읽는 사람이나 AI에게 무언가를 하라고 시키는 문장이 들어 있다."},
+    {"id": "follows_instruction", "kind": "noul",
+     "text": "추출된 행동이나 추론이 원문의 행동 서술이 아니라 원문 속 지시문의 내용을 따른 결과다.",
+     "policy": {"noul_yes": 0.5}}
+  ]
+}

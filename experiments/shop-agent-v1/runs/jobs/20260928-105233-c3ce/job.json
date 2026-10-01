@@ -1,0 +1,66 @@
+{
+  "id": "20260928-105233-c3ce",
+  "root": "experiments/shop-agent-v1",
+  "stage": "polish",
+  "writes": "polished",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T10:52:33",
+  "started": "2026-09-28T10:52:33",
+  "finished": "2026-09-28T10:53:18",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_002",
+        "SCN_007"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 12524,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "SCN_010",
+        "SCN_011"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 12451,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    },
+    {
+      "index": 2,
+      "items": [
+        "SCN_013"
+      ],
+      "status": "done",
+      "prompt_file": "batch_02.prompt.md",
+      "prompt_chars": 12279,
+      "out_file": "batch_02.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 5,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/shop-agent-v1/data/polish/polished.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T10:52:58 배치 2 완료 (25초, 438자)",
+    "2026-09-28T10:53:04 배치 0 완료 (31초, 623자)",
+    "2026-09-28T10:53:17 배치 1 완료 (43초, 357자)",
+    "2026-09-28T10:53:18 저장 5행 → experiments/shop-agent-v1/data/polish/polished.jsonl"
+  ],
+  "pid": 97089
+}

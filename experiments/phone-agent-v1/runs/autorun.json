@@ -1,0 +1,168 @@
+{
+  "id": "20260928-050130",
+  "root": "experiments/phone-agent-v1",
+  "status": "done",
+  "executor": "claude_cli",
+  "plan": [
+    "generate",
+    "split",
+    "baseline",
+    "extract",
+    "link",
+    "analogy",
+    "package",
+    "principle",
+    "premise",
+    "scenario",
+    "judge",
+    "family",
+    "shortlist",
+    "polish",
+    "score"
+  ],
+  "current": null,
+  "started": "2026-09-28T05:01:30",
+  "finished": "2026-09-28T05:17:20",
+  "error": null,
+  "steps": [
+    {
+      "stage": "generate",
+      "status": "done",
+      "note": "품질 재생성",
+      "started": "2026-09-28T05:03:12",
+      "job_id": "20260928-050312-9edc",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 49,
+      "finished": "2026-09-28T05:05:00"
+    },
+    {
+      "stage": "split",
+      "status": "done",
+      "started": "2026-09-28T05:05:00",
+      "note": "품질 검사: 재생성 권장",
+      "finished": "2026-09-28T05:05:01"
+    },
+    {
+      "stage": "baseline",
+      "status": "done",
+      "started": "2026-09-28T05:01:30",
+      "job_id": "20260928-050130-2f00",
+      "model": "sonnet",
+      "batches": 1,
+      "note": "본 사슬과 나란히",
+      "rows": 15,
+      "finished": "2026-09-28T05:01:47"
+    },
+    {
+      "stage": "extract",
+      "status": "done",
+      "started": "2026-09-28T05:05:01",
+      "job_id": "20260928-050501-2264",
+      "model": "sonnet",
+      "batches": 2,
+      "rows": 57,
+      "finished": "2026-09-28T05:07:31"
+    },
+    {
+      "stage": "link",
+      "status": "done",
+      "started": "2026-09-28T05:07:31",
+      "job_id": "20260928-050731-71a9",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 4,
+      "finished": "2026-09-28T05:09:01"
+    },
+    {
+      "stage": "analogy",
+      "status": "done",
+      "started": "2026-09-28T05:09:01",
+      "job_id": "20260928-050901-4d38",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 8,
+      "finished": "2026-09-28T05:09:55"
+    },
+    {
+      "stage": "package",
+      "status": "done",
+      "started": "2026-09-28T05:09:55",
+      "finished": "2026-09-28T05:09:55"
+    },
+    {
+      "stage": "principle",
+      "status": "done",
+      "started": "2026-09-28T05:09:55",
+      "job_id": "20260928-050955-fbaf",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 5,
+      "finished": "2026-09-28T05:11:10"
+    },
+    {
+      "stage": "premise",
+      "status": "done",
+      "started": "2026-09-28T05:11:10",
+      "job_id": "20260928-051110-f7b0",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 5,
+      "finished": "2026-09-28T05:11:56"
+    },
+    {
+      "stage": "scenario",
+      "status": "done",
+      "started": "2026-09-28T05:11:56",
+      "job_id": "20260928-051156-e658",
+      "model": "sonnet",
+      "batches": 2,
+      "rows": 10,
+      "finished": "2026-09-28T05:13:38"
+    },
+    {
+      "stage": "judge",
+      "status": "done",
+      "started": "2026-09-28T05:13:41",
+      "job_id": "20260928-051341-df1a",
+      "model": "sonnet",
+      "batches": 2,
+      "rows": 10,
+      "finished": "2026-09-28T05:15:44"
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "started": "2026-09-28T05:15:44",
+      "job_id": "20260928-051544-fb77",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 5,
+      "finished": "2026-09-28T05:16:14"
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "started": "2026-09-28T05:16:14",
+      "note": "후보 5개 / 적격 7",
+      "finished": "2026-09-28T05:16:14"
+    },
+    {
+      "stage": "polish",
+      "status": "done",
+      "started": "2026-09-28T05:16:14",
+      "job_id": "20260928-051614-d5b2",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 5,
+      "finished": "2026-09-28T05:17:20"
+    },
+    {
+      "stage": "score",
+      "status": "done",
+      "started": "2026-09-28T05:17:20",
+      "note": "PASS 9 / 10",
+      "finished": "2026-09-28T05:17:20"
+    }
+  ]
+}

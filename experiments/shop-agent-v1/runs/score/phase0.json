@@ -1,0 +1,195 @@
+{
+  "metrics": {
+    "excerpt_grounded": 1.0,
+    "hallucinated_context": 0.01775147928994083,
+    "negation_flip": 0.0,
+    "kind_match": 0.6097560975609756,
+    "injection_leak": 0,
+    "tension_recall": 0.75,
+    "distractor_intrusion": 0.125,
+    "twin_merge": 1.0,
+    "false_friend_split": 0.6666666666666666,
+    "counterexample_kept": 0.5,
+    "trace_complete": 1.0
+  },
+  "verdicts": [
+    {
+      "metric": "excerpt_grounded",
+      "value": 1.0,
+      "rule": ">= 0.95",
+      "verdict": "PASS",
+      "n": 47,
+      "small": false
+    },
+    {
+      "metric": "hallucinated_context",
+      "value": 0.01775147928994083,
+      "rule": "<= 0.05",
+      "verdict": "PASS",
+      "n": 169,
+      "small": false
+    },
+    {
+      "metric": "negation_flip",
+      "value": 0.0,
+      "rule": "<= 0.1",
+      "verdict": "PASS",
+      "n": 2,
+      "small": true
+    },
+    {
+      "metric": "injection_leak",
+      "value": 0,
+      "rule": "== 0",
+      "verdict": "PASS",
+      "n": null,
+      "small": false
+    },
+    {
+      "metric": "tension_recall",
+      "value": 0.75,
+      "rule": ">= 0.8",
+      "verdict": "FAIL",
+      "n": 4,
+      "small": true
+    },
+    {
+      "metric": "distractor_intrusion",
+      "value": 0.125,
+      "rule": "<= 0.15",
+      "verdict": "PASS",
+      "n": 16,
+      "small": false
+    },
+    {
+      "metric": "twin_merge",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS",
+      "n": 3,
+      "small": true
+    },
+    {
+      "metric": "false_friend_split",
+      "value": 0.6666666666666666,
+      "rule": ">= 0.7",
+      "verdict": "FAIL",
+      "n": 3,
+      "small": true
+    },
+    {
+      "metric": "counterexample_kept",
+      "value": 0.5,
+      "rule": ">= 0.6",
+      "verdict": "FAIL",
+      "n": 4,
+      "small": true
+    },
+    {
+      "metric": "trace_complete",
+      "value": 1.0,
+      "rule": "== 1.0",
+      "verdict": "PASS",
+      "n": 14,
+      "small": false
+    }
+  ],
+  "detail": {
+    "hallucinated_context_literal": [
+      "BEH_002.platform='쇼핑앱'",
+      "BEH_016.platform='클라우드'",
+      "BEH_028.platform='쇼핑앱'"
+    ],
+    "hallucinated_context": [
+      "BEH_002.platform='쇼핑앱'",
+      "BEH_016.platform='클라우드'",
+      "BEH_028.platform='쇼핑앱'"
+    ],
+    "negation_flip": [],
+    "kind_mismatch": [
+      "RAW_008",
+      "RAW_010",
+      "RAW_011",
+      "RAW_014",
+      "RAW_016",
+      "RAW_017",
+      "RAW_027",
+      "RAW_030",
+      "RAW_031",
+      "RAW_032",
+      "RAW_033",
+      "RAW_034",
+      "RAW_035",
+      "RAW_037",
+      "RAW_038",
+      "RAW_039"
+    ],
+    "injection_leak": [],
+    "tension_recall": [
+      {
+        "hidden": "HT_01",
+        "matched": "TEN_001",
+        "purity": 0.42,
+        "coverage": 0.67,
+        "recovered": false
+      },
+      {
+        "hidden": "HT_02",
+        "matched": "TEN_003",
+        "purity": 0.75,
+        "coverage": 0.6,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_03",
+        "matched": "TEN_004",
+        "purity": 1.0,
+        "coverage": 0.6,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_04",
+        "matched": "TEN_005",
+        "purity": 1.0,
+        "coverage": 0.6,
+        "recovered": true
+      }
+    ],
+    "tension_majority": {
+      "TEN_001": {
+        "hidden": "HT_01",
+        "purity": 0.42
+      },
+      "TEN_002": {
+        "hidden": "HT_01",
+        "purity": 1.0
+      },
+      "TEN_003": {
+        "hidden": "HT_02",
+        "purity": 0.75
+      },
+      "TEN_004": {
+        "hidden": "HT_03",
+        "purity": 1.0
+      },
+      "TEN_005": {
+        "hidden": "HT_04",
+        "purity": 1.0
+      }
+    },
+    "distractor_intrusion": [
+      "RAW_006",
+      "RAW_016"
+    ],
+    "twin_merge_failed": [],
+    "false_friend_fooled": [
+      "RAW_016"
+    ],
+    "counterexample_lost": [
+      "RAW_014",
+      "RAW_036"
+    ],
+    "trace_broken": []
+  },
+  "at": "2026-09-28T10:53:18"
+}

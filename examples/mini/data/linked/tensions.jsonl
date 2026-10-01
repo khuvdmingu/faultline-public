@@ -1,0 +1,2 @@
+{"id":"TEN_001","label":"맥락 확보 ↔ 미래 전개 회피","pole_a":"작품을 이해할 맥락이 필요하다","pole_b":"아직 안 본 전개는 알고 싶지 않다","member_ids":["BEH_001","BEH_002","BEH_003","BEH_004","BEH_011"],"counterexample_ids":["BEH_005"],"alternative_interpretations":["정보량이 아니라 공개 시점의 통제일 수 있다"],"is_synthetic":true}
+{"id":"TEN_002","label":"함께 보기 ↔ 각자의 속도","pole_a":"함께 보는 경험을 지키고 싶다","pole_b":"내 속도로 보고 싶다","member_ids":["BEH_006","BEH_007","BEH_008"],"counterexample_ids":[],"alternative_interpretations":[],"is_synthetic":true}

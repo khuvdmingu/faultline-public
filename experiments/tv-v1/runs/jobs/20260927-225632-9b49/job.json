@@ -1,0 +1,44 @@
+{
+  "id": "20260927-225632-9b49",
+  "root": "experiments/tv-v1",
+  "stage": "premise",
+  "writes": "premises",
+  "executor": "claude_cli",
+  "model": "opus",
+  "status": "done",
+  "created": "2026-09-27T22:56:32",
+  "started": "2026-09-27T22:56:32",
+  "finished": "2026-09-27T22:57:57",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "PRI_001",
+        "PRI_002",
+        "PRI_003",
+        "PRI_004",
+        "PRI_005",
+        "PRI_006"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 6657,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 10,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/tv-v1/data/explore/premises.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-27T22:57:57 배치 0 완료 (85초, 7437자)",
+    "2026-09-27T22:57:57 저장 10행 → experiments/tv-v1/data/explore/premises.jsonl"
+  ]
+}

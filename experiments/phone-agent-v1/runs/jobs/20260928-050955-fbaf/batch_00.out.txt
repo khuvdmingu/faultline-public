@@ -1,0 +1,7 @@
+```json
+{"id":"PRI_001","statement":"확인 빈도는 신뢰 축적에 따라 줄지만, 중요도 높은 일은 최소 확인을 남긴다","tension_ids":["TEN_001"],"package_ids":["PKG_001"],"analogy_ids":["ANA_001","ANA_002","ANA_005"],"rationale":"확인 횟수가 점차 줄어드는 relevant 패턴(오토파일럿·스팸필터 유추)과 완료 메시지만 믿다 사고난 반례를 결합해, 신뢰로 빈도는 줄여도 되돌리기 어려운 일엔 최소선을 두는 원리로 재구성했다."}
+{"id":"PRI_002","statement":"위임 경계는 카테고리가 아니라 금액·되돌림 가능성 기준으로 사용자가 조정한다","tension_ids":["TEN_003"],"package_ids":["PKG_003"],"analogy_ids":["ANA_005","ANA_006"],"rationale":"한도를 낮게 잡고 초과 시 승인받는 relevant 행동과 위임장·스마트홈 유추를 참고해, 고정된 항목 목록 대신 사용자가 스스로 정하는 가변 기준으로 바꾸어 전권위임자도 해치지 않게 했다."}
+{"id":"PRI_003","statement":"결제마다 손대지 않아도 기록이 쌓이고, 필요한 순간 증빙으로 꺼내진다","tension_ids":["TEN_002"],"package_ids":["PKG_002"],"analogy_ids":["ANA_003","ANA_004"],"rationale":"캡처를 남기거나 안 남기는 두 relevant 행동을 블랙박스·메신저 자동백업 유추로 풀어, 수고 없이 기본으로 쌓이고 필요할 때만 불러오는 구조로 바꿨다."}
+{"id":"PRI_004","statement":"진심의 증표를 전체 작성이 아니라 마지막 개인화 손질로 옮긴다","tension_ids":["TEN_004"],"package_ids":["PKG_004"],"analogy_ids":["ANA_007"],"rationale":"AI 초안에 이모티콘·말투를 덧입히는 relevant 행동을 손편지 진정성 유추로 확장해, 진심의 신호를 '누가 썼나'에서 '누가 마지막에 다듬었나'로 이동시켰다."}
+{"id":"PRI_005","statement":"대필 사실 공개와 직접작성 필요도는 관계의 무게에 따라 사용자가 정한다","tension_ids":["TEN_004"],"package_ids":["PKG_004"],"analogy_ids":["ANA_008"],"rationale":"조문 문자는 직접 쓰고 AI작성은 숨기는 relevant 행동과 티나도 무방하다는 반례를 이메일 자동응답 유추로 함께 풀어, 공개·직접작성 여부를 관계 무게별 선택지로 만들었다."}
+```

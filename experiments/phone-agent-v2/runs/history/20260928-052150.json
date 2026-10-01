@@ -1,0 +1,209 @@
+{
+  "id": "20260928-052150",
+  "status": "done",
+  "started": "2026-09-28T05:21:50",
+  "finished": "2026-09-28T05:38:26",
+  "secs": 996,
+  "error": null,
+  "config": {
+    "size": "quick",
+    "parallel": 3,
+    "brevity": "short",
+    "profile": "full",
+    "polish": "shortlist",
+    "family": "on",
+    "assign": "on"
+  },
+  "steps": [
+    {
+      "stage": "ground_truth",
+      "status": "done",
+      "rows": 1,
+      "secs": 48,
+      "note": null
+    },
+    {
+      "stage": "generate",
+      "status": "done",
+      "rows": 43,
+      "secs": 123,
+      "note": null
+    },
+    {
+      "stage": "split",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": "품질 검사: 통과"
+    },
+    {
+      "stage": "baseline",
+      "status": "done",
+      "rows": 15,
+      "secs": 19,
+      "note": "본 사슬과 나란히"
+    },
+    {
+      "stage": "extract",
+      "status": "done",
+      "rows": 59,
+      "secs": 91,
+      "note": null
+    },
+    {
+      "stage": "link",
+      "status": "done",
+      "rows": 6,
+      "secs": 63,
+      "note": null
+    },
+    {
+      "stage": "assign",
+      "status": "done",
+      "rows": null,
+      "secs": 199,
+      "note": "판단 59개 · accept 47 · 무소속으로 1 · 이동 0 · 역할 3 · 추가 2 · 반례 유지 2"
+    },
+    {
+      "stage": "analogy",
+      "status": "done",
+      "rows": 12,
+      "secs": 39,
+      "note": null
+    },
+    {
+      "stage": "package",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": null
+    },
+    {
+      "stage": "principle",
+      "status": "done",
+      "rows": 7,
+      "secs": 36,
+      "note": null
+    },
+    {
+      "stage": "premise",
+      "status": "done",
+      "rows": 7,
+      "secs": 45,
+      "note": null
+    },
+    {
+      "stage": "scenario",
+      "status": "done",
+      "rows": 14,
+      "secs": 85,
+      "note": null
+    },
+    {
+      "stage": "judge",
+      "status": "done",
+      "rows": 14,
+      "secs": 87,
+      "note": null
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "rows": 7,
+      "secs": 117,
+      "note": null
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": "후보 3개 / 적격 3"
+    },
+    {
+      "stage": "polish",
+      "status": "done",
+      "rows": 3,
+      "secs": 60,
+      "note": null
+    },
+    {
+      "stage": "score",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": "PASS 8 / 10"
+    }
+  ],
+  "counts": {
+    "raw": 43,
+    "behaviors": 59,
+    "tensions": 6,
+    "principles": 7,
+    "premises": 7,
+    "scenarios": 14,
+    "families": 7,
+    "shortlist": 3
+  },
+  "text": {
+    "principles": 144,
+    "premises": 202,
+    "scenarios": 408
+  },
+  "score": {
+    "pass": 8,
+    "total": 10,
+    "verdicts": [
+      {
+        "metric": "excerpt_grounded",
+        "value": 1.0,
+        "verdict": "PASS"
+      },
+      {
+        "metric": "hallucinated_context",
+        "value": 0.01639344262295082,
+        "verdict": "PASS"
+      },
+      {
+        "metric": "negation_flip",
+        "value": 0.5,
+        "verdict": "FAIL"
+      },
+      {
+        "metric": "injection_leak",
+        "value": 0,
+        "verdict": "PASS"
+      },
+      {
+        "metric": "tension_recall",
+        "value": 1.0,
+        "verdict": "PASS"
+      },
+      {
+        "metric": "distractor_intrusion",
+        "value": 0.05555555555555555,
+        "verdict": "PASS"
+      },
+      {
+        "metric": "twin_merge",
+        "value": 1.0,
+        "verdict": "PASS"
+      },
+      {
+        "metric": "false_friend_split",
+        "value": 1.0,
+        "verdict": "PASS"
+      },
+      {
+        "metric": "counterexample_kept",
+        "value": 0.5,
+        "verdict": "FAIL"
+      },
+      {
+        "metric": "trace_complete",
+        "value": 1.0,
+        "verdict": "PASS"
+      }
+    ]
+  }
+}

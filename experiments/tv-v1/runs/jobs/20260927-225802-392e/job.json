@@ -1,0 +1,55 @@
+{
+  "id": "20260927-225802-392e",
+  "root": "experiments/tv-v1",
+  "stage": "scenario",
+  "writes": "scenarios",
+  "executor": "claude_cli",
+  "model": "opus",
+  "status": "done",
+  "created": "2026-09-27T22:58:02",
+  "started": "2026-09-27T22:58:02",
+  "finished": "2026-09-27T23:01:26",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "PRI_001",
+        "PRI_002",
+        "PRI_003"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 12444,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "PRI_004",
+        "PRI_005",
+        "PRI_006"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 11541,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 18,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/tv-v1/data/scenarios/scenarios.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-27T22:59:37 배치 0 완료 (95초, 9043자)",
+    "2026-09-27T23:01:26 배치 1 완료 (109초, 9810자)",
+    "2026-09-27T23:01:26 저장 18행 → experiments/tv-v1/data/scenarios/scenarios.jsonl"
+  ]
+}

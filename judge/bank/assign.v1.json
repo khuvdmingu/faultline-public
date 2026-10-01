@@ -1,0 +1,20 @@
+{
+  "bank": "assign",
+  "version": "v1",
+  "attach": "20_link 를 20a(LLM: tension 후보 제안) + 20b(판단: 행동별 배정)로 나눈 20b. 행동 1개당 1~2회",
+  "phase0_metrics": ["distractor_intrusion", "twin_merge", "false_friend_split", "counterexample_kept"],
+  "none_option": {"value": "NONE", "desc": "어느 후보에도 속하지 않는다 — 두 욕구의 충돌이 보이지 않거나 후보 밖의 긴장이다"},
+  "min_members": 3,
+  "questions": [
+    {"id": "tension", "kind": "choice", "options_from": "candidates",
+     "text": "이 행동 밑에 깔린 긴장(함께 충족하기 어려운 두 욕구)은 어느 후보인가? 같은 단어가 나오는지가 아니라 행동이 드러내는 욕구가 같은지로 판단한다. 맞는 후보가 없으면 억지로 고르지 않는다.",
+     "policy": {"accept_p": 0.6}},
+    {"id": "role", "kind": "choice", "after": "tension",
+     "text": "이 행동은 긴장 「{label}: {pole_a} ↔ {pole_b}」과 어떤 관계인가?",
+     "options": [
+       {"value": "MEMBER", "desc": "이 행동에서 두 욕구가 실제로 함께 걸려 있다"},
+       {"value": "COUNTER", "desc": "이 긴장의 전제를 뒤집는다 — 한쪽 욕구를 일부러 버리거나 정반대로 행동한다"},
+       {"value": "UNKNOWN", "desc": "판정할 수 없다"}],
+     "unknown_value": "UNKNOWN"}
+  ]
+}

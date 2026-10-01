@@ -1,0 +1,37 @@
+{
+  "id": "20260927-224722-4801",
+  "root": "experiments/tv-v1",
+  "stage": "baseline",
+  "writes": "baseline",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-27T22:47:22",
+  "started": "2026-09-27T22:52:23",
+  "finished": "2026-09-27T22:53:12",
+  "batches": [
+    {
+      "index": 0,
+      "items": [],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 799,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 30,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/tv-v1/data/baseline/baseline.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-27T22:53:12 배치 0 완료 (49초, 4328자)",
+    "2026-09-27T22:53:12 저장 30행 → experiments/tv-v1/data/baseline/baseline.jsonl"
+  ]
+}

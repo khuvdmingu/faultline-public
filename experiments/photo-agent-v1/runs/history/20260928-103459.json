@@ -1,0 +1,65 @@
+{
+  "id": "20260928-103459",
+  "status": "done",
+  "started": "2026-09-28T10:34:59",
+  "finished": "2026-09-28T10:37:41",
+  "secs": 162,
+  "error": null,
+  "config": {
+    "size": "quick",
+    "parallel": 3,
+    "brevity": "short",
+    "profile": "full",
+    "polish": "shortlist",
+    "family": "on",
+    "assign": "on",
+    "assign_rule": "v3",
+    "baseline_split": "avoid"
+  },
+  "steps": [
+    {
+      "stage": "scenario",
+      "status": "done",
+      "rows": 10,
+      "secs": 108,
+      "note": null
+    },
+    {
+      "stage": "judge",
+      "status": "done",
+      "rows": 10,
+      "secs": 48,
+      "note": null
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "rows": 5,
+      "secs": 54,
+      "note": "평가와 나란히"
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": "후보 5개 / 적격 6"
+    }
+  ],
+  "counts": {
+    "raw": 42,
+    "behaviors": 53,
+    "tensions": 4,
+    "principles": 5,
+    "premises": 5,
+    "scenarios": 10,
+    "families": 5,
+    "shortlist": 5
+  },
+  "text": {
+    "principles": 161,
+    "premises": 233,
+    "scenarios": 527
+  },
+  "score": null
+}

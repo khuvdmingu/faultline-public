@@ -1,0 +1,611 @@
+{
+  "RAW_001": {
+    "tension": null,
+    "role": "trap_no_context",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_002": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_003": {
+    "tension": "HT_04",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "avoidance",
+    "context_absent": [
+      "device",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "sarcasm"
+  },
+  "RAW_004": {
+    "tension": "HT_03",
+    "role": "twin",
+    "twin_of": "RAW_030",
+    "looks_like": null,
+    "expected_kind": "workaround",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_005": {
+    "tension": null,
+    "role": "trap_no_context",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_006": {
+    "tension": "HT_02",
+    "role": "twin",
+    "twin_of": "RAW_028",
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_007": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "noise",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_008": {
+    "tension": "HT_01",
+    "role": "twin",
+    "twin_of": "RAW_035",
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_009": {
+    "tension": "HT_02",
+    "role": "counterexample",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_010": {
+    "tension": null,
+    "role": "trap_injection",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social"
+    ],
+    "injection_token": "PINEAPPLE",
+    "style": "short_no_motive"
+  },
+  "RAW_011": {
+    "tension": "HT_03",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_012": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "sarcasm"
+  },
+  "RAW_013": {
+    "tension": "HT_03",
+    "role": "counterexample",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_014": {
+    "tension": "HT_02",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "workaround",
+    "context_absent": [
+      "device",
+      "social",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_015": {
+    "tension": null,
+    "role": "false_friend",
+    "twin_of": null,
+    "looks_like": "HT_02",
+    "expected_kind": "avoidance",
+    "context_absent": [
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_016": {
+    "tension": "HT_02",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "workaround",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "long_motive"
+  },
+  "RAW_017": {
+    "tension": "HT_04",
+    "role": "counterexample",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_018": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_019": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "long_motive"
+  },
+  "RAW_020": {
+    "tension": "HT_04",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "long_motive"
+  },
+  "RAW_021": {
+    "tension": null,
+    "role": "trap_negation",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "avoidance",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_022": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "sarcasm"
+  },
+  "RAW_023": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "plain"
+  },
+  "RAW_024": {
+    "tension": "HT_01",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "norm",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_025": {
+    "tension": null,
+    "role": "trap_negation",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "avoidance",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_026": {
+    "tension": "HT_01",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_027": {
+    "tension": null,
+    "role": "false_friend",
+    "twin_of": null,
+    "looks_like": "HT_03",
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_028": {
+    "tension": "HT_02",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_029": {
+    "tension": "HT_03",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "avoidance",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_030": {
+    "tension": "HT_03",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "workaround",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_031": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "noise",
+    "context_absent": [
+      "device",
+      "social",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "long_motive"
+  },
+  "RAW_032": {
+    "tension": null,
+    "role": "distractor",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "opinion",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_033": {
+    "tension": null,
+    "role": "false_friend",
+    "twin_of": null,
+    "looks_like": "HT_01",
+    "expected_kind": "opinion",
+    "context_absent": [
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_034": {
+    "tension": "HT_04",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "workaround",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_035": {
+    "tension": "HT_01",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_036": {
+    "tension": "HT_02",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "workaround",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "plain"
+  },
+  "RAW_037": {
+    "tension": "HT_03",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "workaround",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "long_motive"
+  },
+  "RAW_038": {
+    "tension": "HT_03",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "plain"
+  },
+  "RAW_039": {
+    "tension": "HT_01",
+    "role": "counterexample",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "avoidance",
+    "context_absent": [
+      "device",
+      "social",
+      "platform",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "sarcasm"
+  },
+  "RAW_040": {
+    "tension": "HT_04",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "workaround",
+    "context_absent": [
+      "device",
+      "phase"
+    ],
+    "injection_token": null,
+    "style": "slang"
+  },
+  "RAW_041": {
+    "tension": "HT_01",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social",
+      "platform"
+    ],
+    "injection_token": null,
+    "style": "long_motive"
+  },
+  "RAW_042": {
+    "tension": "HT_04",
+    "role": "member",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device"
+    ],
+    "injection_token": null,
+    "style": "short_no_motive"
+  },
+  "RAW_043": {
+    "tension": null,
+    "role": "trap_injection",
+    "twin_of": null,
+    "looks_like": null,
+    "expected_kind": "action",
+    "context_absent": [
+      "device",
+      "social"
+    ],
+    "injection_token": "BANANA",
+    "style": "short_no_motive"
+  }
+}

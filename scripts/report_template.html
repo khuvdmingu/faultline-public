@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko" data-astryx-theme="neutral">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faultline 리포트</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@astryxdesign/core@0.1.3/src/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@astryxdesign/core@0.1.3/dist/astryx.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@astryxdesign/theme-neutral@0.1.3/dist/theme.css">
+<style>
+:root{
+  --bg:var(--color-background-body,#f4f4f2); --surface:var(--color-background-surface,#fff);
+  --text:var(--color-text-primary,#141414); --muted:var(--color-text-secondary,#5f5f5a);
+  --border:var(--color-border,rgba(0,0,0,.1)); --radius:var(--radius-container,14px);
+  --pass:var(--color-success,#2e7d5b); --fail:var(--color-error,#c0392b); --warn:#b7791f;
+  --accent:var(--color-border-emphasized,#3b5bdb); --s1:var(--spacing-1,4px); --s2:var(--spacing-2,8px);
+  --s3:var(--spacing-3,12px); --s4:var(--spacing-4,16px); --s6:var(--spacing-6,24px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif}
+header{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center;justify-content:space-between;padding:var(--s4) var(--s6);border-bottom:1px solid var(--border);background:var(--surface);position:sticky;top:0;z-index:5}
+h1{font-size:18px;margin:0}
+h2{font-size:15px;margin:0 0 var(--s3)}
+h3{font-size:14px;margin:var(--s4) 0 var(--s2);color:var(--muted);font-weight:600}
+.badge{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;border:1px solid var(--border);color:var(--muted);white-space:nowrap}
+.badge.pass{background:var(--pass);color:#fff;border-color:transparent}
+.badge.fail{background:var(--fail);color:#fff;border-color:transparent}
+.badge.kind{color:var(--accent);border-color:currentColor}
+.badge.gt{background:#fff4d6;color:#7a5a00;border-color:#ecd28a}
+.badge.gt.bad{background:#fde2df;color:var(--fail);border-color:#f3b4ad}
+main{max-width:1280px;margin:0 auto;padding:var(--s6);display:grid;gap:var(--s6)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--s4)}
+.grid{display:grid;grid-template-columns:280px 1fr;gap:var(--s6);align-items:start}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{text-align:left;padding:6px 8px;border-bottom:1px solid var(--border)}
+th{color:var(--muted);font-weight:600}
+.num{font-variant-numeric:tabular-nums;text-align:right}
+.list button{display:block;width:100%;text-align:left;padding:var(--s2) var(--s3);margin:0 0 var(--s1);border:1px solid transparent;border-radius:10px;background:transparent;color:inherit;font:inherit;cursor:pointer}
+.list button:hover{background:var(--bg)}
+.list button[aria-current="true"]{border-color:var(--accent);background:var(--bg)}
+.list small{display:block;color:var(--muted)}
+.poles{display:grid;grid-template-columns:1fr auto 1fr;gap:var(--s2);align-items:center}
+.pole{padding:var(--s3);border-radius:10px;background:var(--bg)}
+.item{padding:var(--s3) 0;border-bottom:1px solid var(--border)}
+.item:last-child{border-bottom:0}
+.raw{color:var(--muted);font-size:14px}
+mark{background:#fff0a8;color:inherit;border-radius:3px;padding:0 2px}
+.row{display:flex;flex-wrap:wrap;gap:var(--s2);align-items:center}
+.scn{border:1px solid var(--border);border-radius:10px;padding:var(--s3);margin-top:var(--s3)}
+.scn dl{display:grid;grid-template-columns:90px 1fr;gap:var(--s1) var(--s3);margin:var(--s2) 0 0;font-size:14px}
+.scn dt{color:var(--muted)}
+.scn dd{margin:0}
+.muted{color:var(--muted)}
+label.toggle{display:flex;gap:var(--s2);align-items:center;font-size:14px;cursor:pointer}
+.empty{color:var(--muted);padding:var(--s4) 0}
+@media (max-width:760px){
+  header{padding:var(--s3) var(--s4)} main{padding:var(--s4)}
+  .grid{grid-template-columns:1fr} .poles{grid-template-columns:1fr} .poles .vs{text-align:center}
+  .scn dl{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="row"><h1 id="title">Faultline</h1><span class="badge">합성 데이터</span></div>
+  <label class="toggle"><input type="checkbox" id="gt"> 정답 보기 (평가자 전용)</label>
+</header>
+<main>
+  <section class="card" id="score"></section>
+  <section class="grid">
+    <nav class="card list" id="nav" aria-label="tension 목록"></nav>
+    <article class="card" id="detail"></article>
+  </section>
+</main>
+<script>
+const D = /*__DATA__*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const by = (arr) => Object.fromEntries(arr.map(x => [x.id, x]));
+const raw = by(D.raw), beh = by(D.behaviors), ten = by(D.tensions);
+const gtT = by((D.ground_truth.tensions)||[]);
+let showGT = false, current = D.tensions[0] ? D.tensions[0].id : "_none";
+
+$("#title").textContent = "Faultline · " + D.title;
+
+function renderScore(){
+  const s = D.score;
+  if(!s){ $("#score").innerHTML = '<h2>채점</h2><p class="muted">score.json 없음 — build_report.py --score 로 연결</p>'; return; }
+  const rows = s.verdicts.map(v => `<tr><td>${esc(v.metric)}</td>
+    <td class="num">${v.value===null?"—":(typeof v.value==="number"&&!Number.isInteger(v.value)?v.value.toFixed(2):v.value)}</td>
+    <td class="muted">${esc(v.rule)}</td>
+    <td><span class="badge ${v.verdict==="PASS"?"pass":v.verdict==="FAIL"?"fail":""}">${v.verdict}</span></td></tr>`).join("");
+  const pass = s.verdicts.filter(v=>v.verdict==="PASS").length, fail = s.verdicts.filter(v=>v.verdict==="FAIL").length;
+  const rec = (s.detail.tension_recall||[]).map(r => `<tr><td>${esc(r.hidden)}${showGT&&gtT[r.hidden]?` <span class="muted">${esc(gtT[r.hidden].pole_a)} ↔ ${esc(gtT[r.hidden].pole_b)}</span>`:""}</td>
+    <td>${esc(r.matched||"—")}</td><td class="num">${r.purity??"—"}</td><td class="num">${r.coverage??"—"}</td>
+    <td><span class="badge ${r.recovered?"pass":"fail"}">${r.recovered?"재발견":"놓침"}</span></td></tr>`).join("");
+  $("#score").innerHTML = `<h2>채점 — PASS ${pass} · FAIL ${fail}</h2>
+    <table><thead><tr><th>지표</th><th class="num">값</th><th>기준</th><th>판정</th></tr></thead><tbody>${rows}</tbody></table>
+    <h3>심어둔 tension 재발견</h3>
+    <table><thead><tr><th>정답</th><th>매칭</th><th class="num">순도</th><th class="num">커버</th><th></th></tr></thead><tbody>${rec}</tbody></table>`;
+}
+
+function linked(){ const s=new Set(); D.tensions.forEach(t=>[...t.member_ids,...t.counterexample_ids].forEach(b=>s.add(b))); return s; }
+
+function renderNav(){
+  const unl = D.behaviors.filter(b => !linked().has(b.id)).length;
+  $("#nav").innerHTML = '<h2>tension</h2>' + D.tensions.map(t =>
+    `<button data-id="${t.id}" aria-current="${t.id===current}">${esc(t.id)} · ${esc(t.label)}<small>member ${t.member_ids.length} · 반례 ${t.counterexample_ids.length}</small></button>`).join("")
+    + `<button data-id="_none" aria-current="${current==="_none"}">연결되지 않은 행동<small>${unl}개 — 방해물이 여기 있어야 정상</small></button>`;
+  $("#nav").querySelectorAll("button").forEach(b => b.onclick = () => { current = b.dataset.id; render(); });
+}
+
+function hl(text, ex){
+  const t = esc(text), e = esc(ex||"");
+  return e && t.includes(e) ? t.replace(e, `<mark>${e}</mark>`) : t;
+}
+function gtChip(rawId, expectHT){
+  if(!showGT) return "";
+  const L = D.labels[rawId]; if(!L) return "";
+  const ok = expectHT === undefined ? !L.tension : L.tension === expectHT;
+  return `<span class="badge gt ${ok?"":"bad"}">${esc(L.tension||"무소속")} · ${esc(L.role)}</span>`;
+}
+function majority(t){
+  const c = {}; t.member_ids.forEach(b => { const l = beh[b] && D.labels[beh[b].source_id]; const k = l ? l.tension : null; c[k]=(c[k]||0)+1; });
+  return Object.entries(c).sort((a,b)=>b[1]-a[1])[0]?.[0];
+}
+function behItem(bid, expectHT){
+  const b = beh[bid]; if(!b) return `<div class="item"><span class="badge fail">없는 ID ${esc(bid)}</span></div>`;
+  const r = raw[b.source_id] || {};
+  const ctx = Object.entries(b.context||{}).filter(([,v])=>v!==null).map(([k,v])=>`${k}=${esc(v)}`).join(" · ");
+  return `<div class="item"><div class="row"><span class="badge kind">${esc(b.kind)}</span><strong>${esc(b.action)}</strong>${gtChip(b.source_id, expectHT)}</div>
+    <div class="raw">${esc(b.source_id)} “${hl(r.raw_text, b.source_excerpt)}”</div>
+    ${ctx?`<div class="muted" style="font-size:13px">context: ${ctx}</div>`:""}
+    ${b.inferred_need?`<div class="muted" style="font-size:13px">추론(${esc(b.inference_status)}): ${esc(b.inferred_need)}</div>`:""}</div>`;
+}
+
+function renderDetail(){
+  if(current === "_none"){
+    const L = linked(), rest = D.behaviors.filter(b=>!L.has(b.id));
+    $("#detail").innerHTML = `<h2>연결되지 않은 행동 (${rest.length})</h2>` + (rest.map(b=>behItem(b.id, undefined)).join("") || '<p class="empty">없음</p>');
+    return;
+  }
+  const t = ten[current], maj = majority(t);
+  const pris = D.principles.filter(p => p.tension_ids.includes(t.id));
+  const scns = D.scenarios.filter(s => s.tension_ids.includes(t.id));
+  $("#detail").innerHTML = `<div class="row"><h2 style="margin:0">${esc(t.id)} · ${esc(t.label)}</h2>${showGT&&maj?`<span class="badge gt">다수 정답: ${esc(maj)}</span>`:""}</div>
+    <div class="poles" style="margin-top:12px"><div class="pole">${esc(t.pole_a)}</div><div class="vs muted">↔</div><div class="pole">${esc(t.pole_b)}</div></div>
+    ${(t.alternative_interpretations||[]).length?`<p class="muted" style="font-size:13px">다른 해석: ${t.alternative_interpretations.map(esc).join(" / ")}</p>`:""}
+    <h3>principle</h3>${pris.map(p=>`<div class="item">${esc(p.id)} · ${esc(p.statement)}</div>`).join("") || '<p class="empty">없음</p>'}
+    <h3>scenario (${scns.length})</h3>${scns.map(s=>`<div class="scn"><div class="row"><strong>${esc(s.id)} · ${esc(s.title)}</strong>${s.evidence_ids.every(e=>beh[e])?"":'<span class="badge fail">추적 끊김</span>'}</div>
+      <dl><dt>trigger</dt><dd>${esc(s.trigger)}</dd><dt>경험</dt><dd>${esc(s.experience)}</dd>
+      <dt>가정</dt><dd>${(s.assumptions||[]).map(esc).join("<br>")}</dd><dt>실패 장면</dt><dd>${esc(s.failure_case)}</dd>
+      <dt>근거</dt><dd>${s.evidence_ids.map(e=>`${esc(e)}${beh[e]?` “${esc(beh[e].source_excerpt)}”`:""}`).join("<br>")}</dd></dl></div>`).join("") || '<p class="empty">없음</p>'}
+    <h3>member (${t.member_ids.length})</h3>${t.member_ids.map(b=>behItem(b, maj)).join("")}
+    <h3>반례 (${t.counterexample_ids.length})</h3>${t.counterexample_ids.map(b=>behItem(b, maj)).join("") || '<p class="empty">없음</p>'}`;
+}
+
+function render(){ renderScore(); renderNav(); renderDetail(); }
+$("#gt").onchange = e => { showGT = e.target.checked; render(); };
+render();
+</script>
+</body>
+</html>

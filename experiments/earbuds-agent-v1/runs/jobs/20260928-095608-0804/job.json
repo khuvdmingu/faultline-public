@@ -1,0 +1,54 @@
+{
+  "id": "20260928-095608-0804",
+  "root": "experiments/earbuds-agent-v1",
+  "stage": "analogy",
+  "writes": "analogies",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T09:56:08",
+  "started": "2026-09-28T09:56:08",
+  "finished": "2026-09-28T09:57:00",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "TEN_001",
+        "TEN_002"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 2096,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "TEN_003",
+        "TEN_004"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 2101,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 8,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/earbuds-agent-v1/data/explore/analogies.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T09:56:35 배치 1 완료 (27초, 1363자)",
+    "2026-09-28T09:57:00 배치 0 완료 (52초, 1537자)",
+    "2026-09-28T09:57:00 저장 8행 → experiments/earbuds-agent-v1/data/explore/analogies.jsonl"
+  ],
+  "pid": 86649
+}

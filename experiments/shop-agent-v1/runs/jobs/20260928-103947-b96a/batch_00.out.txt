@@ -1,0 +1,15 @@
+{"id":"BAS_001","title":"최저가 자동 구매","experience":"사용자가 원하는 상품을 말하면 AI가 여러 쇼핑앱을 비교해 가장 싼 곳에서 자동 결제한다.","mechanism":"가격 비교 후 저장된 결제수단으로 자동 주문","condition":"A"}
+{"id":"BAS_002","title":"구독 해지 대행","experience":"안 쓰는 구독 서비스 목록을 AI가 찾아내고 사용자 확인 후 한 번에 해지한다.","mechanism":"결제 내역 스캔 후 일괄 해지 요청","condition":"A"}
+{"id":"BAS_003","title":"반품 자동 접수","experience":"마음에 안 든 상품 사진을 보내면 AI가 반품 사유를 작성해 접수하고 택배 픽업을 예약한다.","mechanism":"이미지 인식 기반 반품 신청 자동화","condition":"A"}
+{"id":"BAS_004","title":"가격 하락 알림 후 자동 환불","experience":"구매한 상품이 나중에 더 싸지면 AI가 차액을 자동으로 환불 요청한다.","mechanism":"가격 추적 후 차액보상 청구 자동화","condition":"A"}
+{"id":"BAS_005","title":"택배 통합 조회","experience":"여러 쇼핑앱에서 온 택배를 AI가 하나의 화면에 모아 배송 상태를 알려준다.","mechanism":"택배사 API 통합 조회","condition":"A"}
+{"id":"BAS_006","title":"정기배송 수량 조정","experience":"소비 패턴을 학습한 AI가 정기배송 생필품의 수량과 주기를 자동으로 조절한다.","mechanism":"소비 이력 기반 구독 수량 최적화","condition":"A"}
+{"id":"BAS_007","title":"카드 청구서 이상 탐지","experience":"AI가 카드사 앱의 청구 내역을 확인해 중복 결제나 이상 청구를 찾아 사용자에게 알린다.","mechanism":"결제 내역 이상치 탐지 알림","condition":"A"}
+{"id":"BAS_008","title":"쿠폰 자동 적용","experience":"장바구니에 담긴 상품에 적용 가능한 쿠폰을 AI가 찾아 자동으로 적용한다.","mechanism":"쿠폰 검색 및 자동 적용","condition":"A"}
+{"id":"BAS_009","title":"배송지 자동 통일","experience":"이사한 사용자를 위해 AI가 모든 쇼핑앱의 저장된 주소를 새 주소로 일괄 변경한다.","mechanism":"저장 주소 일괄 업데이트","condition":"A"}
+{"id":"BAS_010","title":"구독 갱신 전 알림","experience":"무료체험이 끝나기 전 AI가 사용자에게 알리고 계속할지 물어본다.","mechanism":"갱신일 기반 사전 알림 및 승인 요청","condition":"A"}
+{"id":"BAS_011","title":"환불 진행상황 추적","experience":"환불 요청 후 처리 상태를 AI가 대신 확인하고 완료되면 알려준다.","mechanism":"환불 상태 자동 모니터링","condition":"A"}
+{"id":"BAS_012","title":"장바구니 통합 관리","experience":"여러 쇼핑앱에 흩어진 장바구니 상품을 AI가 한곳에 모아 보여준다.","mechanism":"멀티앱 장바구니 데이터 통합","condition":"A"}
+{"id":"BAS_013","title":"구독 서비스 중복 탐지","experience":"비슷한 기능의 구독 서비스를 여러 개 쓰고 있으면 AI가 중복을 알려주고 정리를 제안한다.","mechanism":"구독 서비스 기능 비교 및 중복 탐지","condition":"A"}
+{"id":"BAS_014","title":"메일함 영수증 정리","experience":"메일함에 흩어진 주문 영수증을 AI가 자동으로 모아 지출 내역으로 정리한다.","mechanism":"메일 파싱 기반 영수증 자동 수집","condition":"A"}
+{"id":"BAS_015","title":"품절 재입고 자동 구매","experience":"품절된 상품이 재입고되면 AI가 즉시 자동으로 구매를 완료한다.","mechanism":"재고 모니터링 후 즉시 자동 결제","condition":"A"}

@@ -1,0 +1,13 @@
+{"at": "2026-09-28T09:46:35", "key": "baseline", "rows": 15, "job": "20260928-094615-cd47", "stage": "baseline", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T09:47:05", "key": "ground_truth", "rows": 1, "job": "20260928-094615-c290", "stage": "ground_truth", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T09:48:45", "key": "corpus_labeled", "rows": 42, "job": "20260928-094706-2630", "stage": "generate", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T09:50:51", "key": "corpus_labeled", "rows": 43, "job": "20260928-094845-1cd7", "stage": "generate", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T09:51:46", "key": "behaviors", "rows": 50, "job": "20260928-095051-7a6a", "stage": "extract", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T09:53:38", "key": "tensions", "rows": 4, "job": "20260928-095149-e122", "stage": "link", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T09:57:00", "key": "analogies", "rows": 8, "job": "20260928-095608-0804", "stage": "analogy", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T09:57:47", "key": "principles", "rows": 7, "job": "20260928-095702-b57f", "stage": "principle", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T09:58:52", "key": "premises", "rows": 7, "job": "20260928-095747-647d", "stage": "premise", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:00:51", "key": "scenarios", "rows": 14, "job": "20260928-095854-fff3", "stage": "scenario", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:02:03", "key": "evaluations", "rows": 14, "job": "20260928-100057-757b", "stage": "judge", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:02:19", "key": "families", "rows": 5, "job": "20260928-100057-aaa9", "stage": "family", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T10:03:17", "key": "polished", "rows": 4, "job": "20260928-100222-e5da", "stage": "polish", "executor": "claude_cli", "model": "sonnet"}

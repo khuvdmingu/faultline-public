@@ -1,0 +1,189 @@
+{
+  "id": "20260928-094615",
+  "root": "experiments/earbuds-agent-v1",
+  "status": "done",
+  "executor": "claude_cli",
+  "plan": [
+    "ground_truth",
+    "generate",
+    "split",
+    "baseline",
+    "extract",
+    "link",
+    "assign",
+    "analogy",
+    "package",
+    "principle",
+    "premise",
+    "scenario",
+    "judge",
+    "family",
+    "shortlist",
+    "polish",
+    "score"
+  ],
+  "current": null,
+  "started": "2026-09-28T09:46:15",
+  "finished": "2026-09-28T10:03:19",
+  "error": null,
+  "steps": [
+    {
+      "stage": "ground_truth",
+      "status": "done",
+      "started": "2026-09-28T09:46:15",
+      "job_id": "20260928-094615-c290",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 1,
+      "finished": "2026-09-28T09:47:06"
+    },
+    {
+      "stage": "generate",
+      "status": "done",
+      "note": "품질 재생성",
+      "started": "2026-09-28T09:48:45",
+      "job_id": "20260928-094845-1cd7",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 43,
+      "finished": "2026-09-28T09:50:51"
+    },
+    {
+      "stage": "split",
+      "status": "done",
+      "started": "2026-09-28T09:50:51",
+      "note": "품질 검사: 재생성 권장",
+      "finished": "2026-09-28T09:50:51"
+    },
+    {
+      "stage": "baseline",
+      "status": "done",
+      "started": "2026-09-28T09:46:15",
+      "job_id": "20260928-094615-cd47",
+      "model": "sonnet",
+      "batches": 1,
+      "note": "본 사슬과 나란히",
+      "finished": "2026-09-28T09:46:35",
+      "rows": 15
+    },
+    {
+      "stage": "extract",
+      "status": "done",
+      "started": "2026-09-28T09:50:51",
+      "job_id": "20260928-095051-7a6a",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 50,
+      "finished": "2026-09-28T09:51:49"
+    },
+    {
+      "stage": "link",
+      "status": "done",
+      "started": "2026-09-28T09:51:49",
+      "job_id": "20260928-095149-e122",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 4,
+      "finished": "2026-09-28T09:53:40"
+    },
+    {
+      "stage": "assign",
+      "status": "done",
+      "started": "2026-09-28T09:53:40",
+      "note": "판단 50개 · accept 40 · 무소속으로 0 · 이동 0 · 역할 7 · 추가 1 · 반례 유지 0",
+      "finished": "2026-09-28T09:56:08"
+    },
+    {
+      "stage": "analogy",
+      "status": "done",
+      "started": "2026-09-28T09:56:08",
+      "job_id": "20260928-095608-0804",
+      "model": "sonnet",
+      "batches": 2,
+      "rows": 8,
+      "finished": "2026-09-28T09:57:02"
+    },
+    {
+      "stage": "package",
+      "status": "done",
+      "started": "2026-09-28T09:57:02",
+      "finished": "2026-09-28T09:57:02"
+    },
+    {
+      "stage": "principle",
+      "status": "done",
+      "started": "2026-09-28T09:57:02",
+      "job_id": "20260928-095702-b57f",
+      "model": "sonnet",
+      "batches": 2,
+      "rows": 7,
+      "finished": "2026-09-28T09:57:47"
+    },
+    {
+      "stage": "premise",
+      "status": "done",
+      "started": "2026-09-28T09:57:47",
+      "job_id": "20260928-095747-647d",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 7,
+      "finished": "2026-09-28T09:58:54"
+    },
+    {
+      "stage": "scenario",
+      "status": "done",
+      "started": "2026-09-28T09:58:54",
+      "job_id": "20260928-095854-fff3",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 14,
+      "finished": "2026-09-28T10:00:54"
+    },
+    {
+      "stage": "judge",
+      "status": "done",
+      "started": "2026-09-28T10:00:57",
+      "job_id": "20260928-100057-757b",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 14,
+      "finished": "2026-09-28T10:02:03"
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "started": "2026-09-28T10:00:57",
+      "job_id": "20260928-100057-aaa9",
+      "model": "sonnet",
+      "batches": 1,
+      "note": "평가와 나란히",
+      "parallel": true,
+      "rows": 5,
+      "finished": "2026-09-28T10:02:19"
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "started": "2026-09-28T10:02:21",
+      "note": "후보 4개 / 적격 4",
+      "finished": "2026-09-28T10:02:21"
+    },
+    {
+      "stage": "polish",
+      "status": "done",
+      "started": "2026-09-28T10:02:21",
+      "job_id": "20260928-100222-e5da",
+      "model": "sonnet",
+      "batches": 2,
+      "rows": 4,
+      "finished": "2026-09-28T10:03:19"
+    },
+    {
+      "stage": "score",
+      "status": "done",
+      "started": "2026-09-28T10:03:19",
+      "note": "PASS 8 / 10",
+      "finished": "2026-09-28T10:03:19"
+    }
+  ]
+}

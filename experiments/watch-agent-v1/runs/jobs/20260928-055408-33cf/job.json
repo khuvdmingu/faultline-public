@@ -1,0 +1,51 @@
+{
+  "id": "20260928-055408-33cf",
+  "root": "experiments/watch-agent-v1",
+  "stage": "family",
+  "writes": "families",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T05:54:08",
+  "started": "2026-09-28T05:54:08",
+  "finished": "2026-09-28T05:55:59",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_001",
+        "SCN_002",
+        "SCN_003",
+        "SCN_004",
+        "SCN_005",
+        "SCN_006",
+        "SCN_007",
+        "SCN_008",
+        "SCN_009",
+        "SCN_010",
+        "SCN_011",
+        "SCN_012"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 5012,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 5,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/watch-agent-v1/data/evaluate/families.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T05:55:59 배치 0 완료 (110초, 2116자)",
+    "2026-09-28T05:55:59 저장 5행 → experiments/watch-agent-v1/data/evaluate/families.jsonl"
+  ],
+  "pid": 65166
+}

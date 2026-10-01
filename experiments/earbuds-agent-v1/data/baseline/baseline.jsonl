@@ -1,0 +1,15 @@
+{"id": "BAS_001", "title": "자동 통화 요약 전달", "experience": "회의 중 걸려온 전화를 대신 받아 용건을 물어보고 요약을 귓속말로 전해준다.", "mechanism": "통화 가로채기 후 음성 요약 브리핑", "condition": "A", "is_synthetic": true}
+{"id": "BAS_002", "title": "실시간 메시지 자동 답장", "experience": "운전 중 온 메시지에 상황에 맞는 답장을 대신 보내고 결과만 짧게 알려준다.", "mechanism": "메신저 컨텍스트 기반 자동 응답", "condition": "A", "is_synthetic": true}
+{"id": "BAS_003", "title": "즉석 양방향 통역", "experience": "외국인과 대화할 때 상대 말을 실시간으로 통역해 귀에 들려준다.", "mechanism": "음성 인식-번역-합성 파이프라인", "condition": "A", "is_synthetic": true}
+{"id": "BAS_004", "title": "소음 자동 차단·투과 전환", "experience": "지하철에서는 소음을 차단하고 역 안내방송이 나오면 자동으로 투과 모드로 전환한다.", "mechanism": "음향 상황 인식 기반 ANC 전환", "condition": "A", "is_synthetic": true}
+{"id": "BAS_005", "title": "일정 충돌 자동 조율", "experience": "새 미팅 요청이 오면 캘린더를 확인해 겹치는 일정을 조율하고 확정만 물어본다.", "mechanism": "캘린더 연동 자동 스케줄링 제안", "condition": "A", "is_synthetic": true}
+{"id": "BAS_006", "title": "이동 중 경로 음성 안내", "experience": "걷는 동안 지도 앱과 연동해 다음 방향을 짧은 소리 신호로 알려준다.", "mechanism": "위치 기반 턴바이턴 음성 큐", "condition": "A", "is_synthetic": true}
+{"id": "BAS_007", "title": "집중 모드 자동 방해 차단", "experience": "몰입 중임을 감지하면 전화와 알림을 자동으로 보류하고 요약만 나중에 전달한다.", "mechanism": "활동 감지 기반 알림 지연 큐잉", "condition": "A", "is_synthetic": true}
+{"id": "BAS_008", "title": "회의록 자동 생성", "experience": "대화가 끝나면 핵심 결정사항을 음성으로 요약해 들려준다.", "mechanism": "대화 녹음-요약 후처리", "condition": "A", "is_synthetic": true}
+{"id": "BAS_009", "title": "긴급 연락 우선 통과", "experience": "가족의 긴급 전화만 방해금지 모드를 뚫고 즉시 연결한다.", "mechanism": "발신자 우선순위 화이트리스트 필터링", "condition": "A", "is_synthetic": true}
+{"id": "BAS_010", "title": "쇼핑 주문 대행", "experience": "필요한 물건을 말하면 앱에서 대신 검색·주문하고 결과만 확인시켜준다.", "mechanism": "음성 명령 기반 앱 자동화 실행", "condition": "A", "is_synthetic": true}
+{"id": "BAS_011", "title": "걷기 중 뉴스 브리핑", "experience": "출근길에 관심 뉴스를 짧게 요약해 순서대로 들려준다.", "mechanism": "콘텐츠 큐레이션 후 음성 브리핑", "condition": "A", "is_synthetic": true}
+{"id": "BAS_012", "title": "약속 장소 자동 공유", "experience": "약속 시간이 다가오면 상대에게 위치를 자동으로 공유하고 도착 예정 시간을 알려준다.", "mechanism": "위치 공유 자동화 트리거", "condition": "A", "is_synthetic": true}
+{"id": "BAS_013", "title": "소음 환경 맞춤 볼륨 조절", "experience": "주변 소음 크기에 따라 음악 볼륨을 자동으로 높이거나 낮춘다.", "mechanism": "환경 소음 측정 기반 볼륨 자동 조정", "condition": "A", "is_synthetic": true}
+{"id": "BAS_014", "title": "이메일 음성 대응", "experience": "중요 이메일이 오면 내용을 요약해 들려주고 간단 답장은 음성으로 지시해 보낸다.", "mechanism": "이메일 요약-음성 명령 답장 연동", "condition": "A", "is_synthetic": true}
+{"id": "BAS_015", "title": "대화 중 팩트체크 귓속말", "experience": "대화 상대가 언급한 정보를 실시간으로 확인해 틀린 부분을 조용히 알려준다.", "mechanism": "실시간 음성 인식 기반 사실 검증", "condition": "A", "is_synthetic": true}

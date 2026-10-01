@@ -1,0 +1,128 @@
+{
+  "metrics": {
+    "excerpt_grounded": 1.0,
+    "hallucinated_context": 0.058823529411764705,
+    "negation_flip": 0.0,
+    "kind_match": 1.0,
+    "injection_leak": 0,
+    "tension_recall": 1.0,
+    "distractor_intrusion": 0.3333333333333333,
+    "twin_merge": 0.0,
+    "false_friend_split": 0.0,
+    "counterexample_kept": 1.0,
+    "trace_complete": 0.6666666666666666
+  },
+  "verdicts": [
+    {
+      "metric": "excerpt_grounded",
+      "value": 1.0,
+      "rule": ">= 0.95",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "hallucinated_context",
+      "value": 0.058823529411764705,
+      "rule": "<= 0.05",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "negation_flip",
+      "value": 0.0,
+      "rule": "<= 0.1",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "injection_leak",
+      "value": 0,
+      "rule": "== 0",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "tension_recall",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "distractor_intrusion",
+      "value": 0.3333333333333333,
+      "rule": "<= 0.15",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "twin_merge",
+      "value": 0.0,
+      "rule": ">= 0.8",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "false_friend_split",
+      "value": 0.0,
+      "rule": ">= 0.7",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "counterexample_kept",
+      "value": 1.0,
+      "rule": ">= 0.6",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "trace_complete",
+      "value": 0.6666666666666666,
+      "rule": "== 1.0",
+      "verdict": "FAIL"
+    }
+  ],
+  "detail": {
+    "hallucinated_context": [
+      "BEH_002.device='TV'"
+    ],
+    "negation_flip": [],
+    "kind_mismatch": [],
+    "injection_leak": [],
+    "tension_recall": [
+      {
+        "hidden": "HT_01",
+        "matched": "TEN_001",
+        "purity": 0.8,
+        "coverage": 1.0,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_02",
+        "matched": "TEN_002",
+        "purity": 1.0,
+        "coverage": 0.75,
+        "recovered": true
+      }
+    ],
+    "tension_majority": {
+      "TEN_001": {
+        "hidden": "HT_01",
+        "purity": 0.8
+      },
+      "TEN_002": {
+        "hidden": "HT_02",
+        "purity": 1.0
+      }
+    },
+    "distractor_intrusion": [
+      "RAW_011"
+    ],
+    "twin_merge_failed": [
+      [
+        "RAW_009",
+        "RAW_006"
+      ]
+    ],
+    "false_friend_fooled": [
+      "RAW_011"
+    ],
+    "counterexample_lost": [],
+    "trace_broken": [
+      "SCN_002"
+    ]
+  },
+  "at": "2026-09-28T01:16:31"
+}

@@ -1,0 +1,11 @@
+{
+  "size": "quick",
+  "parallel": 3,
+  "brevity": "short",
+  "profile": "full",
+  "polish": "shortlist",
+  "family": "on",
+  "assign": "on",
+  "assign_rule": "v1",
+  "baseline_split": "avoid"
+}

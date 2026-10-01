@@ -1,0 +1,66 @@
+{
+  "id": "20260928-102652-afa7",
+  "root": "experiments/photo-agent-v1",
+  "stage": "scenario",
+  "writes": "scenarios",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T10:26:52",
+  "started": "2026-09-28T10:26:52",
+  "finished": "2026-09-28T10:28:13",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "PRI_001",
+        "PRI_002"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 9418,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "PRI_003",
+        "PRI_004"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 6780,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    },
+    {
+      "index": 2,
+      "items": [
+        "PRI_005"
+      ],
+      "status": "done",
+      "prompt_file": "batch_02.prompt.md",
+      "prompt_chars": 3867,
+      "out_file": "batch_02.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 10,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/photo-agent-v1/data/scenarios/scenarios.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T10:27:26 배치 2 완료 (33초, 1476자)",
+    "2026-09-28T10:28:06 배치 1 완료 (73초, 3338자)",
+    "2026-09-28T10:28:13 배치 0 완료 (81초, 3441자)",
+    "2026-09-28T10:28:13 저장 10행 → experiments/photo-agent-v1/data/scenarios/scenarios.jsonl"
+  ],
+  "pid": 91228
+}

@@ -1,0 +1,7 @@
+```json
+{"id":"POL_001","target_id":"SCN_002","fields":{},"changes":[],"is_synthetic":true}
+{"id":"POL_002","target_id":"SCN_004","fields":{"experience":"가격은 낮지만 환불 안 되는 각인 상품이라 에이전트가 카테고리와 무관하게 확인을 요청했다. 반대로 금액 큰 정기 구독 갱신은 언제든 취소 가능해 확인 없이 진행됐다.","takeaway":"위임 경계는 결제냐 일정이냐가 아니라 되돌릴 수 있느냐로 나뉜다."},"changes":[{"rule":"F-1","before":"사용자는 '결제냐 일정이냐'가 아니라 '되돌릴 수 있냐'로 나뉘는 걸 체감했다.","after":"takeaway 로 이동"}],"is_synthetic":true}
+{"id":"POL_003","target_id":"SCN_006","fields":{"experience":"사용자는 결제 때마다 아무 기록도 남기지 않았지만 에이전트가 모든 결제와 관련 메시지를 배경에서 계속 정리해두고 있었다. 이의제기 화면에 들어가자 에이전트가 카드사 양식에 맞춰 증빙 패키지를 자동으로 채워 제출까지 대신 진행했다. 최종 제출 버튼만 눌렀다."},"changes":[{"rule":"F-2","before":"사용자는 최종 제출 버튼만 눌렀다.","after":"최종 제출 버튼만 눌렀다."}],"is_synthetic":true}
+{"id":"POL_004","target_id":"SCN_008","fields":{},"changes":[],"is_synthetic":true}
+{"id":"POL_005","target_id":"SCN_009","fields":{},"changes":[],"is_synthetic":true}
+```

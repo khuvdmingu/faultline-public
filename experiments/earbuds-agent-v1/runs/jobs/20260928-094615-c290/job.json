@@ -1,0 +1,40 @@
+{
+  "id": "20260928-094615-c290",
+  "root": "experiments/earbuds-agent-v1",
+  "stage": "ground_truth",
+  "writes": "ground_truth",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T09:46:15",
+  "started": "2026-09-28T09:46:15",
+  "finished": "2026-09-28T09:47:05",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "brief"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 1842,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 1,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/earbuds-agent-v1/hidden/ground_truth.json",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T09:47:05 배치 0 완료 (50초, 1588자)",
+    "2026-09-28T09:47:05 저장 1행 → experiments/earbuds-agent-v1/hidden/ground_truth.json"
+  ],
+  "pid": 86649
+}

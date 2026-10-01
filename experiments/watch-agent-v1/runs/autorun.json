@@ -1,0 +1,179 @@
+{
+  "id": "20260928-054243",
+  "root": "experiments/watch-agent-v1",
+  "status": "done",
+  "executor": "claude_cli",
+  "plan": [
+    "ground_truth",
+    "generate",
+    "split",
+    "baseline",
+    "extract",
+    "link",
+    "analogy",
+    "package",
+    "principle",
+    "premise",
+    "scenario",
+    "judge",
+    "family",
+    "shortlist",
+    "polish",
+    "score"
+  ],
+  "current": null,
+  "started": "2026-09-28T05:42:43",
+  "finished": "2026-09-28T05:56:34",
+  "error": null,
+  "steps": [
+    {
+      "stage": "ground_truth",
+      "status": "done",
+      "started": "2026-09-28T05:42:43",
+      "job_id": "20260928-054243-4af2",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 1,
+      "finished": "2026-09-28T05:43:34"
+    },
+    {
+      "stage": "generate",
+      "status": "done",
+      "note": "품질 재생성",
+      "started": "2026-09-28T05:45:28",
+      "job_id": "20260928-054528-f715",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 43,
+      "finished": "2026-09-28T05:47:07"
+    },
+    {
+      "stage": "split",
+      "status": "done",
+      "started": "2026-09-28T05:47:07",
+      "note": "품질 검사: 통과",
+      "finished": "2026-09-28T05:47:07"
+    },
+    {
+      "stage": "baseline",
+      "status": "done",
+      "started": "2026-09-28T05:42:43",
+      "job_id": "20260928-054243-e9b9",
+      "model": "sonnet",
+      "batches": 1,
+      "note": "본 사슬과 나란히",
+      "finished": "2026-09-28T05:43:02",
+      "rows": 15
+    },
+    {
+      "stage": "extract",
+      "status": "done",
+      "started": "2026-09-28T05:47:07",
+      "job_id": "20260928-054707-6583",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 50,
+      "finished": "2026-09-28T05:48:11"
+    },
+    {
+      "stage": "link",
+      "status": "done",
+      "started": "2026-09-28T05:48:11",
+      "job_id": "20260928-054811-0344",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 3,
+      "finished": "2026-09-28T05:49:56"
+    },
+    {
+      "stage": "analogy",
+      "status": "done",
+      "started": "2026-09-28T05:49:56",
+      "job_id": "20260928-054956-cd6e",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 6,
+      "finished": "2026-09-28T05:50:20"
+    },
+    {
+      "stage": "package",
+      "status": "done",
+      "started": "2026-09-28T05:50:20",
+      "finished": "2026-09-28T05:50:20"
+    },
+    {
+      "stage": "principle",
+      "status": "done",
+      "started": "2026-09-28T05:50:20",
+      "job_id": "20260928-055020-0516",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 6,
+      "finished": "2026-09-28T05:50:50"
+    },
+    {
+      "stage": "premise",
+      "status": "done",
+      "started": "2026-09-28T05:50:50",
+      "job_id": "20260928-055050-b2fd",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 6,
+      "finished": "2026-09-28T05:51:29"
+    },
+    {
+      "stage": "scenario",
+      "status": "done",
+      "started": "2026-09-28T05:51:29",
+      "job_id": "20260928-055129-5dca",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 12,
+      "finished": "2026-09-28T05:52:59"
+    },
+    {
+      "stage": "judge",
+      "status": "done",
+      "started": "2026-09-28T05:53:02",
+      "job_id": "20260928-055302-2efc",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 12,
+      "finished": "2026-09-28T05:54:08"
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "started": "2026-09-28T05:54:08",
+      "job_id": "20260928-055408-33cf",
+      "model": "sonnet",
+      "batches": 1,
+      "rows": 5,
+      "finished": "2026-09-28T05:56:00"
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "started": "2026-09-28T05:56:00",
+      "note": "후보 5개 / 적격 6",
+      "finished": "2026-09-28T05:56:00"
+    },
+    {
+      "stage": "polish",
+      "status": "done",
+      "started": "2026-09-28T05:56:00",
+      "job_id": "20260928-055601-0aef",
+      "model": "sonnet",
+      "batches": 3,
+      "rows": 5,
+      "finished": "2026-09-28T05:56:34"
+    },
+    {
+      "stage": "score",
+      "status": "done",
+      "started": "2026-09-28T05:56:34",
+      "note": "PASS 4 / 10",
+      "finished": "2026-09-28T05:56:34"
+    }
+  ]
+}

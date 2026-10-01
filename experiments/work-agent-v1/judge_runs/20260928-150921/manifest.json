@@ -1,0 +1,26 @@
+{
+  "run_id": "20260928-150921",
+  "task": "assign",
+  "bank": "assign@v1",
+  "backend": "claude_cli:sonnet (verbal)",
+  "started": "2026-09-28T15:09:21",
+  "finished": "2026-09-28T15:15:52",
+  "items": 108,
+  "errors": 0,
+  "summary": {
+    "accept": 76,
+    "review": 32,
+    "none": 30
+  },
+  "rule": "B accept 우선 · review 는 20 연결 유지 · 연결 반례를 B 가 무소속이라 하면 반례 유지 · tension 은 버리지 않음 · (v1)",
+  "rule_version": "v1",
+  "changed": {
+    "to_none": 0,
+    "moved": 1,
+    "role": 4,
+    "added": 2,
+    "kept_counter": 1,
+    "kept_member": 0
+  },
+  "source": "pipeline 22"
+}

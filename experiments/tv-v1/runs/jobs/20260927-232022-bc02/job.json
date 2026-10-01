@@ -1,0 +1,116 @@
+{
+  "id": "20260927-232022-bc02",
+  "root": "experiments/tv-v1",
+  "stage": "polish",
+  "writes": "polished",
+  "executor": "claude_cli",
+  "model": "opus",
+  "status": "done",
+  "created": "2026-09-27T23:20:22",
+  "started": "2026-09-27T23:20:22",
+  "finished": "2026-09-27T23:22:28",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_001",
+        "SCN_002",
+        "SCN_003",
+        "SCN_004",
+        "SCN_005",
+        "SCN_006",
+        "SCN_007",
+        "SCN_008"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 14218,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "SCN_009",
+        "SCN_010",
+        "SCN_011",
+        "SCN_012",
+        "SCN_013",
+        "SCN_014",
+        "SCN_015",
+        "SCN_016"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 14558,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    },
+    {
+      "index": 2,
+      "items": [
+        "SCN_017",
+        "SCN_018",
+        "PRI_001",
+        "PRI_002",
+        "PRI_003",
+        "PRI_004",
+        "PRI_005",
+        "PRI_006"
+      ],
+      "status": "done",
+      "prompt_file": "batch_02.prompt.md",
+      "prompt_chars": 11392,
+      "out_file": "batch_02.out.txt",
+      "error": null
+    },
+    {
+      "index": 3,
+      "items": [
+        "PREM_001",
+        "PREM_002",
+        "PREM_003",
+        "PREM_004",
+        "PREM_005",
+        "PREM_006",
+        "PREM_007",
+        "PREM_008"
+      ],
+      "status": "done",
+      "prompt_file": "batch_03.prompt.md",
+      "prompt_chars": 11476,
+      "out_file": "batch_03.out.txt",
+      "error": null
+    },
+    {
+      "index": 4,
+      "items": [
+        "PREM_009",
+        "PREM_010"
+      ],
+      "status": "done",
+      "prompt_file": "batch_04.prompt.md",
+      "prompt_chars": 9874,
+      "out_file": "batch_04.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 34,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/tv-v1/data/polish/polished.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-27T23:21:00 배치 0 완료 (39초, 4032자)",
+    "2026-09-27T23:21:42 배치 1 완료 (41초, 3918자)",
+    "2026-09-27T23:22:03 배치 2 완료 (21초, 1857자)",
+    "2026-09-27T23:22:14 배치 3 완료 (11초, 883자)",
+    "2026-09-27T23:22:25 배치 4 완료 (11초, 845자)",
+    "2026-09-27T23:22:28 저장 34행 → experiments/tv-v1/data/polish/polished.jsonl"
+  ]
+}

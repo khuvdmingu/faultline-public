@@ -1,0 +1,4 @@
+```json
+{"id":"ANA_001","source_domain":"email/notification services","source_pattern":"다이제스트 메일(요약 발송)","abstract_mechanism":"모든 이벤트는 기록에 계속 쌓이지만 실시간 알림은 묶어서 드물게만 보낸다","target_tension_ids":["TEN_002"],"mapping":{"받은편지함 전체 기록":"장기 건강 기록 로그","일간/주간 다이제스트 발송":"묶음 알림·요약 리포트"},"transfer_limitations":["메일은 지연 확인해도 무해하지만 건강 이상 신호는 지연 시 실제 위해로 이어질 수 있어 같은 배치 주기를 적용할 수 없다"],"distance":"adjacent"}
+{"id":"ANA_002","source_domain":"의료(병원 알람 관리)","source_pattern":"ICU 알람 피로도 관리(알람 우선순위·임계값 조정)","abstract_mechanism":"모든 생체신호는 끊김 없이 계속 기록·모니터링하되, 사람에게 가는 경보는 위험도로 걸러 최소화한다","target_tension_ids":["TEN_002"],"mapping":{"연속 생체신호 모니터링 기록":"손목 심박·수면 데이터 장기 로그","알람 임계값·우선순위 필터":"에이전트의 알림 발송 기준"},"transfer_limitations":["병원 알람은 생명 위협 상황을 전제로 한 규제·프로토콜이 뒷받침되지만, 일상 건강 알림은 그런 강제 기준이 없어 '무엇을 걸러도 되는지' 판단 근거가 훨씬 약하다"],"distance":"distant"}
+```

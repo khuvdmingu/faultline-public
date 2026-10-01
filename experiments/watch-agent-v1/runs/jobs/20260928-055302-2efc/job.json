@@ -1,0 +1,73 @@
+{
+  "id": "20260928-055302-2efc",
+  "root": "experiments/watch-agent-v1",
+  "stage": "judge",
+  "writes": "evaluations",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T05:53:02",
+  "started": "2026-09-28T05:53:02",
+  "finished": "2026-09-28T05:54:07",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "SCN_001",
+        "SCN_002",
+        "SCN_003",
+        "SCN_004"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 6767,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "SCN_005",
+        "SCN_006",
+        "SCN_007",
+        "SCN_008"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 6339,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    },
+    {
+      "index": 2,
+      "items": [
+        "SCN_009",
+        "SCN_010",
+        "SCN_011",
+        "SCN_012"
+      ],
+      "status": "done",
+      "prompt_file": "batch_02.prompt.md",
+      "prompt_chars": 6965,
+      "out_file": "batch_02.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 12,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/watch-agent-v1/data/evaluate/evaluations.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T05:53:45 배치 0 완료 (43초, 2359자)",
+    "2026-09-28T05:53:48 배치 1 완료 (45초, 2381자)",
+    "2026-09-28T05:54:07 배치 2 완료 (65초, 2485자)",
+    "2026-09-28T05:54:07 저장 12행 → experiments/watch-agent-v1/data/evaluate/evaluations.jsonl"
+  ],
+  "pid": 65166
+}

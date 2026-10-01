@@ -1,0 +1,14 @@
+{"at": "2026-09-28T00:04:30", "key": "ground_truth", "rows": 1, "job": "20260928-000350-f5cf", "stage": "ground_truth", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T00:12:20", "key": "corpus_labeled", "rows": 98, "job": "20260928-000432-709d", "stage": "generate", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T00:12:20", "key": "corpus_labeled", "rows": 98, "job": "20260928-000432-709d", "stage": "generate", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T00:22:04", "key": "baseline", "rows": 30, "job": "20260928-002124-fbaa", "stage": "baseline", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T00:25:08", "key": "corpus_labeled", "rows": 103, "job": "20260928-002124-9243", "stage": "generate", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T00:30:05", "key": "behaviors", "rows": 117, "job": "20260928-002509-cc26", "stage": "extract", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T00:30:48", "key": "tensions", "rows": 8, "job": "20260928-003007-7da9", "stage": "link", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T00:32:42", "key": "analogies", "rows": 16, "job": "20260928-003049-2c7f", "stage": "analogy", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T00:33:35", "key": "principles", "rows": 8, "job": "20260928-003243-99b0", "stage": "principle", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T00:34:52", "key": "premises", "rows": 13, "job": "20260928-003338-0c2a", "stage": "premise", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T00:36:44", "key": "scenarios", "rows": 24, "job": "20260928-003453-5840", "stage": "scenario", "executor": "claude_cli", "model": "opus"}
+{"at": "2026-09-28T00:38:47", "key": "evaluations", "rows": 24, "job": "20260928-003647-a0a5", "stage": "judge", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T00:41:30", "key": "families", "rows": 20, "job": "20260928-003847-be99", "stage": "family", "executor": "claude_cli", "model": "sonnet"}
+{"at": "2026-09-28T00:43:19", "key": "polished", "rows": 45, "job": "20260928-004133-cdd5", "stage": "polish", "executor": "claude_cli", "model": "opus"}

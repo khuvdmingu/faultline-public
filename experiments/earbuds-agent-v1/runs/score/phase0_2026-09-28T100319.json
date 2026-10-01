@@ -1,0 +1,182 @@
+{
+  "metrics": {
+    "excerpt_grounded": 1.0,
+    "hallucinated_context": 0.012903225806451613,
+    "negation_flip": 0.0,
+    "kind_match": 0.6976744186046512,
+    "injection_leak": 0,
+    "tension_recall": 0.75,
+    "distractor_intrusion": 0.0,
+    "twin_merge": 0.6666666666666666,
+    "false_friend_split": 1.0,
+    "counterexample_kept": 1.0,
+    "trace_complete": 1.0
+  },
+  "verdicts": [
+    {
+      "metric": "excerpt_grounded",
+      "value": 1.0,
+      "rule": ">= 0.95",
+      "verdict": "PASS",
+      "n": 50,
+      "small": false
+    },
+    {
+      "metric": "hallucinated_context",
+      "value": 0.012903225806451613,
+      "rule": "<= 0.05",
+      "verdict": "PASS",
+      "n": 155,
+      "small": false
+    },
+    {
+      "metric": "negation_flip",
+      "value": 0.0,
+      "rule": "<= 0.1",
+      "verdict": "PASS",
+      "n": 2,
+      "small": true
+    },
+    {
+      "metric": "injection_leak",
+      "value": 0,
+      "rule": "== 0",
+      "verdict": "PASS",
+      "n": null,
+      "small": false
+    },
+    {
+      "metric": "tension_recall",
+      "value": 0.75,
+      "rule": ">= 0.8",
+      "verdict": "FAIL",
+      "n": 4,
+      "small": true
+    },
+    {
+      "metric": "distractor_intrusion",
+      "value": 0.0,
+      "rule": "<= 0.15",
+      "verdict": "PASS",
+      "n": 12,
+      "small": false
+    },
+    {
+      "metric": "twin_merge",
+      "value": 0.6666666666666666,
+      "rule": ">= 0.8",
+      "verdict": "FAIL",
+      "n": 3,
+      "small": true
+    },
+    {
+      "metric": "false_friend_split",
+      "value": 1.0,
+      "rule": ">= 0.7",
+      "verdict": "PASS",
+      "n": 3,
+      "small": true
+    },
+    {
+      "metric": "counterexample_kept",
+      "value": 1.0,
+      "rule": ">= 0.6",
+      "verdict": "PASS",
+      "n": 4,
+      "small": true
+    },
+    {
+      "metric": "trace_complete",
+      "value": 1.0,
+      "rule": "== 1.0",
+      "verdict": "PASS",
+      "n": 14,
+      "small": false
+    }
+  ],
+  "detail": {
+    "hallucinated_context_literal": [
+      "BEH_018.phase='실외'"
+    ],
+    "hallucinated_context": [
+      "BEH_018.phase='실외'",
+      "BEH_044.device='통역기'"
+    ],
+    "negation_flip": [],
+    "kind_mismatch": [
+      "RAW_008",
+      "RAW_015",
+      "RAW_017",
+      "RAW_018",
+      "RAW_019",
+      "RAW_028",
+      "RAW_029",
+      "RAW_030",
+      "RAW_031",
+      "RAW_034",
+      "RAW_035",
+      "RAW_040",
+      "RAW_043"
+    ],
+    "injection_leak": [],
+    "tension_recall": [
+      {
+        "hidden": "HT_01",
+        "matched": "TEN_001",
+        "purity": 1.0,
+        "coverage": 0.71,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_02",
+        "matched": "TEN_002",
+        "purity": 1.0,
+        "coverage": 0.83,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_03",
+        "matched": "TEN_003",
+        "purity": 1.0,
+        "coverage": 1.0,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_04",
+        "matched": "TEN_004",
+        "purity": 1.0,
+        "coverage": 0.14,
+        "recovered": false
+      }
+    ],
+    "tension_majority": {
+      "TEN_001": {
+        "hidden": "HT_01",
+        "purity": 1.0
+      },
+      "TEN_002": {
+        "hidden": "HT_02",
+        "purity": 1.0
+      },
+      "TEN_003": {
+        "hidden": "HT_03",
+        "purity": 1.0
+      },
+      "TEN_004": {
+        "hidden": "HT_04",
+        "purity": 1.0
+      }
+    },
+    "distractor_intrusion": [],
+    "twin_merge_failed": [
+      [
+        "RAW_028",
+        "RAW_040"
+      ]
+    ],
+    "false_friend_fooled": [],
+    "counterexample_lost": [],
+    "trace_broken": []
+  },
+  "at": "2026-09-28T10:03:19"
+}

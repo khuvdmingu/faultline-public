@@ -1,0 +1,30 @@
+{"id": "BAS_001", "title": "출근길 메일 요약", "experience": "이동 중 밀린 메일을 AI가 요약해 우선순위대로 보여준다.", "mechanism": "메일함 스캔 후 중요도 순 요약", "condition": "A", "is_synthetic": true}
+{"id": "BAS_002", "title": "회의 시간 자동 조율", "experience": "참석자들의 캘린더를 비교해 AI가 가능한 시간을 제안한다.", "mechanism": "캘린더 교차 비교 후 후보 시간 제시", "condition": "A", "is_synthetic": true}
+{"id": "BAS_003", "title": "동료에게 대신 질문", "experience": "사용자가 궁금한 내용을 AI가 메신저로 동료에게 물어보고 답을 정리해준다.", "mechanism": "메신저 대리 발신 후 응답 요약", "condition": "A", "is_synthetic": true}
+{"id": "BAS_004", "title": "문서 공유 자동화", "experience": "요청한 문서를 AI가 찾아 관련자에게 공유 링크를 보낸다.", "mechanism": "문서 검색 후 권한 부여 및 전송", "condition": "A", "is_synthetic": true}
+{"id": "BAS_005", "title": "답장 초안 승인", "experience": "AI가 답장 초안을 작성하면 사용자가 한 번의 탭으로 승인한다.", "mechanism": "초안 생성 후 승인 요청 알림", "condition": "A", "is_synthetic": true}
+{"id": "BAS_006", "title": "일정 충돌 알림", "experience": "새 회의 요청이 기존 일정과 겹치면 AI가 즉시 알려준다.", "mechanism": "캘린더 충돌 감지 후 푸시 알림", "condition": "A", "is_synthetic": true}
+{"id": "BAS_007", "title": "이동 중 음성 지시", "experience": "걷는 중 음성으로 업무를 지시하면 AI가 백그라운드에서 처리한다.", "mechanism": "음성 명령 파싱 후 비동기 실행", "condition": "A", "is_synthetic": true}
+{"id": "BAS_008", "title": "개인·업무 계정 분리 제안", "experience": "AI가 메일 발신자를 보고 개인용인지 업무용인지 구분해 처리한다.", "mechanism": "발신자 도메인 기반 계정 분류", "condition": "A", "is_synthetic": true}
+{"id": "BAS_009", "title": "회의록 자동 배포", "experience": "회의가 끝나면 AI가 요약본을 참석자 메신저로 전송한다.", "mechanism": "녹취 요약 후 채널별 배포", "condition": "A", "is_synthetic": true}
+{"id": "BAS_010", "title": "긴급 메일 즉시 알림", "experience": "중요 키워드가 포함된 메일이 오면 AI가 바로 알림을 띄운다.", "mechanism": "키워드 필터링 후 즉시 푸시", "condition": "A", "is_synthetic": true}
+{"id": "BAS_011", "title": "대기 승인 목록", "experience": "짧은 틈에 밀린 승인 요청들을 한 화면에서 스와이프로 처리한다.", "mechanism": "승인 큐 일괄 노출 후 제스처 처리", "condition": "A", "is_synthetic": true}
+{"id": "BAS_012", "title": "문서 버전 확인 대행", "experience": "최신 문서 버전이 맞는지 AI가 동료에게 확인해 알려준다.", "mechanism": "버전 질의 메시지 발송 후 응답 수집", "condition": "A", "is_synthetic": true}
+{"id": "BAS_013", "title": "회의 참석 여부 대리 응답", "experience": "초대 메일에 대한 참석 여부를 AI가 일정 보고 자동 회신한다.", "mechanism": "일정 가용성 판단 후 자동 회신", "condition": "A", "is_synthetic": true}
+{"id": "BAS_014", "title": "출장 중 문서 요청 처리", "experience": "이동 중 필요한 자료를 말하면 AI가 노트북 파일에서 찾아 보낸다.", "mechanism": "기기 간 파일 검색 후 전송", "condition": "A", "is_synthetic": true}
+{"id": "BAS_015", "title": "메일 톤 조정", "experience": "AI가 작성한 답장의 어조를 캐주얼하거나 격식 있게 바꿔준다.", "mechanism": "톤 파라미터 조절 후 재생성", "condition": "A", "is_synthetic": true}
+{"id": "BAS_016", "title": "반복 일정 자동 생성", "experience": "매주 같은 회의를 AI가 알아서 캘린더에 등록한다.", "mechanism": "패턴 인식 후 반복 일정 생성", "condition": "A", "is_synthetic": true}
+{"id": "BAS_017", "title": "동료 부재중 처리", "experience": "질문할 동료가 부재중이면 AI가 대체 담당자를 찾아 다시 묻는다.", "mechanism": "부재 상태 감지 후 대체 라우팅", "condition": "A", "is_synthetic": true}
+{"id": "BAS_018", "title": "알림 우선순위 정리", "experience": "쏟아지는 알림을 AI가 업무 중요도 순으로 재배열한다.", "mechanism": "알림 메타데이터 기반 재정렬", "condition": "A", "is_synthetic": true}
+{"id": "BAS_019", "title": "회의실 예약 대행", "experience": "회의 참석자 수를 보고 AI가 적절한 회의실을 예약한다.", "mechanism": "인원수 매칭 후 공간 예약", "condition": "A", "is_synthetic": true}
+{"id": "BAS_020", "title": "이메일 첨부파일 정리", "experience": "받은 첨부파일들을 AI가 문서 도구 폴더에 자동 분류해 저장한다.", "mechanism": "파일 유형 분석 후 폴더 분류", "condition": "A", "is_synthetic": true}
+{"id": "BAS_021", "title": "출근 전 하루 브리핑", "experience": "아침에 오늘 일정과 할 일을 AI가 짧게 음성으로 브리핑한다.", "mechanism": "일정·태스크 통합 후 음성 요약", "condition": "A", "is_synthetic": true}
+{"id": "BAS_022", "title": "메신저 대기 메시지 요약", "experience": "장시간 미확인 메신저 대화를 AI가 핵심만 요약해준다.", "mechanism": "대화 스레드 요약 알고리즘", "condition": "A", "is_synthetic": true}
+{"id": "BAS_023", "title": "승인 전 위험 안내", "experience": "AI가 민감한 내용의 메일 발송 전 위험 요소를 짚어준다.", "mechanism": "내용 스캔 후 경고 플래그", "condition": "A", "is_synthetic": true}
+{"id": "BAS_024", "title": "이동 중 회의 요약 청취", "experience": "운전 중 놓친 회의 내용을 AI 음성 요약으로 듣는다.", "mechanism": "텍스트 요약의 음성 변환 재생", "condition": "A", "is_synthetic": true}
+{"id": "BAS_025", "title": "동료 일정 간단 조회", "experience": "동료가 지금 바쁜지 AI에게 물어보면 캘린더를 확인해 답한다.", "mechanism": "캘린더 조회 권한 기반 응답", "condition": "A", "is_synthetic": true}
+{"id": "BAS_026", "title": "문서 공유 권한 확인", "experience": "외부인에게 문서를 공유하기 전 AI가 권한 설정을 재확인시킨다.", "mechanism": "공유 대상 검증 후 확인 요청", "condition": "A", "is_synthetic": true}
+{"id": "BAS_027", "title": "짧은 대기시간 활용 처리", "experience": "엘리베이터를 기다리는 짧은 시간에 승인 하나를 처리한다.", "mechanism": "마이크로 인터랙션 단위 작업 분할", "condition": "A", "is_synthetic": true}
+{"id": "BAS_028", "title": "메일 반복 문의 자동 응답", "experience": "자주 오는 동일 질문 메일에 AI가 표준 답변을 자동 발송한다.", "mechanism": "질문 패턴 매칭 후 템플릿 응답", "condition": "A", "is_synthetic": true}
+{"id": "BAS_029", "title": "일정 변경 알림 전파", "experience": "회의 시간이 바뀌면 AI가 관련자 전원에게 메신저로 알린다.", "mechanism": "변경 감지 후 일괄 알림 발송", "condition": "A", "is_synthetic": true}
+{"id": "BAS_030", "title": "개인 일정 보호", "experience": "업무 AI가 개인 일정은 공유하지 않고 '바쁨'으로만 표시한다.", "mechanism": "일정 태그 기반 노출 필터링", "condition": "A", "is_synthetic": true}

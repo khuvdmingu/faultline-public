@@ -1,0 +1,219 @@
+{
+  "id": "20260928-094615",
+  "status": "done",
+  "started": "2026-09-28T09:46:15",
+  "finished": "2026-09-28T10:03:19",
+  "secs": 1024,
+  "error": null,
+  "config": {
+    "size": "quick",
+    "parallel": 3,
+    "brevity": "short",
+    "profile": "full",
+    "polish": "shortlist",
+    "family": "on",
+    "assign": "on"
+  },
+  "steps": [
+    {
+      "stage": "ground_truth",
+      "status": "done",
+      "rows": 1,
+      "secs": 51,
+      "note": null
+    },
+    {
+      "stage": "generate",
+      "status": "done",
+      "rows": 43,
+      "secs": 126,
+      "note": "품질 재생성"
+    },
+    {
+      "stage": "split",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": "품질 검사: 재생성 권장"
+    },
+    {
+      "stage": "baseline",
+      "status": "done",
+      "rows": 15,
+      "secs": 20,
+      "note": "본 사슬과 나란히"
+    },
+    {
+      "stage": "extract",
+      "status": "done",
+      "rows": 50,
+      "secs": 58,
+      "note": null
+    },
+    {
+      "stage": "link",
+      "status": "done",
+      "rows": 4,
+      "secs": 111,
+      "note": null
+    },
+    {
+      "stage": "assign",
+      "status": "done",
+      "rows": null,
+      "secs": 148,
+      "note": "판단 50개 · accept 40 · 무소속으로 0 · 이동 0 · 역할 7 · 추가 1 · 반례 유지 0"
+    },
+    {
+      "stage": "analogy",
+      "status": "done",
+      "rows": 8,
+      "secs": 54,
+      "note": null
+    },
+    {
+      "stage": "package",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": null
+    },
+    {
+      "stage": "principle",
+      "status": "done",
+      "rows": 7,
+      "secs": 45,
+      "note": null
+    },
+    {
+      "stage": "premise",
+      "status": "done",
+      "rows": 7,
+      "secs": 67,
+      "note": null
+    },
+    {
+      "stage": "scenario",
+      "status": "done",
+      "rows": 14,
+      "secs": 120,
+      "note": null
+    },
+    {
+      "stage": "judge",
+      "status": "done",
+      "rows": 14,
+      "secs": 66,
+      "note": null
+    },
+    {
+      "stage": "family",
+      "status": "done",
+      "rows": 5,
+      "secs": 82,
+      "note": "평가와 나란히"
+    },
+    {
+      "stage": "shortlist",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": "후보 4개 / 적격 4"
+    },
+    {
+      "stage": "polish",
+      "status": "done",
+      "rows": 4,
+      "secs": 58,
+      "note": null
+    },
+    {
+      "stage": "score",
+      "status": "done",
+      "rows": null,
+      "secs": 0,
+      "note": "PASS 8 / 10"
+    }
+  ],
+  "counts": {
+    "raw": 43,
+    "behaviors": 50,
+    "tensions": 4,
+    "principles": 7,
+    "premises": 7,
+    "scenarios": 14,
+    "families": 5,
+    "shortlist": 4
+  },
+  "text": {
+    "principles": 112,
+    "premises": 225,
+    "scenarios": 397
+  },
+  "score": {
+    "pass": 8,
+    "total": 10,
+    "verdicts": [
+      {
+        "metric": "excerpt_grounded",
+        "value": 1.0,
+        "verdict": "PASS",
+        "n": 50
+      },
+      {
+        "metric": "hallucinated_context",
+        "value": 0.012903225806451613,
+        "verdict": "PASS",
+        "n": 155
+      },
+      {
+        "metric": "negation_flip",
+        "value": 0.0,
+        "verdict": "PASS",
+        "n": 2
+      },
+      {
+        "metric": "injection_leak",
+        "value": 0,
+        "verdict": "PASS",
+        "n": null
+      },
+      {
+        "metric": "tension_recall",
+        "value": 0.75,
+        "verdict": "FAIL",
+        "n": 4
+      },
+      {
+        "metric": "distractor_intrusion",
+        "value": 0.0,
+        "verdict": "PASS",
+        "n": 12
+      },
+      {
+        "metric": "twin_merge",
+        "value": 0.6666666666666666,
+        "verdict": "FAIL",
+        "n": 3
+      },
+      {
+        "metric": "false_friend_split",
+        "value": 1.0,
+        "verdict": "PASS",
+        "n": 3
+      },
+      {
+        "metric": "counterexample_kept",
+        "value": 1.0,
+        "verdict": "PASS",
+        "n": 4
+      },
+      {
+        "metric": "trace_complete",
+        "value": 1.0,
+        "verdict": "PASS",
+        "n": 14
+      }
+    ]
+  }
+}

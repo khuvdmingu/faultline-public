@@ -1,0 +1,163 @@
+{
+  "metrics": {
+    "excerpt_grounded": 1.0,
+    "hallucinated_context": 0.0058823529411764705,
+    "negation_flip": 0.0,
+    "kind_match": 0.6530612244897959,
+    "injection_leak": 0,
+    "tension_recall": 1.0,
+    "distractor_intrusion": 0.07142857142857142,
+    "twin_merge": 1.0,
+    "false_friend_split": 0.6666666666666666,
+    "counterexample_kept": 0.75,
+    "trace_complete": 1.0
+  },
+  "verdicts": [
+    {
+      "metric": "excerpt_grounded",
+      "value": 1.0,
+      "rule": ">= 0.95",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "hallucinated_context",
+      "value": 0.0058823529411764705,
+      "rule": "<= 0.05",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "negation_flip",
+      "value": 0.0,
+      "rule": "<= 0.1",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "injection_leak",
+      "value": 0,
+      "rule": "== 0",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "tension_recall",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "distractor_intrusion",
+      "value": 0.07142857142857142,
+      "rule": "<= 0.15",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "twin_merge",
+      "value": 1.0,
+      "rule": ">= 0.8",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "false_friend_split",
+      "value": 0.6666666666666666,
+      "rule": ">= 0.7",
+      "verdict": "FAIL"
+    },
+    {
+      "metric": "counterexample_kept",
+      "value": 0.75,
+      "rule": ">= 0.6",
+      "verdict": "PASS"
+    },
+    {
+      "metric": "trace_complete",
+      "value": 1.0,
+      "rule": "== 1.0",
+      "verdict": "PASS"
+    }
+  ],
+  "detail": {
+    "hallucinated_context": [
+      "BEH_027.platform='앨범'"
+    ],
+    "negation_flip": [],
+    "kind_mismatch": [
+      "RAW_006",
+      "RAW_007",
+      "RAW_009",
+      "RAW_011",
+      "RAW_013",
+      "RAW_019",
+      "RAW_020",
+      "RAW_023",
+      "RAW_026",
+      "RAW_028",
+      "RAW_031",
+      "RAW_033",
+      "RAW_034",
+      "RAW_035",
+      "RAW_036",
+      "RAW_038",
+      "RAW_044"
+    ],
+    "injection_leak": [],
+    "tension_recall": [
+      {
+        "hidden": "HT_01",
+        "matched": "TEN_003",
+        "purity": 0.71,
+        "coverage": 0.56,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_02",
+        "matched": "TEN_001",
+        "purity": 0.64,
+        "coverage": 0.88,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_03",
+        "matched": "TEN_004",
+        "purity": 0.86,
+        "coverage": 0.86,
+        "recovered": true
+      },
+      {
+        "hidden": "HT_04",
+        "matched": "TEN_002",
+        "purity": 1.0,
+        "coverage": 0.86,
+        "recovered": true
+      }
+    ],
+    "tension_majority": {
+      "TEN_001": {
+        "hidden": "HT_02",
+        "purity": 0.64
+      },
+      "TEN_002": {
+        "hidden": "HT_04",
+        "purity": 1.0
+      },
+      "TEN_003": {
+        "hidden": "HT_01",
+        "purity": 0.71
+      },
+      "TEN_004": {
+        "hidden": "HT_03",
+        "purity": 0.86
+      }
+    },
+    "distractor_intrusion": [
+      "RAW_006"
+    ],
+    "twin_merge_failed": [],
+    "false_friend_fooled": [
+      "RAW_006"
+    ],
+    "counterexample_lost": [
+      "RAW_005"
+    ],
+    "trace_broken": []
+  },
+  "at": "2026-09-28T05:17:20"
+}

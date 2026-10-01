@@ -1,0 +1,158 @@
+{
+  "version": "shortlist_v01",
+  "at": "2026-09-28T00:43:21",
+  "n": 5,
+  "rule": "근거·현실성 3 미만, 뻔함 4 이상, 추적 끊김은 제외 → 점수 = 평균(근거·tension·새로움·현실성·기기 적합) − 0.5×(뻔함−1) → tension 마다 1개(다음 family 마다 1개) → 상위 5개",
+  "counts": {
+    "scenarios": 24,
+    "eligible": 21,
+    "excluded": 3
+  },
+  "picks": [
+    {
+      "scenario_id": "SCN_013",
+      "score": 4.6,
+      "family_id": "FAM_011",
+      "tension_id": "TEN_005",
+      "family_label": "필요한 순간에만 드러나는 조용한 소유 신호",
+      "scores": {
+        "behavioral_grounding": 5,
+        "tension_strength": 4,
+        "novelty": 5,
+        "cliche_level": 1,
+        "plausibility": 4,
+        "device_fit": 5,
+        "ai_necessity": 1
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 1,
+      "why": [
+        "새로움 5",
+        "기기 적합 5",
+        "뻔함 1",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_009",
+      "score": 4.2,
+      "family_id": "FAM_007",
+      "tension_id": "TEN_003",
+      "family_label": "불확실성을 내장한 구매 판단 규칙",
+      "scores": {
+        "behavioral_grounding": 4,
+        "tension_strength": 4,
+        "novelty": 5,
+        "cliche_level": 1,
+        "plausibility": 4,
+        "device_fit": 4,
+        "ai_necessity": 2
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 2,
+      "why": [
+        "새로움 5",
+        "현실성 4",
+        "뻔함 1",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_004",
+      "score": 4.2,
+      "family_id": "FAM_004",
+      "tension_id": "TEN_002",
+      "family_label": "이벤트 촉발형 가역적 흔적 전환",
+      "scores": {
+        "behavioral_grounding": 5,
+        "tension_strength": 3,
+        "novelty": 4,
+        "cliche_level": 1,
+        "plausibility": 4,
+        "device_fit": 5,
+        "ai_necessity": 1
+      },
+      "review_route": "develop_candidate",
+      "slot": "tension 대표",
+      "rank": 3,
+      "why": [
+        "기기 적합 5",
+        "근거 5",
+        "뻔함 1",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_002",
+      "score": 3.8,
+      "family_id": "FAM_002",
+      "tension_id": "TEN_001",
+      "family_label": "등장 인물·시간창에 결부된 동적 세부 열람",
+      "scores": {
+        "behavioral_grounding": 3,
+        "tension_strength": 4,
+        "novelty": 5,
+        "cliche_level": 1,
+        "plausibility": 3,
+        "device_fit": 4,
+        "ai_necessity": 4
+      },
+      "review_route": "question_candidate",
+      "slot": "tension 대표",
+      "rank": 4,
+      "why": [
+        "새로움 5",
+        "기기 적합 4",
+        "뻔함 1",
+        "tension 대표"
+      ]
+    },
+    {
+      "scenario_id": "SCN_012",
+      "score": 3.8,
+      "family_id": "FAM_010",
+      "tension_id": "TEN_004",
+      "family_label": "가구 경계를 넘는 외부 재경로",
+      "scores": {
+        "behavioral_grounding": 3,
+        "tension_strength": 4,
+        "novelty": 5,
+        "cliche_level": 1,
+        "plausibility": 4,
+        "device_fit": 3,
+        "ai_necessity": 2
+      },
+      "review_route": "question_candidate",
+      "slot": "tension 대표",
+      "rank": 5,
+      "why": [
+        "새로움 5",
+        "현실성 4",
+        "뻔함 1",
+        "tension 대표"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "scenario_id": "SCN_006",
+      "reasons": [
+        "근거 부족 (2)"
+      ]
+    },
+    {
+      "scenario_id": "SCN_007",
+      "reasons": [
+        "뻔함 (4)"
+      ]
+    },
+    {
+      "scenario_id": "SCN_008",
+      "reasons": [
+        "뻔함 (4)"
+      ]
+    }
+  ]
+}

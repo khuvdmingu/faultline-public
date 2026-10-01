@@ -1,0 +1,6 @@
+```json
+{"id":"ANA_001","source_domain":"aviation","source_pattern":"승무원 최소 휴식시간(turnaround) 규정","abstract_mechanism":"연속 작업 사이에 최소 회복 시간을 강제로 확보한다","target_tension_ids":["TEN_001"],"mapping":{"비행 구간":"회의","의무 휴식시간":"이동·버퍼 시간"},"transfer_limitations":["항공 규정은 법적 강제력이 있지만 개인 캘린더는 강제 규범이 없어 AI가 쉽게 무시할 수 있다"],"distance":"distant"}
+{"id":"ANA_002","source_domain":"cloud infrastructure","source_pattern":"오토스케일링 쿨다운 기간","abstract_mechanism":"자동화가 연속으로 동작하지 못하도록 최소 간격을 강제한다","target_tension_ids":["TEN_001"],"mapping":{"스케일링 이벤트":"회의 자동 배치","쿨다운 기간":"이동·휴식 버퍼"},"transfer_limitations":["인프라 쿨다운은 시스템 리소스 보호 목적이라 사람의 피로·이동 같은 주관적 요인은 반영하기 어렵다"],"distance":"adjacent"}
+{"id":"ANA_003","source_domain":"medicine","source_pattern":"응급 호출 vs 정기 회진 구분","abstract_mechanism":"긴급도에 따라 즉시 호출 대상과 모아서 묻는 정기 문의 대상을 구분한다","target_tension_ids":["TEN_002"],"mapping":{"응급 호출":"막히는 즉시 질문","정기 회진":"질문을 모아 한번에 보내기","선임의":"동료"},"transfer_limitations":["의료의 응급 기준은 생명 위협처럼 명확하지만 업무 질문의 긴급도는 모호해 동일한 기준을 적용하기 어렵다"],"distance":"distant"}
+{"id":"ANA_004","source_domain":"customer support tooling","source_pattern":"알림 다이제스트(digest) 묶음 발송","abstract_mechanism":"개별 요청을 즉시 보내지 않고 모아서 한 번에 전달해 상대 부담을 줄인다","target_tension_ids":["TEN_002"],"mapping":{"개별 알림":"낱개 질문","다이제스트 발송":"질문 묶음 전송"},"transfer_limitations":["다이제스트는 지연을 전제로 하므로 정말 급한 질문까지 묶이면 응답이 늦어지는 부작용이 생긴다"],"distance":"adjacent"}
+```

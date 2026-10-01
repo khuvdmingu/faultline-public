@@ -1,0 +1,93 @@
+{
+  "id": "20260928-052441-42b8",
+  "root": "experiments/phone-agent-v2",
+  "stage": "extract",
+  "writes": "behaviors",
+  "executor": "claude_cli",
+  "model": "sonnet",
+  "status": "done",
+  "created": "2026-09-28T05:24:41",
+  "started": "2026-09-28T05:24:41",
+  "finished": "2026-09-28T05:26:11",
+  "batches": [
+    {
+      "index": 0,
+      "items": [
+        "RAW_001",
+        "RAW_002",
+        "RAW_003",
+        "RAW_004",
+        "RAW_005",
+        "RAW_006",
+        "RAW_007",
+        "RAW_008",
+        "RAW_009",
+        "RAW_010",
+        "RAW_011",
+        "RAW_012",
+        "RAW_013",
+        "RAW_014",
+        "RAW_015",
+        "RAW_016",
+        "RAW_017",
+        "RAW_018",
+        "RAW_019",
+        "RAW_020",
+        "RAW_021",
+        "RAW_022",
+        "RAW_023",
+        "RAW_024",
+        "RAW_025",
+        "RAW_026",
+        "RAW_027",
+        "RAW_028",
+        "RAW_029",
+        "RAW_030"
+      ],
+      "status": "done",
+      "prompt_file": "batch_00.prompt.md",
+      "prompt_chars": 4067,
+      "out_file": "batch_00.out.txt",
+      "error": null
+    },
+    {
+      "index": 1,
+      "items": [
+        "RAW_031",
+        "RAW_032",
+        "RAW_033",
+        "RAW_034",
+        "RAW_035",
+        "RAW_036",
+        "RAW_037",
+        "RAW_038",
+        "RAW_039",
+        "RAW_040",
+        "RAW_041",
+        "RAW_042",
+        "RAW_043"
+      ],
+      "status": "done",
+      "prompt_file": "batch_01.prompt.md",
+      "prompt_chars": 2512,
+      "out_file": "batch_01.out.txt",
+      "error": null
+    }
+  ],
+  "result": {
+    "rows": 59,
+    "errors": [],
+    "error_count": 0,
+    "warnings": [],
+    "parse_warnings": [],
+    "file": "experiments/phone-agent-v2/data/extracted/behaviors.jsonl",
+    "forced": false
+  },
+  "error": null,
+  "log": [
+    "2026-09-28T05:25:57 배치 1 완료 (76초, 5130자)",
+    "2026-09-28T05:26:11 배치 0 완료 (89초, 10022자)",
+    "2026-09-28T05:26:11 저장 59행 → experiments/phone-agent-v2/data/extracted/behaviors.jsonl"
+  ],
+  "pid": 60485
+}
